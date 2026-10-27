@@ -19,14 +19,24 @@
   "integrity_note": "This inventory excludes itself and SHA256SUMS.txt. SHA256SUMS.txt covers this manifest and every other file except itself.",
   "files": [
     {
+      "path": ".gitignore",
+      "bytes": 48,
+      "sha256": "01147102905c01f3835c966643156e54ba29da555a4a47e093b6f0e4eef200c6"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1068,
+      "sha256": "8325c3e5052b8ab5c659d722c7b04d9b7d023dce098fd4ede68ac3123920983b"
+    },
+    {
       "path": "README.en.md",
       "bytes": 3829,
       "sha256": "97894620992cca681b4fb33ec4a7c9b4c06cd2b4b184833b445347401f30daee"
     },
     {
       "path": "README.md",
-      "bytes": 344,
-      "sha256": "b8c1cbe6f7b39a84002afbe8a3bf4892f8527f5ca76f2550d1edbc506fbd2fc3"
+      "bytes": 627,
+      "sha256": "678121645fb85c27c2673e953982c0872483c3dade8cd5f9062955394994dcb9"
     },
     {
       "path": "README.zh-CN.md",
@@ -35,13 +45,13 @@
     },
     {
       "path": "START-HERE.en.html",
-      "bytes": 14531,
-      "sha256": "2e5e703eddc6b15bdd9287264eb375f4cab264a2df3420a7afc2008dd8589b60"
+      "bytes": 14532,
+      "sha256": "a0cee9ef14d0618c8d1af9a316090fef04cbbe1c9445fa1a226b37036abe35c7"
     },
     {
       "path": "START-HERE.html",
-      "bytes": 14534,
-      "sha256": "4fceb9b3fe173b799c571c1dc0db0b17a35f3cee87b7f7597dd5b86b56936bef"
+      "bytes": 14535,
+      "sha256": "c21f923df66a45d9578bc4fab4fda76c431cf1646397d1ad5b4ea6233539612c"
     },
     {
       "path": "archive/the-scream-previous-screenshots/01-entry.png",
@@ -85,8 +95,8 @@
     },
     {
       "path": "docs/en/DEVELOPMENT.html",
-      "bytes": 5977,
-      "sha256": "8e33811374565ad8db046fd999fc0aa207fed65b443f96ef6259c9c2c6736a51"
+      "bytes": 5978,
+      "sha256": "e12868aca782729e0db5dd54f51c4638cdaf238849756b20ebc7aa1b10f34470"
     },
     {
       "path": "docs/en/DEVELOPMENT.md",
@@ -95,8 +105,8 @@
     },
     {
       "path": "docs/en/GUIDE.html",
-      "bytes": 9678,
-      "sha256": "dca0176fc425f4ffa403095733e8a092e197db9af67347c7a3ea171f13b3df02"
+      "bytes": 9679,
+      "sha256": "e9959a61b0713adece12de8fca3510b3a458f69167a871da1b72c2ff57b94a97"
     },
     {
       "path": "docs/en/GUIDE.md",
@@ -105,8 +115,8 @@
     },
     {
       "path": "docs/en/PRODUCT.html",
-      "bytes": 5894,
-      "sha256": "88a54fbaf5a1fd2c0a314d97b0cc48b095694690d8a385586e2fae537b46ee82"
+      "bytes": 5895,
+      "sha256": "aa1d60befc9f18f2b26b4f6ba6e0c6180077e1121c5582f0176bd662ab27a84e"
     },
     {
       "path": "docs/en/PRODUCT.md",
@@ -115,8 +125,8 @@
     },
     {
       "path": "docs/en/PROMPTS.html",
-      "bytes": 2759,
-      "sha256": "88f1921381f39f8350a020e310f54c5ce058afaf66148cc74dc8da7aedf77be7"
+      "bytes": 2760,
+      "sha256": "9e7306bada65a4b324f7867805d3023b639e544a2dd086946498abba495d1708"
     },
     {
       "path": "docs/en/PROMPTS.md",
@@ -125,18 +135,18 @@
     },
     {
       "path": "docs/en/PROVENANCE.html",
-      "bytes": 4993,
-      "sha256": "1fdd62d85507b92add166c95dfda874997c473a00ed475b7002163de03faddf9"
+      "bytes": 4994,
+      "sha256": "3947ef9309480bbb424e3f21f18ff44d2f995ae766da02682f88cced0c37f32a"
     },
     {
       "path": "docs/en/PROVENANCE.md",
-      "bytes": 2836,
-      "sha256": "2c2f84b93836f3a6f7b20b7865330285a8737d222e1debf1476ec0c53e77be54"
+      "bytes": 2695,
+      "sha256": "312536fa0ee29a464cf20a1be9bc583a39d735e438a33c39a79fe3df5c5bd94a"
     },
     {
       "path": "docs/en/QA.html",
-      "bytes": 6438,
-      "sha256": "392c6e5352a232e5510f9444452f405c324ed338cc7e7555174cb78c1058c2da"
+      "bytes": 6439,
+      "sha256": "723babdf45b980ac2d6f1956fe773e527353753050b0a51fbb0336955ed6a08c"
     },
     {
       "path": "docs/en/QA.md",
@@ -145,8 +155,8 @@
     },
     {
       "path": "docs/zh-CN/DEVELOPMENT.html",
-      "bytes": 5791,
-      "sha256": "ded17d5d7a72bc7e4b87d06fd7130353bc88c77db59499bcd94531b0cad5970b"
+      "bytes": 5792,
+      "sha256": "df04ebe416e94d05a4f8e3c8cb09fad7821cec55d7965589d53d4fd145d4be0c"
     },
     {
       "path": "docs/zh-CN/DEVELOPMENT.md",
@@ -155,8 +165,8 @@
     },
     {
       "path": "docs/zh-CN/GUIDE.html",
-      "bytes": 9051,
-      "sha256": "9f2dd6be84342795cb38a48c45bad186e189d7ad243a709d3d0bb5d0078f9236"
+      "bytes": 9052,
+      "sha256": "1329330d51fa484931a61b77210403a14b3cd59d61c9eefbfb791c8b24091e8f"
     },
     {
       "path": "docs/zh-CN/GUIDE.md",
@@ -165,8 +175,8 @@
     },
     {
       "path": "docs/zh-CN/PRODUCT.html",
-      "bytes": 5427,
-      "sha256": "ec1e5384d68e9954e8bc6d1876639c32f283ff9a320a906532af66f05cc30d49"
+      "bytes": 5428,
+      "sha256": "18e441182377286589d9fb69f0962e5fb60c21fa6e606be8a5c0a54c0dd4d15b"
     },
     {
       "path": "docs/zh-CN/PRODUCT.md",
@@ -175,8 +185,8 @@
     },
     {
       "path": "docs/zh-CN/PROMPTS.html",
-      "bytes": 2563,
-      "sha256": "aa09711969f7e45ab4062357b0a86419f81182dae5589d191b409728292f44f3"
+      "bytes": 2564,
+      "sha256": "dcdf967c4d53929ee0ccbabcb6fb304822b1bd990cb94f3eb1c2c49f97eaac82"
     },
     {
       "path": "docs/zh-CN/PROMPTS.md",
@@ -185,18 +195,18 @@
     },
     {
       "path": "docs/zh-CN/PROVENANCE.html",
-      "bytes": 4676,
-      "sha256": "562bdfe0365c57f5ee44ec148d32a58aa215fe27a6e0be57cabc8f9f946aec9f"
+      "bytes": 4677,
+      "sha256": "2a5f502d4981d1f2021007f74cdd8531356c52f9d897205025f0122d7435a63a"
     },
     {
       "path": "docs/zh-CN/PROVENANCE.md",
-      "bytes": 2513,
-      "sha256": "8eea50c8d34de2fabf7c87d109ff2d620793a60bb70d0e94d3de29d538cd508d"
+      "bytes": 2407,
+      "sha256": "b772693cb3a318be00b844260702e72bc7465f5b48c50557a91439af0a0e8f64"
     },
     {
       "path": "docs/zh-CN/QA.html",
-      "bytes": 5945,
-      "sha256": "52db0bfa1d9a9983b73741790e8f1d840636ee0a7b04814d2204ddbd2ccfed2b"
+      "bytes": 5946,
+      "sha256": "a920ae51f8b2bc8fecf692a3aeac9fd508e74bc5b4e91b0c5b0f75b068c5bd82"
     },
     {
       "path": "docs/zh-CN/QA.md",
@@ -269,11 +279,6 @@
       "sha256": "6b7035c40b3615602387f4d2d57c96b76a12d2ed572b079341a2c7b55520eb98"
     },
     {
-      "path": "examples/cafe-terrace/archive/qa/desktop.log",
-      "bytes": 1301,
-      "sha256": "8ba936ed54ecf19852bc248a6cf6e8839116cf43e608349178829d5e2ad66625"
-    },
-    {
       "path": "examples/cafe-terrace/archive/qa/place-02.png",
       "bytes": 1203836,
       "sha256": "4bd37ee0d1a400b3581ca13b50500fb784837f46115727551c20fb861fbe969d"
@@ -295,28 +300,23 @@
     },
     {
       "path": "examples/cafe-terrace/archive/qa/test-desktop.json",
-      "bytes": 5546,
-      "sha256": "d4ef997080bb40ee46e4a236d329bdb231150defe76ee46770f5577c46fa9326"
+      "bytes": 5547,
+      "sha256": "422b8ebcd800176ee7a49181ed666170348d992d8f41743bd3e7049b52c2420e"
     },
     {
       "path": "examples/cafe-terrace/archive/qa/test-fallback.json",
-      "bytes": 505,
-      "sha256": "ffdf8d32a289a16878f5f92796f394f71c9055f260d8b62a58ffdb79f6d324ef"
+      "bytes": 506,
+      "sha256": "0802265027f055f2be3cd52be3e25627602cca310dbd5ce4dcb1e38e4d27011a"
     },
     {
       "path": "examples/cafe-terrace/archive/qa/test-mobile.json",
-      "bytes": 3326,
-      "sha256": "ee656d7cfb8e4a5a6f0f86386841f8e6b635e57ecc73017eb91b645a0c77e89d"
+      "bytes": 3327,
+      "sha256": "0feb4e8f626c03afd172609f1cb5fe37184ee0bc0c5a67efdadc05d3d34b6aa0"
     },
     {
       "path": "examples/cafe-terrace/archive/qa/test-tour.json",
-      "bytes": 2623,
-      "sha256": "ac97cf67721c369acd9e061a88f21655a8629da2045adf80e8c5dd5d782e6aca"
-    },
-    {
-      "path": "examples/cafe-terrace/archive/qa/tour.log",
-      "bytes": 407,
-      "sha256": "74417431626c43c05b889b5f04e03b9dc1ab233e69fa07f08b35229e2867d0d5"
+      "bytes": 2624,
+      "sha256": "45a16d4199d2b9e51094182f8b8b9b832f09274581ed055150039a1d0ad71568"
     },
     {
       "path": "examples/cafe-terrace/archive/scripts/build.mjs",
@@ -385,8 +385,8 @@
     },
     {
       "path": "examples/cafe-terrace/package.json",
-      "bytes": 349,
-      "sha256": "3992a37952bead48e76728009119c828048fa72d0edf87d3dcd826e00bfae42b"
+      "bytes": 342,
+      "sha256": "7fd0e4e1533d42b7c848161d0ff5c9e0056212eb67f80c166d0143d6fb865c5d"
     },
     {
       "path": "examples/cafe-terrace/preview-original.jpg",
@@ -465,23 +465,23 @@
     },
     {
       "path": "examples/cafe-terrace/qa/test-desktop.json",
-      "bytes": 4045,
-      "sha256": "52c84d83d9e802cf9e13422d72d8d62c218997b402d017d7d17d0cba92469bf9"
+      "bytes": 4046,
+      "sha256": "945e15f77184d06f0d3bda163539d99ade93f2775b8c23cbf58e0bae88693156"
     },
     {
       "path": "examples/cafe-terrace/qa/test-fallback.json",
-      "bytes": 633,
-      "sha256": "d21f3720ca9ba8c5440322d5d21fb542836d5f8c4d93459e40f2ab6f81959d3a"
+      "bytes": 634,
+      "sha256": "7a39b4c885051829fefc8d0753e41f8e6016cd3673cd5070004798196b4ed523"
     },
     {
       "path": "examples/cafe-terrace/qa/test-mobile.json",
-      "bytes": 3370,
-      "sha256": "cdf64e19e856315b4bd38a951bd57bb207deff8e655d830d16391de3ba92acf3"
+      "bytes": 3371,
+      "sha256": "e0169dcd4617f6f2d76695510582ab5ec12c194d1c05d115c00d51b5cd421460"
     },
     {
       "path": "examples/cafe-terrace/qa/test-tour.json",
-      "bytes": 1917,
-      "sha256": "ef3d2cf1bbbf3ee500fc3feddc4c9f28a492592896e078d9a78024866ffde7e4"
+      "bytes": 1918,
+      "sha256": "ea5fadde0a88d4ed4e1a8be4b3887f0825eb7c8ceb2acf5bb75a4e8bc9b64195"
     },
     {
       "path": "examples/cafe-terrace/qa/tour-complete.png",
@@ -560,8 +560,8 @@
     },
     {
       "path": "examples/the-scream/package.json",
-      "bytes": 333,
-      "sha256": "87a7c7d6f8a7d90a45b1fae0acea3acd8d65f78626b33a4d8ad4de240b6775ba"
+      "bytes": 327,
+      "sha256": "eef0de2e38065601e2d22cb7a8a9d80ad8eaf515321478a384306e7843f4818b"
     },
     {
       "path": "examples/the-scream/qa/entry-en.png",
@@ -635,23 +635,23 @@
     },
     {
       "path": "examples/the-scream/qa/test-desktop.json",
-      "bytes": 4078,
-      "sha256": "ff73613ddc1704708bf4e9820bf3c0e1f3a063f5220cc985ed578c2e957c9402"
+      "bytes": 4079,
+      "sha256": "b791c447874210edec938564c3f27fbc3c117cfa897f3b59ea8502e2df1c97a8"
     },
     {
       "path": "examples/the-scream/qa/test-fallback.json",
-      "bytes": 631,
-      "sha256": "4bbbdc919b8054aadbf3c0044a4e821379fd7437892c9fe7425e19fbc106c9a9"
+      "bytes": 632,
+      "sha256": "6fc43d1afbe9ac2d72459f2046341b5e7194aeda79b625dbd431504019307718"
     },
     {
       "path": "examples/the-scream/qa/test-mobile.json",
-      "bytes": 3410,
-      "sha256": "ec903f9203fb81d85744fd187c81b60876febc3a4250cd604b947bdfa355fc5c"
+      "bytes": 3411,
+      "sha256": "78e1590094b114f53a586dd93a4d977349899ace4ceb53e14a9e2c0db88b4b35"
     },
     {
       "path": "examples/the-scream/qa/test-tour.json",
-      "bytes": 1958,
-      "sha256": "80a867ac5e42630b1916138152b6aa65f3e670202d325761cc5ddf6ade5b0a75"
+      "bytes": 1959,
+      "sha256": "d48949ada4c7dc36f2559aeabd6179329a8da0356bd1d26669205c9e2ec6b77f"
     },
     {
       "path": "examples/the-scream/qa/tour-complete.png",
@@ -725,8 +725,8 @@
     },
     {
       "path": "marketing/en/01-hero.html",
-      "bytes": 5434,
-      "sha256": "507627b1b7b4cfc81b42d3e5eef148e49db790a56b4924eac71069879f9cb201"
+      "bytes": 5435,
+      "sha256": "569a17f38ee1e99ea06663f6e8d4e7161d04ecce8cdaba67bb7502cfea9ea478"
     },
     {
       "path": "marketing/en/01-hero.png",
@@ -735,8 +735,8 @@
     },
     {
       "path": "marketing/en/02-guide.html",
-      "bytes": 6173,
-      "sha256": "9e2234f63288b441ac77584aefdb5426c8220df8cc80dd6e81125eda317291d8"
+      "bytes": 6174,
+      "sha256": "f04a598ff909819dde25e0436e88618641b9f9f69761a8244e1f7e58de55ae2f"
     },
     {
       "path": "marketing/en/02-guide.png",
@@ -745,8 +745,8 @@
     },
     {
       "path": "marketing/en/03-product.html",
-      "bytes": 6227,
-      "sha256": "848bc1bea4191719547d4d252d80582092f04e85e4cfff4dbc8a0b4327a2d310"
+      "bytes": 6228,
+      "sha256": "09167b656bb63e7af1c324f8d5b104a4a3449ab2135ad5aea1437f20e2fdc842"
     },
     {
       "path": "marketing/en/03-product.png",
@@ -755,8 +755,8 @@
     },
     {
       "path": "marketing/en/04-case.html",
-      "bytes": 5749,
-      "sha256": "457f6dbacc7d7848c6c71339b4f5bc140c57f646c508e35460af8dc9df0b98dc"
+      "bytes": 5750,
+      "sha256": "eefb975ddc7a8e48e0c70fca2c53cd5eb7f76deb2e6640f6f2d2cc86b108f8e0"
     },
     {
       "path": "marketing/en/04-case.png",
@@ -765,8 +765,8 @@
     },
     {
       "path": "marketing/zh-CN/01-hero.html",
-      "bytes": 5424,
-      "sha256": "3bc34aa35ad1f1d85a25464e82e50474bfe5ef6535b5e98549cce5397b9b847a"
+      "bytes": 5425,
+      "sha256": "606c1b8996e11fa5dbde0678df398909bb5f192d118c1675e5e1b7d8cfb7eae6"
     },
     {
       "path": "marketing/zh-CN/01-hero.png",
@@ -775,8 +775,8 @@
     },
     {
       "path": "marketing/zh-CN/02-guide.html",
-      "bytes": 6201,
-      "sha256": "990fb094997be600c0da55745d3fc6a4a1fceea8b4c78489bbce3f28628b1e01"
+      "bytes": 6202,
+      "sha256": "917b5ea8db0ebaab896ddab86e920cc2aafaa7727e85b910ae11b4db828234b1"
     },
     {
       "path": "marketing/zh-CN/02-guide.png",
@@ -785,8 +785,8 @@
     },
     {
       "path": "marketing/zh-CN/03-product.html",
-      "bytes": 6185,
-      "sha256": "851c2f042a32332beb5ccfd413d1772427ba39f49736f6c593b41ddab0155000"
+      "bytes": 6186,
+      "sha256": "2894e8d0c34c26753bbdc8fd8dcf471450444412f317462d5b1301db8cc46ad3"
     },
     {
       "path": "marketing/zh-CN/03-product.png",
@@ -795,8 +795,8 @@
     },
     {
       "path": "marketing/zh-CN/04-case.html",
-      "bytes": 5739,
-      "sha256": "7d63bbdd37ad1e268bec6355936f693bc5100623661d8cfa13758cce51de4c99"
+      "bytes": 5740,
+      "sha256": "12da68c973adb1be706cc2ad7bb5a23bd355e398e37a015bffc60c64dd1f3817"
     },
     {
       "path": "marketing/zh-CN/04-case.png",
@@ -805,13 +805,13 @@
     },
     {
       "path": "qa/current/cafe-baseline-integrity.json",
-      "bytes": 760,
-      "sha256": "2308eb5d2e16e608d97938d5e6ab479a11fb085aea01e2bd270fc3e7b06188c8"
+      "bytes": 761,
+      "sha256": "c75df9bd4051a9b8f5f177474f8638ad3ce4288ad39effe3a095589a00488744"
     },
     {
       "path": "qa/current/marketing-layout.json",
-      "bytes": 1285,
-      "sha256": "c5a0af01fbdc970c1fd7a2cc5498ebe19178b6d654771f834687f58b18a9dfa1"
+      "bytes": 1286,
+      "sha256": "449bb8054139bd5cb8ba73d089ab80bb8d5f4c35560f26510c53c8b71524a58e"
     },
     {
       "path": "qa/current/package-static.json",
@@ -820,13 +820,13 @@
     },
     {
       "path": "qa/current/portability.json",
-      "bytes": 9082,
-      "sha256": "26dfb104dbec44d88fcc1a40f7bd43745d4be68e8b988641f9f6c8873cf940b8"
+      "bytes": 9083,
+      "sha256": "c9735fcbcfe247b42c491bf94563ebba33719f7bfe295f91ba3cd16b1d2291c0"
     },
     {
       "path": "qa/current/portal-checks.json",
-      "bytes": 1897,
-      "sha256": "25a06f7bd9ac022099ecb1686b51b80d42884abbab58643c89a2ee2adb212fdb"
+      "bytes": 1898,
+      "sha256": "b788e6c0670c2318bdcc74d0f662ee43c8da6b251d5693d4036d037c34642767"
     },
     {
       "path": "qa/current/portal-en.png",
@@ -850,8 +850,8 @@
     },
     {
       "path": "qa/current/test-runner-status.json",
-      "bytes": 557,
-      "sha256": "a7425b1e02446a3efb5ee2acdbb62cebc08ba83d5209f150b05053c9368227f4"
+      "bytes": 558,
+      "sha256": "2bc3b387048e381065cf3ee80a02691646a4196153b481c8f6f8b774f7b127fa"
     },
     {
       "path": "scripts/build-all.mjs",
@@ -885,8 +885,8 @@
     },
     {
       "path": "skills/en/painting-to-world/assets/starter/package.json",
-      "bytes": 349,
-      "sha256": "3992a37952bead48e76728009119c828048fa72d0edf87d3dcd826e00bfae42b"
+      "bytes": 342,
+      "sha256": "7fd0e4e1533d42b7c848161d0ff5c9e0056212eb67f80c166d0143d6fb865c5d"
     },
     {
       "path": "skills/en/painting-to-world/assets/starter/scripts/build.mjs",
@@ -990,8 +990,8 @@
     },
     {
       "path": "skills/zh-CN/painting-to-world/assets/starter/package.json",
-      "bytes": 349,
-      "sha256": "3992a37952bead48e76728009119c828048fa72d0edf87d3dcd826e00bfae42b"
+      "bytes": 342,
+      "sha256": "7fd0e4e1533d42b7c848161d0ff5c9e0056212eb67f80c166d0143d6fb865c5d"
     },
     {
       "path": "skills/zh-CN/painting-to-world/assets/starter/scripts/build.mjs",
@@ -1083,5 +1083,6 @@
       "bytes": 9730,
       "sha256": "f0a95e189b4099bcccd29e488d78ef8da0627fdc21f8640affe8b43a9ac84007"
     }
-  ]
+  ],
+  "license": "MIT"
 }
