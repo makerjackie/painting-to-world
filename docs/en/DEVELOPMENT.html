@@ -1,0 +1,58 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Development and delivery · Painting to World</title><style>*{box-sizing:border-box}body{margin:0;background:#f2eee2;color:#263c3c;font:17px/1.8 system-ui,-apple-system,"Noto Sans CJK SC",sans-serif}main{max-width:900px;margin:0 auto;padding:50px 30px 90px}nav{display:flex;gap:20px;flex-wrap:wrap;border-bottom:1px solid #cbcbbf;padding-bottom:20px;font-size:14px}a{color:#365c66;text-underline-offset:4px}h1,h2,h3{font-family:Georgia,"Noto Serif CJK SC",serif;line-height:1.35;font-weight:500}h1{font-size:40px;margin:45px 0 22px}h2{font-size:27px;margin:40px 0 15px}h3{font-size:21px}pre{overflow-x:auto;padding:22px;background:#213638;color:#f7eed9;border-radius:5px;line-height:1.6;font-size:14px}code{font-family:ui-monospace,Consolas,monospace}p code,li code{background:#e3dfd2;padding:2px 5px;border-radius:3px}table{width:100%;border-collapse:collapse;font-size:15px;display:block;overflow-x:auto}td,th{padding:12px 16px;border:1px solid #cfcdc0;text-align:left}blockquote{margin:25px 0;padding:4px 20px;border-left:3px solid #b28d45;background:#eae5d7}img{max-width:100%}li{margin:7px 0}footer{margin-top:60px;border-top:1px solid #cbcbbf;padding-top:20px;color:#677a77;font-size:13px}@media(max-width:600px){main{padding:24px 20px 60px}h1{font-size:32px}h2{font-size:24px}body{font-size:16px}}</style><main><nav><a href="../../START-HERE.html">Package home</a><a href="../zh-CN/DEVELOPMENT.html">中文</a><a href="DEVELOPMENT.md">Markdown</a></nav><h1>Development and delivery</h1>
+<h2>Structure</h2>
+<p>In each example, <code>src/engine.js</code> is a dependency-free WebGL2 renderer; <code>world.js</code> defines world-space meshes and collision regions; <code>textures.js</code> uses Canvas to generate material maps, <strong>not to draw an entire pseudo-3D scene</strong>. <code>audio.js</code> provides Web Audio synthesis. <code>app.js</code> controls cameras, input and bilingual copy. <code>style.css</code> and <code>index.template.html</code> define the interface.</p>
+<p><code>node scripts/build.mjs</code> assembles <code>index.html</code> (Chinese) and <code>index.en.html</code> (English). Paths resolve relative to the script, so projects can be relocated. Both are complete single-file applications, not remote pages or iframe wrappers. The root <code>scripts/build-all.mjs</code> builds both examples.</p>
+<h2>Editing a new painting</h2>
+<p>Complete <code>design/painting-analysis.md</code> and <code>design/scene-plan.md</code> first. Replace scene content rather than merely its title:</p>
+<table>
+<thead>
+<tr>
+  <th>Change</th>
+  <th>Primary source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Subjects, paths, architecture, props, bounds</td>
+  <td><code>src/world.js</code></td>
+</tr>
+<tr>
+  <td>Sky, brushwork, palettes, signage</td>
+  <td><code>src/textures.js</code></td>
+</tr>
+<tr>
+  <td>Cameras, tour, destinations, copy</td>
+  <td><code>src/app.js</code></td>
+</tr>
+<tr>
+  <td>Light, fog, painterly postprocess</td>
+  <td>Shader sections in <code>src/engine.js</code></td>
+</tr>
+<tr>
+  <td>Notes and musical pacing</td>
+  <td><code>src/audio.js</code></td>
+</tr>
+<tr>
+  <td>Layout, touch controls, responsiveness</td>
+  <td><code>src/style.css</code></td>
+</tr>
+</tbody>
+</table>
+<p>Do not carry the café's world-coordinate localized warm light into every painting. Change one level at a time, inspect the main composition, and only then add repeated detail. See the Skill's <code>references/engine-contract.md</code> for the exact bundled API.</p>
+<h2>Validation</h2>
+<pre><code class="language-bash">node scripts/check-package.mjs
+node skills/en/painting-to-world/scripts/audit.mjs examples/the-scream
+</code></pre>
+<p>These are static checks only. Browser testing separately needs Python, Playwright, Pillow and Chromium; their binaries are not distributed. The portable test runner can be invoked from any working directory:</p>
+<pre><code class="language-bash">python tests/smoke.py --browser /path/to/chromium --case the-scream --suite desktop
+python tests/smoke.py --browser /path/to/chromium --case cafe-terrace --suite mobile
+</code></pre>
+<p>Other suites are <code>tour</code> and <code>fallback</code>. Headless Linux may require <code>xvfb-run -a</code>. The runner loads local HTML text with <code>set_content</code> and blocks network requests. This is not file-URL navigation, physical-phone verification or a soundtrack listening test. Inspect current JSON reports in each example's <code>qa/</code>; historical reports are retained only for provenance.</p>
+<h2>Editing marketing materials</h2>
+<p><code>marketing/{locale}/</code> contains editable HTML and PNG exports. HTML uses screenshots within the package and system fonts; update copy and recapture it in a browser. PNGs are fixed-size publishing assets. Historical AI posters may contain small-text errors or unsupported claims and must not be treated as current product commitments.</p>
+<h2>Hosting and video</h2>
+<p>The worlds are static sites and can be published through a static host. This package has not performed remote deployment and includes no domain, server or authentication system. Browser recording is possible, but no deterministic MP4 export pipeline or finished video is claimed here.</p>
+<h2>Security and asset handling</h2>
+<p>The code contains no access tokens, background upload, analytics, microphone, camera or payment workflow. Input images stay as analysis material in your working directory. Do not send a private image to an external generation service without authorization. Optional museum-reference links are not runtime dependencies.</p>
+<p>Retain author/provenance notes. Decide your own license and support scope before selling. Source availability alone does not establish commercial rights to every reference image.</p>
+<footer>MakerJackie · Painting to World · Bilingual Kit 1.1</footer></main></html>

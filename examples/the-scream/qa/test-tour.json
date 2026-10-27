@@ -1,0 +1,97 @@
+{
+  "case": "the-scream",
+  "suite": "tour",
+  "browser": "144.0.7559.96",
+  "loading": "set_content, network requests blocked",
+  "checks": [
+    {
+      "name": "Five WebGL render passes",
+      "pass": true,
+      "detail": {
+        "mode": "landing",
+        "fly": false,
+        "eye": [
+          0.15,
+          3.1,
+          10
+        ],
+        "yaw": -0.09516620655396679,
+        "pitch": -0.003016582101786733,
+        "selected": 0,
+        "lang": "en",
+        "reduced": false,
+        "frame": 6,
+        "stats": {
+          "planks": 235,
+          "triangles": 80353,
+          "opaqueVertices": 222627,
+          "interpretation": "Authored 3D reconstruction; no original painting bitmap"
+        },
+        "drawCalls": 5,
+        "audioOn": false,
+        "audioNotes": 0,
+        "audioState": null,
+        "canvas": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "name": "GL error flag zero",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "English entry opens in English",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "No autoplay on load",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Tour starts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Full tour completes and hands over",
+      "pass": true,
+      "detail": {
+        "wallSeconds": 32.0
+      }
+    },
+    {
+      "name": "Esc interrupts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Pointer interrupts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Movement interrupts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Zero runtime network requests",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "No uncaught script errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "requests": [],
+  "physicalPhone": false,
+  "listeningTest": false
+}

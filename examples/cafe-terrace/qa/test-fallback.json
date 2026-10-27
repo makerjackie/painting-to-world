@@ -1,0 +1,32 @@
+{
+  "case": "cafe-terrace",
+  "suite": "fallback",
+  "browser": "144.0.7559.96",
+  "loading": "set_content, network requests blocked",
+  "checks": [
+    {
+      "name": "WebGL unavailable explanation",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "No fake scene after failure",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Zero runtime network requests",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "No uncaught script errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "requests": [],
+  "physicalPhone": false,
+  "listeningTest": false
+}

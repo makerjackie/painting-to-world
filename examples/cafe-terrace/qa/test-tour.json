@@ -1,0 +1,99 @@
+{
+  "case": "cafe-terrace",
+  "suite": "tour",
+  "browser": "144.0.7559.96",
+  "loading": "set_content, network requests blocked",
+  "checks": [
+    {
+      "name": "Five WebGL render passes",
+      "pass": true,
+      "detail": {
+        "mode": "landing",
+        "fly": false,
+        "eye": [
+          8.2,
+          3.25,
+          14.5
+        ],
+        "yaw": -0.41934164755003,
+        "pitch": 0.034832866415099625,
+        "selected": 0,
+        "visits": [
+          0
+        ],
+        "lang": "en",
+        "reduced": false,
+        "stats": {
+          "stones": 2281,
+          "triangles": 269329,
+          "opaqueVertices": 792165
+        },
+        "drawCalls": 5,
+        "audioOn": false,
+        "audioState": null,
+        "audioNotes": 0,
+        "frame": 5,
+        "canvas": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "name": "GL error flag zero",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "English entry opens in English",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "No autoplay on load",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Tour starts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Full tour completes and hands over",
+      "pass": true,
+      "detail": {
+        "wallSeconds": 27.25
+      }
+    },
+    {
+      "name": "Esc interrupts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Pointer interrupts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Movement interrupts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Zero runtime network requests",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "No uncaught script errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "requests": [],
+  "physicalPhone": false,
+  "listeningTest": false
+}

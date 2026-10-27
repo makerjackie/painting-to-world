@@ -1,0 +1,27 @@
+{
+  "case": "fallback",
+  "checks": [
+    {
+      "name": "WebGL unavailable produces a visible explanation",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "No fake scene after renderer failure",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "No runtime HTTP/network requests",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "No uncaught JavaScript errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "requests": []
+}

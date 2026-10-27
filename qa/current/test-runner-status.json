@@ -1,0 +1,37 @@
+[
+  {
+    "case": "cafe-terrace",
+    "suite": "desktop",
+    "returncode": 0
+  },
+  {
+    "case": "the-scream",
+    "suite": "mobile",
+    "returncode": 0
+  },
+  {
+    "case": "cafe-terrace",
+    "suite": "mobile",
+    "returncode": 0
+  },
+  {
+    "case": "the-scream",
+    "suite": "tour",
+    "returncode": 0
+  },
+  {
+    "case": "cafe-terrace",
+    "suite": "tour",
+    "returncode": 0
+  },
+  {
+    "case": "the-scream",
+    "suite": "fallback",
+    "returncode": 0
+  },
+  {
+    "case": "cafe-terrace",
+    "suite": "fallback",
+    "returncode": 0
+  }
+]

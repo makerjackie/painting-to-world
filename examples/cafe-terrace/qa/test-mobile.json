@@ -1,0 +1,171 @@
+{
+  "case": "cafe-terrace",
+  "suite": "mobile",
+  "browser": "144.0.7559.96",
+  "loading": "set_content, network requests blocked",
+  "checks": [
+    {
+      "name": "Five WebGL render passes",
+      "pass": true,
+      "detail": {
+        "mode": "landing",
+        "fly": false,
+        "eye": [
+          8.2,
+          3.25,
+          14.5
+        ],
+        "yaw": -0.41934164755003,
+        "pitch": 0.034832866415099625,
+        "selected": 0,
+        "visits": [
+          0
+        ],
+        "lang": "en",
+        "reduced": false,
+        "stats": {
+          "stones": 2281,
+          "triangles": 269329,
+          "opaqueVertices": 792165
+        },
+        "drawCalls": 5,
+        "audioOn": false,
+        "audioState": null,
+        "audioNotes": 0,
+        "frame": 5,
+        "canvas": [
+          360,
+          800
+        ]
+      }
+    },
+    {
+      "name": "GL error flag zero",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "English entry opens in English",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "No autoplay on load",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "No horizontal page overflow",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "zh header fits without overlap",
+      "pass": true,
+      "detail": {
+        "b": {
+          "x": 24,
+          "y": 24,
+          "width": 114.953125,
+          "height": 35,
+          "top": 24,
+          "right": 138.953125,
+          "bottom": 59,
+          "left": 24
+        },
+        "n": {
+          "x": 150,
+          "y": 25,
+          "width": 188,
+          "height": 33,
+          "top": 25,
+          "right": 338,
+          "bottom": 58,
+          "left": 150
+        },
+        "w": 360
+      }
+    },
+    {
+      "name": "en header fits without overlap",
+      "pass": true,
+      "detail": {
+        "b": {
+          "x": 24,
+          "y": 26,
+          "width": 129.359375,
+          "height": 29,
+          "top": 26,
+          "right": 153.359375,
+          "bottom": 55,
+          "left": 24
+        },
+        "n": {
+          "x": 164,
+          "y": 24,
+          "width": 174,
+          "height": 33,
+          "top": 24,
+          "right": 338,
+          "bottom": 57,
+          "left": 164
+        },
+        "w": 360
+      }
+    },
+    {
+      "name": "Mobile joystick visible",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Joystick moves camera",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Mobile flight toggle",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Mobile altitude buttons visible",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Mobile ascend works",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Dock reaches final destination",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Mobile restores UI",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Landscape resize",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Zero runtime network requests",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "No uncaught script errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "requests": [],
+  "physicalPhone": false,
+  "listeningTest": false
+}

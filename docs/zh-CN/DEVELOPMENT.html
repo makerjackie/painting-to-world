@@ -1,0 +1,58 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>开发与交付说明 · Painting to World</title><style>*{box-sizing:border-box}body{margin:0;background:#f2eee2;color:#263c3c;font:17px/1.8 system-ui,-apple-system,"Noto Sans CJK SC",sans-serif}main{max-width:900px;margin:0 auto;padding:50px 30px 90px}nav{display:flex;gap:20px;flex-wrap:wrap;border-bottom:1px solid #cbcbbf;padding-bottom:20px;font-size:14px}a{color:#365c66;text-underline-offset:4px}h1,h2,h3{font-family:Georgia,"Noto Serif CJK SC",serif;line-height:1.35;font-weight:500}h1{font-size:40px;margin:45px 0 22px}h2{font-size:27px;margin:40px 0 15px}h3{font-size:21px}pre{overflow-x:auto;padding:22px;background:#213638;color:#f7eed9;border-radius:5px;line-height:1.6;font-size:14px}code{font-family:ui-monospace,Consolas,monospace}p code,li code{background:#e3dfd2;padding:2px 5px;border-radius:3px}table{width:100%;border-collapse:collapse;font-size:15px;display:block;overflow-x:auto}td,th{padding:12px 16px;border:1px solid #cfcdc0;text-align:left}blockquote{margin:25px 0;padding:4px 20px;border-left:3px solid #b28d45;background:#eae5d7}img{max-width:100%}li{margin:7px 0}footer{margin-top:60px;border-top:1px solid #cbcbbf;padding-top:20px;color:#677a77;font-size:13px}@media(max-width:600px){main{padding:24px 20px 60px}h1{font-size:32px}h2{font-size:24px}body{font-size:16px}}</style><main><nav><a href="../../START-HERE.html">返回导航</a><a href="../en/DEVELOPMENT.html">English</a><a href="DEVELOPMENT.md">Markdown</a></nav><h1>开发与交付说明</h1>
+<h2>工程结构</h2>
+<p>每个案例的 <code>src/engine.js</code> 是无外部依赖的 WebGL2 三维渲染器；<code>world.js</code> 定义世界坐标中的网格和碰撞区域；<code>textures.js</code> 用 Canvas 生成材质图，<strong>并不是用 Canvas 2D 绘制整个假三维世界</strong>；<code>audio.js</code> 是 Web Audio 配乐；<code>app.js</code> 管理镜头、交互与中英文文案；<code>style.css</code> 和 <code>index.template.html</code> 是界面。</p>
+<p><code>node scripts/build.mjs</code> 从模块构建 <code>index.html</code>（中文）和 <code>index.en.html</code>（英文）。路径相对脚本解析，可移动到任意目录。两份成品都是完整代码，不是 iframe 或远程网址。包根目录的 <code>scripts/build-all.mjs</code> 一次构建两例。</p>
+<h2>新画作要改哪里</h2>
+<p>先完成 <code>design/painting-analysis.md</code> 和 <code>design/scene-plan.md</code>。替换场景与画作内容，而不是只改标题：</p>
+<table>
+<thead>
+<tr>
+  <th>目标</th>
+  <th>主要文件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>主体、路径、建筑、道具、空间边界</td>
+  <td><code>src/world.js</code></td>
+</tr>
+<tr>
+  <td>天空、笔触、色板、标牌</td>
+  <td><code>src/textures.js</code></td>
+</tr>
+<tr>
+  <td>镜头视点、导览、目的地与文案</td>
+  <td><code>src/app.js</code></td>
+</tr>
+<tr>
+  <td>灯光、雾、统一画面处理</td>
+  <td><code>src/engine.js</code> 中着色器</td>
+</tr>
+<tr>
+  <td>配乐音符与节奏</td>
+  <td><code>src/audio.js</code></td>
+</tr>
+<tr>
+  <td>布局、触控与响应式</td>
+  <td><code>src/style.css</code></td>
+</tr>
+</tbody>
+</table>
+<p>不要把咖啡馆局部暖光的世界坐标写法带到所有画作中。一次修改一个层级，先检查主构图，再追加重复细节。工程接口在 Skill 的 <code>references/engine-contract.md</code> 中。</p>
+<h2>检查</h2>
+<pre><code class="language-bash">node scripts/check-package.mjs
+node skills/zh-CN/painting-to-world/scripts/audit.mjs examples/the-scream
+</code></pre>
+<p>以上仅为静态检查。浏览器测试需要单独准备 Python、Playwright、Pillow 和 Chromium；本包不分发这些程序。通用测试器可以从任何工作目录执行：</p>
+<pre><code class="language-bash">python tests/smoke.py --browser /path/to/chromium --case the-scream --suite desktop
+python tests/smoke.py --browser /path/to/chromium --case cafe-terrace --suite mobile
+</code></pre>
+<p><code>--suite</code> 还支持 <code>tour</code>、<code>fallback</code>。无桌面的 Linux 可能需要 <code>xvfb-run -a</code>。测试使用 <code>set_content</code> 加载本地 HTML 文本并阻止网络请求，不是 <code>file://</code> 导航测试，不是手机真机测试，也不代表听审过音乐。请查看案例 <code>qa/</code> 中本次生成的 JSON，历史报告只留作溯源。</p>
+<h2>宣传素材编辑</h2>
+<p><code>marketing/{语言}/</code> 内提供 HTML 源版和 PNG。HTML 使用包里的实机截图和系统字体，修改文字后可用浏览器重新截图。PNG 只是固定尺寸的发布素材。历史 AI 海报中可能存在小字错误或超出实际交付范围的宣传措辞，不应直接当正式商品承诺。</p>
+<h2>发布和视频</h2>
+<p>这两个世界是静态网站：发布到静态托管即可在线访问，但本包没有执行远程发布，也没有域名、服务器或登录系统。视频可以由你在浏览器中录制；本包没有宣称交付可重复确定性的 MP4 渲染流水线或成片。</p>
+<h2>安全与素材</h2>
+<p>代码不含访问令牌、后台上传、遥测、麦克风、摄像头或支付逻辑。初始图片作为分析资料保留在你的工作目录。不要让 AI 未经允许把私有图传到第三方图生三维服务。用户交互触发的“原作资料”外链与运行所需依赖应分开对待。</p>
+<p>保留作者与来源说明。对外售卖前决定你自己的商品许可与支持范围；不要仅凭源码存在就宣称任意原画图片都可商用。</p>
+<footer>MakerJackie · Painting to World · Bilingual Kit 1.1</footer></main></html>

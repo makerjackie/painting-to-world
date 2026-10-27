@@ -1,0 +1,1087 @@
+{
+  "package": "Painting to World / 入画",
+  "version": "1.1.0",
+  "locales": [
+    "zh-CN",
+    "en"
+  ],
+  "start": "START-HERE.html",
+  "english_start": "START-HERE.en.html",
+  "source_policy": "Café baseline preserved; The Scream is a newly rebuilt edition; rejected Starry Night excluded.",
+  "counts": {
+    "browser_checks_passed": 130,
+    "browser_checks_total": 130,
+    "portability_checks_passed": 24,
+    "static_package_checks_passed": 78,
+    "portal_checks_passed": 9,
+    "current_bilingual_posters": 8
+  },
+  "integrity_note": "This inventory excludes itself and SHA256SUMS.txt. SHA256SUMS.txt covers this manifest and every other file except itself.",
+  "files": [
+    {
+      "path": "README.en.md",
+      "bytes": 3829,
+      "sha256": "97894620992cca681b4fb33ec4a7c9b4c06cd2b4b184833b445347401f30daee"
+    },
+    {
+      "path": "README.md",
+      "bytes": 344,
+      "sha256": "b8c1cbe6f7b39a84002afbe8a3bf4892f8527f5ca76f2550d1edbc506fbd2fc3"
+    },
+    {
+      "path": "README.zh-CN.md",
+      "bytes": 3495,
+      "sha256": "654ec15f379a021b586490e7a8d9ebf3b24e0c07cdfc2e351f8a0b6ded4969a1"
+    },
+    {
+      "path": "START-HERE.en.html",
+      "bytes": 14531,
+      "sha256": "2e5e703eddc6b15bdd9287264eb375f4cab264a2df3420a7afc2008dd8589b60"
+    },
+    {
+      "path": "START-HERE.html",
+      "bytes": 14534,
+      "sha256": "4fceb9b3fe173b799c571c1dc0db0b17a35f3cee87b7f7597dd5b86b56936bef"
+    },
+    {
+      "path": "archive/the-scream-previous-screenshots/01-entry.png",
+      "bytes": 1724162,
+      "sha256": "8303bb458e41b3c115908f0f52ab837902a5f476c8aa10a40c4ce7c82f37589a"
+    },
+    {
+      "path": "archive/the-scream-previous-screenshots/03-figure.png",
+      "bytes": 1676643,
+      "sha256": "444aec47b18cd1cc2c192ffef60552dc5d6864d8ea2b8ec640c822cf9a8b91f9"
+    },
+    {
+      "path": "archive/the-scream-previous-screenshots/04-reverse.png",
+      "bytes": 1659802,
+      "sha256": "a023389c8f91932f369d95c48440b250666db8923c30d45303f04d7fa1be7665"
+    },
+    {
+      "path": "archive/the-scream-previous-screenshots/05-aerial.png",
+      "bytes": 1757600,
+      "sha256": "28487cdd1ec203622e5609b6906c01675625eb919807220fe37b06e2809fa73a"
+    },
+    {
+      "path": "archive/the-scream-previous-screenshots/README.md",
+      "bytes": 483,
+      "sha256": "24fc8a00f9649dc75863225d488714a0404b044586778332fd2359aabb65139c"
+    },
+    {
+      "path": "archive/the-scream-previous-screenshots/mobile-english.png",
+      "bytes": 439023,
+      "sha256": "b555fe1ab949a8de48377721fc888284b776a669e531acfa6d10061c7b597a82"
+    },
+    {
+      "path": "archive/the-scream-previous-screenshots/mobile-entry.png",
+      "bytes": 477565,
+      "sha256": "92e695f4a5fb2da9e891a7386d535fe3840dcbd779935b567e3efd96ffce10dc"
+    },
+    {
+      "path": "archive/the-scream-previous-screenshots/reference-ratio.png",
+      "bytes": 905093,
+      "sha256": "e448b5c888852b3804cd7835a0cc4f846e443ebf0a62ab84d4a7289d94522ab0"
+    },
+    {
+      "path": "docs/en/DEVELOPMENT.html",
+      "bytes": 5977,
+      "sha256": "8e33811374565ad8db046fd999fc0aa207fed65b443f96ef6259c9c2c6736a51"
+    },
+    {
+      "path": "docs/en/DEVELOPMENT.md",
+      "bytes": 3613,
+      "sha256": "7839bc1a19106719e55b7cbb5fed876c76a51cd857a30f7200492a880c367822"
+    },
+    {
+      "path": "docs/en/GUIDE.html",
+      "bytes": 9678,
+      "sha256": "dca0176fc425f4ffa403095733e8a092e197db9af67347c7a3ea171f13b3df02"
+    },
+    {
+      "path": "docs/en/GUIDE.md",
+      "bytes": 7257,
+      "sha256": "ecc5daac7bbb6b0eb0dc90e46422fb448ac04a6dbf575f46afe772ba6c39f722"
+    },
+    {
+      "path": "docs/en/PRODUCT.html",
+      "bytes": 5894,
+      "sha256": "88a54fbaf5a1fd2c0a314d97b0cc48b095694690d8a385586e2fae537b46ee82"
+    },
+    {
+      "path": "docs/en/PRODUCT.md",
+      "bytes": 4036,
+      "sha256": "2bd9f2d944baff6f7edd9215012a3070aaaaa3c2040ef0d51e5c386fe73b617c"
+    },
+    {
+      "path": "docs/en/PROMPTS.html",
+      "bytes": 2759,
+      "sha256": "88f1921381f39f8350a020e310f54c5ce058afaf66148cc74dc8da7aedf77be7"
+    },
+    {
+      "path": "docs/en/PROMPTS.md",
+      "bytes": 1085,
+      "sha256": "1cd1391add36265407c379278b4d0a795ff7e559d102d360a6488ee3351a18df"
+    },
+    {
+      "path": "docs/en/PROVENANCE.html",
+      "bytes": 4993,
+      "sha256": "1fdd62d85507b92add166c95dfda874997c473a00ed475b7002163de03faddf9"
+    },
+    {
+      "path": "docs/en/PROVENANCE.md",
+      "bytes": 2836,
+      "sha256": "2c2f84b93836f3a6f7b20b7865330285a8737d222e1debf1476ec0c53e77be54"
+    },
+    {
+      "path": "docs/en/QA.html",
+      "bytes": 6438,
+      "sha256": "392c6e5352a232e5510f9444452f405c324ed338cc7e7555174cb78c1058c2da"
+    },
+    {
+      "path": "docs/en/QA.md",
+      "bytes": 4074,
+      "sha256": "f69caaf5071a04bc92e26470b845398b35c13d66036212cc35cc68b071478544"
+    },
+    {
+      "path": "docs/zh-CN/DEVELOPMENT.html",
+      "bytes": 5791,
+      "sha256": "ded17d5d7a72bc7e4b87d06fd7130353bc88c77db59499bcd94531b0cad5970b"
+    },
+    {
+      "path": "docs/zh-CN/DEVELOPMENT.md",
+      "bytes": 3407,
+      "sha256": "0b95551a47fa84f2e42bde89063a63be16dda750b43141a1792fa37a93368d8a"
+    },
+    {
+      "path": "docs/zh-CN/GUIDE.html",
+      "bytes": 9051,
+      "sha256": "9f2dd6be84342795cb38a48c45bad186e189d7ad243a709d3d0bb5d0078f9236"
+    },
+    {
+      "path": "docs/zh-CN/GUIDE.md",
+      "bytes": 6628,
+      "sha256": "0b33c107801b41fa358870ebb61030ac1a6b361f234a748c3f22f4a50f495d75"
+    },
+    {
+      "path": "docs/zh-CN/PRODUCT.html",
+      "bytes": 5427,
+      "sha256": "ec1e5384d68e9954e8bc6d1876639c32f283ff9a320a906532af66f05cc30d49"
+    },
+    {
+      "path": "docs/zh-CN/PRODUCT.md",
+      "bytes": 3573,
+      "sha256": "8e106a9cf66d77f9b7c5477b9c1103ac70948e6e07e4b56e355aea1add929862"
+    },
+    {
+      "path": "docs/zh-CN/PROMPTS.html",
+      "bytes": 2563,
+      "sha256": "aa09711969f7e45ab4062357b0a86419f81182dae5589d191b409728292f44f3"
+    },
+    {
+      "path": "docs/zh-CN/PROMPTS.md",
+      "bytes": 883,
+      "sha256": "37949b44ebffea73d4e71100e57acd0e27b73be6ff6030b76f9506c5c46293a0"
+    },
+    {
+      "path": "docs/zh-CN/PROVENANCE.html",
+      "bytes": 4676,
+      "sha256": "562bdfe0365c57f5ee44ec148d32a58aa215fe27a6e0be57cabc8f9f946aec9f"
+    },
+    {
+      "path": "docs/zh-CN/PROVENANCE.md",
+      "bytes": 2513,
+      "sha256": "8eea50c8d34de2fabf7c87d109ff2d620793a60bb70d0e94d3de29d538cd508d"
+    },
+    {
+      "path": "docs/zh-CN/QA.html",
+      "bytes": 5945,
+      "sha256": "52db0bfa1d9a9983b73741790e8f1d840636ee0a7b04814d2204ddbd2ccfed2b"
+    },
+    {
+      "path": "docs/zh-CN/QA.md",
+      "bytes": 3587,
+      "sha256": "9204ee224912ba4bef57c2a5b0b98e58df9713acd609986ea25f6f0ea3b85e2a"
+    },
+    {
+      "path": "examples/cafe-terrace/ATTRIBUTION.md",
+      "bytes": 1701,
+      "sha256": "9308bdc3742ffb27be780724e3cb4d69ab48dc1b991ec2af65aceec7f50084a9"
+    },
+    {
+      "path": "examples/cafe-terrace/README.en.md",
+      "bytes": 1372,
+      "sha256": "482c32f3ebc97d40538d391ae0d14d8c1ecce9d1d103add4d5008a9d52bb66db"
+    },
+    {
+      "path": "examples/cafe-terrace/README.zh-CN.md",
+      "bytes": 1237,
+      "sha256": "cc53eb544e702a6db2fad9ed88938c96877661f3c1460199b15e3f94a0c70401"
+    },
+    {
+      "path": "examples/cafe-terrace/archive/QA_REPORT.md",
+      "bytes": 4701,
+      "sha256": "d344863e036733f78f5b436f6fe1940aeaa3def84a2b17f314996f726edb9f1d"
+    },
+    {
+      "path": "examples/cafe-terrace/archive/README.md",
+      "bytes": 8196,
+      "sha256": "23129e2454249c949b697e568d5d4c3767d87f5df19bcc0ca05919d66545ae7a"
+    },
+    {
+      "path": "examples/cafe-terrace/archive/index.html",
+      "bytes": 94002,
+      "sha256": "0fcd57f72480054a0b0c2eab1a834af49748e2e046a6d5ccdce24f15fc4547a7"
+    },
+    {
+      "path": "examples/cafe-terrace/archive/qa/08-desktop-final.png",
+      "bytes": 1167364,
+      "sha256": "4851c151d8cd9905a6c126efac03ce74a0352085e86993c3a22f938ee1e1611f"
+    },
+    {
+      "path": "examples/cafe-terrace/archive/qa/09-exported-postcard.png",
+      "bytes": 1765163,
+      "sha256": "de62cae9e82075d339ccaf7397a38b374b15b8a4f44aeb7b391eebdc7a37d8ee"
+    },
+    {
+      "path": "examples/cafe-terrace/archive/qa/10-mobile-360.png",
+      "bytes": 423379,
+      "sha256": "286f5411e6feb2ff7ad987e08a8bb2f294399f747e660cd8251357950f8242b3"
+    },
+    {
+      "path": "examples/cafe-terrace/archive/qa/11-mobile-360-en.png",
+      "bytes": 422385,
+      "sha256": "bc7915fd64e4076c2f15348f61206a8fef045e7300da93ac10c7690274d51765"
+    },
+    {
+      "path": "examples/cafe-terrace/archive/qa/12-mobile-flight.png",
+      "bytes": 356507,
+      "sha256": "76941b5d60a6f7e25a51775eb6722dd8ae7a80b68796208de5e679c3d9795f4a"
+    },
+    {
+      "path": "examples/cafe-terrace/archive/qa/13-mobile-landscape.png",
+      "bytes": 342925,
+      "sha256": "6e2841d59e70a71149a989a265d590c7e4f43bf7df00af02ae83ca06faf9baf0"
+    },
+    {
+      "path": "examples/cafe-terrace/archive/qa/15-webgl-fallback.png",
+      "bytes": 34418,
+      "sha256": "6b7035c40b3615602387f4d2d57c96b76a12d2ed572b079341a2c7b55520eb98"
+    },
+    {
+      "path": "examples/cafe-terrace/archive/qa/desktop.log",
+      "bytes": 1301,
+      "sha256": "8ba936ed54ecf19852bc248a6cf6e8839116cf43e608349178829d5e2ad66625"
+    },
+    {
+      "path": "examples/cafe-terrace/archive/qa/place-02.png",
+      "bytes": 1203836,
+      "sha256": "4bd37ee0d1a400b3581ca13b50500fb784837f46115727551c20fb861fbe969d"
+    },
+    {
+      "path": "examples/cafe-terrace/archive/qa/place-03.png",
+      "bytes": 1118383,
+      "sha256": "c0764f79c3d9700e18522151158e4a34019fca2489205dc86444d94cb243c580"
+    },
+    {
+      "path": "examples/cafe-terrace/archive/qa/place-05.png",
+      "bytes": 1150022,
+      "sha256": "68de6282c2256c9e35f36994ee968c3f8088a14081d184468c72978fee1ea53c"
+    },
+    {
+      "path": "examples/cafe-terrace/archive/qa/place-06.png",
+      "bytes": 1006516,
+      "sha256": "b1e2746b7631a9644eb5f7df05e2e143f2ff0fed0ca09b735f9c6322fd364825"
+    },
+    {
+      "path": "examples/cafe-terrace/archive/qa/test-desktop.json",
+      "bytes": 5546,
+      "sha256": "d4ef997080bb40ee46e4a236d329bdb231150defe76ee46770f5577c46fa9326"
+    },
+    {
+      "path": "examples/cafe-terrace/archive/qa/test-fallback.json",
+      "bytes": 505,
+      "sha256": "ffdf8d32a289a16878f5f92796f394f71c9055f260d8b62a58ffdb79f6d324ef"
+    },
+    {
+      "path": "examples/cafe-terrace/archive/qa/test-mobile.json",
+      "bytes": 3326,
+      "sha256": "ee656d7cfb8e4a5a6f0f86386841f8e6b635e57ecc73017eb91b645a0c77e89d"
+    },
+    {
+      "path": "examples/cafe-terrace/archive/qa/test-tour.json",
+      "bytes": 2623,
+      "sha256": "ac97cf67721c369acd9e061a88f21655a8629da2045adf80e8c5dd5d782e6aca"
+    },
+    {
+      "path": "examples/cafe-terrace/archive/qa/tour.log",
+      "bytes": 407,
+      "sha256": "74417431626c43c05b889b5f04e03b9dc1ab233e69fa07f08b35229e2867d0d5"
+    },
+    {
+      "path": "examples/cafe-terrace/archive/scripts/build.mjs",
+      "bytes": 793,
+      "sha256": "be2e7721802de7755b1e191a9dc4524786827e76896364f52b1a2109e64ec477"
+    },
+    {
+      "path": "examples/cafe-terrace/archive/src/app.js",
+      "bytes": 27902,
+      "sha256": "764b229ae65d6bbf7b8760c4aa62df6b69144c18c94e625e0daecc4377247d89"
+    },
+    {
+      "path": "examples/cafe-terrace/archive/src/audio.js",
+      "bytes": 3405,
+      "sha256": "88faa12f559616d6a152b471f99cd19eed46abdeb38edeb1defc424fdebf737b"
+    },
+    {
+      "path": "examples/cafe-terrace/archive/src/engine.js",
+      "bytes": 12103,
+      "sha256": "6e16d9763dd2a905369416435ee135d62fe8142647497bfcc8054d7eee98701f"
+    },
+    {
+      "path": "examples/cafe-terrace/archive/src/index.template.html",
+      "bytes": 10113,
+      "sha256": "2239bf232309fd9df9337e42887a6fa79b19b0297fd14f9144a790e519f8c3a1"
+    },
+    {
+      "path": "examples/cafe-terrace/archive/src/style.css",
+      "bytes": 14786,
+      "sha256": "e6071e390865aed0c6130dce2e497892d3e722aa21df9ec560f13c5fadfad72a"
+    },
+    {
+      "path": "examples/cafe-terrace/archive/src/textures.js",
+      "bytes": 5596,
+      "sha256": "dbc3d06c58f6aac561258f9eca4ee230f34a2472186f7ee8ffdc7d7963ab90c0"
+    },
+    {
+      "path": "examples/cafe-terrace/archive/src/world.js",
+      "bytes": 20153,
+      "sha256": "deabbd37f6ee94e7f9cb13d48e55ab669e45c0b8712e21bec6e30445f089b45e"
+    },
+    {
+      "path": "examples/cafe-terrace/archive/tests/mobile_preview.py",
+      "bytes": 1375,
+      "sha256": "be32e226304cfcb43c6c79d7ea2162e4af20481e1d285f83a642276e2d1e01c6"
+    },
+    {
+      "path": "examples/cafe-terrace/archive/tests/preview.py",
+      "bytes": 1133,
+      "sha256": "be59daa587c6c6bf529e9c08c04f5ff685ddb1535a32b518f8e0ac2997b09a72"
+    },
+    {
+      "path": "examples/cafe-terrace/archive/tests/verify.py",
+      "bytes": 10657,
+      "sha256": "10db7716f692a8434f322e881a70888f99f0ad08e94fa36a69665c4e4bdd2baf"
+    },
+    {
+      "path": "examples/cafe-terrace/index.en.html",
+      "bytes": 95296,
+      "sha256": "f02cfe67f8c8ace77825faec98ffaa4b38549e5b0e91e9d1f6c09413b1902380"
+    },
+    {
+      "path": "examples/cafe-terrace/index.html",
+      "bytes": 95299,
+      "sha256": "a8db7f482259780ff44f6f7b0c853cbe69f8c01d0673b2b3922454b4ca8600e7"
+    },
+    {
+      "path": "examples/cafe-terrace/package.json",
+      "bytes": 349,
+      "sha256": "3992a37952bead48e76728009119c828048fa72d0edf87d3dcd826e00bfae42b"
+    },
+    {
+      "path": "examples/cafe-terrace/preview-original.jpg",
+      "bytes": 220243,
+      "sha256": "0271f92f8b80667acf4c051362a3d5b282401fabbe3468d55e59bcbfdfda2e3c"
+    },
+    {
+      "path": "examples/cafe-terrace/qa/entry-en.png",
+      "bytes": 774023,
+      "sha256": "2dce9fc0c40047845d8c98b4ce79cc98a4eaa045678b8b00a015531f688efae4"
+    },
+    {
+      "path": "examples/cafe-terrace/qa/entry-zh.png",
+      "bytes": 777077,
+      "sha256": "bf7a6d79386326f2a96604054d16d8f048e6f651da9b5979ef322c7151958516"
+    },
+    {
+      "path": "examples/cafe-terrace/qa/fallback.png",
+      "bytes": 29165,
+      "sha256": "bf7e2be29fdc10fbab5d4f32a0f96e3a56af4f44e369401a062a7e9c0b029a03"
+    },
+    {
+      "path": "examples/cafe-terrace/qa/mobile-en.png",
+      "bytes": 422204,
+      "sha256": "865ab42f8b6b71cc00f4327c1842bacebbd2fc555da21194de89af5d99120d81"
+    },
+    {
+      "path": "examples/cafe-terrace/qa/mobile-free.png",
+      "bytes": 352814,
+      "sha256": "c4c122ba2f12b27367df5ae7ba5691c141d6392898e54a92c8b4b1836aed67f8"
+    },
+    {
+      "path": "examples/cafe-terrace/qa/mobile-landscape.png",
+      "bytes": 339422,
+      "sha256": "f2679069c57f8b5320826fceb6a1b74515f18a46047a514a00d6285073675332"
+    },
+    {
+      "path": "examples/cafe-terrace/qa/mobile-zh.png",
+      "bytes": 423267,
+      "sha256": "74f979ff5c9b1ed9d0f3bf5320feb118888dee6a8778b9b2d4fe25dcdf7dc2f7"
+    },
+    {
+      "path": "examples/cafe-terrace/qa/place-02.png",
+      "bytes": 780367,
+      "sha256": "d30b3517c082aee6dee9df37b898ca08430b69e5f14298f7e33486b6116b3de0"
+    },
+    {
+      "path": "examples/cafe-terrace/qa/place-03.png",
+      "bytes": 719744,
+      "sha256": "1252c131039e4ea8fa5617c05bf49b0d5d3cf03777a8099bc5ac17e86f34fe93"
+    },
+    {
+      "path": "examples/cafe-terrace/qa/place-06.png",
+      "bytes": 653785,
+      "sha256": "3f2e2ade70bed62737987e3a0150124cbfd2a38438d3c1bad0ea5b02bd9ad000"
+    },
+    {
+      "path": "examples/cafe-terrace/qa/postcard.png",
+      "bytes": 1168774,
+      "sha256": "9fd697a82f3b16de8be1dcc5a40eb669468b9bff1dbb263ee969d54511faab72"
+    },
+    {
+      "path": "examples/cafe-terrace/qa/reverse.png",
+      "bytes": 752762,
+      "sha256": "6e2174cf849a8aec37790740a47b58f9adb6b3b41836392f9af0369e2fe01af9"
+    },
+    {
+      "path": "examples/cafe-terrace/qa/scene-clean.jpg",
+      "bytes": 267956,
+      "sha256": "5472b235b4c551d1b16450a772c15d8edd5dde87a08404e5e9973274dbf85f80"
+    },
+    {
+      "path": "examples/cafe-terrace/qa/scene-clean.png",
+      "bytes": 1969188,
+      "sha256": "23c229eea1a3807818bd75bc901d9087fe33f20575d80bb91602b2e77eb9c282"
+    },
+    {
+      "path": "examples/cafe-terrace/qa/test-desktop.json",
+      "bytes": 4045,
+      "sha256": "52c84d83d9e802cf9e13422d72d8d62c218997b402d017d7d17d0cba92469bf9"
+    },
+    {
+      "path": "examples/cafe-terrace/qa/test-fallback.json",
+      "bytes": 633,
+      "sha256": "d21f3720ca9ba8c5440322d5d21fb542836d5f8c4d93459e40f2ab6f81959d3a"
+    },
+    {
+      "path": "examples/cafe-terrace/qa/test-mobile.json",
+      "bytes": 3370,
+      "sha256": "cdf64e19e856315b4bd38a951bd57bb207deff8e655d830d16391de3ba92acf3"
+    },
+    {
+      "path": "examples/cafe-terrace/qa/test-tour.json",
+      "bytes": 1917,
+      "sha256": "ef3d2cf1bbbf3ee500fc3feddc4c9f28a492592896e078d9a78024866ffde7e4"
+    },
+    {
+      "path": "examples/cafe-terrace/qa/tour-complete.png",
+      "bytes": 368336,
+      "sha256": "fd7210cc73e7c68062e5995f508a495dacadefab737c52721106550547aae415"
+    },
+    {
+      "path": "examples/cafe-terrace/scripts/build.mjs",
+      "bytes": 884,
+      "sha256": "9a83e7e4b95c50738d2ed0e13859ce17e6fe4c1c5faf1b00151baa2530598ec2"
+    },
+    {
+      "path": "examples/cafe-terrace/src/app.js",
+      "bytes": 29199,
+      "sha256": "79e8dd214af6e9143d33a7b3d8b057d307e417cb44b832e73701c9839b79b106"
+    },
+    {
+      "path": "examples/cafe-terrace/src/audio.js",
+      "bytes": 3405,
+      "sha256": "88faa12f559616d6a152b471f99cd19eed46abdeb38edeb1defc424fdebf737b"
+    },
+    {
+      "path": "examples/cafe-terrace/src/engine.js",
+      "bytes": 12103,
+      "sha256": "6e16d9763dd2a905369416435ee135d62fe8142647497bfcc8054d7eee98701f"
+    },
+    {
+      "path": "examples/cafe-terrace/src/index.template.html",
+      "bytes": 10113,
+      "sha256": "2239bf232309fd9df9337e42887a6fa79b19b0297fd14f9144a790e519f8c3a1"
+    },
+    {
+      "path": "examples/cafe-terrace/src/style.css",
+      "bytes": 14786,
+      "sha256": "e6071e390865aed0c6130dce2e497892d3e722aa21df9ec560f13c5fadfad72a"
+    },
+    {
+      "path": "examples/cafe-terrace/src/textures.js",
+      "bytes": 5596,
+      "sha256": "dbc3d06c58f6aac561258f9eca4ee230f34a2472186f7ee8ffdc7d7963ab90c0"
+    },
+    {
+      "path": "examples/cafe-terrace/src/world.js",
+      "bytes": 20153,
+      "sha256": "deabbd37f6ee94e7f9cb13d48e55ab669e45c0b8712e21bec6e30445f089b45e"
+    },
+    {
+      "path": "examples/the-scream/README.en.md",
+      "bytes": 1307,
+      "sha256": "589163ab91b2c21d59adb6e20181499ac4e51c7904186d6211fa433d20673579"
+    },
+    {
+      "path": "examples/the-scream/README.zh-CN.md",
+      "bytes": 1207,
+      "sha256": "d5a3adee351237f3b9fc229e7a39558ae96e306689e5bbf172e0583f510417cc"
+    },
+    {
+      "path": "examples/the-scream/design/scene-plan.en.md",
+      "bytes": 2685,
+      "sha256": "2a0f28c4076153e4df770ec3b2b43f894c95b51fb856f77dad6293ee56efce46"
+    },
+    {
+      "path": "examples/the-scream/design/scene-plan.zh-CN.md",
+      "bytes": 2213,
+      "sha256": "352582112ee26b1f673f7278ec9b511c8852486281785e14cfeb5b29d084bce2"
+    },
+    {
+      "path": "examples/the-scream/index.en.html",
+      "bytes": 60464,
+      "sha256": "7a89cf3f7da00b56f46691e275cb98c727793ac7f70f3a03b232d1523952204d"
+    },
+    {
+      "path": "examples/the-scream/index.html",
+      "bytes": 60467,
+      "sha256": "7cb2a5bf9d3055f0e53bef306fac8a51ba6c7e14ab5d4d6a930e44a46cc45fdc"
+    },
+    {
+      "path": "examples/the-scream/package.json",
+      "bytes": 333,
+      "sha256": "87a7c7d6f8a7d90a45b1fae0acea3acd8d65f78626b33a4d8ad4de240b6775ba"
+    },
+    {
+      "path": "examples/the-scream/qa/entry-en.png",
+      "bytes": 745081,
+      "sha256": "3ad655397e1d074a549ee0e5fb1007cf0a716495fb59586b06a7c6f43dda7a04"
+    },
+    {
+      "path": "examples/the-scream/qa/entry-zh.png",
+      "bytes": 741989,
+      "sha256": "5595efee8f4de8f909180c2aa8b1fe1da9a4d758c3cc69f0eae350c1c7651186"
+    },
+    {
+      "path": "examples/the-scream/qa/fallback.png",
+      "bytes": 24412,
+      "sha256": "164d9fbb00e5f9603d2b7c695074e622ad0cedb6b726a601800bd43d30feb899"
+    },
+    {
+      "path": "examples/the-scream/qa/mobile-en.png",
+      "bytes": 385320,
+      "sha256": "ac2b1c770f4728da2ad6291e3cc33c280012cb43d43f1c044378559dfd213ff4"
+    },
+    {
+      "path": "examples/the-scream/qa/mobile-free.png",
+      "bytes": 315801,
+      "sha256": "e93f94489eb63749c77382c1a546c30cb5ea3f54ceb90f55ef60742976a909ed"
+    },
+    {
+      "path": "examples/the-scream/qa/mobile-landscape.png",
+      "bytes": 370457,
+      "sha256": "c66ef182b2389523133dae61f7d712bea5350acde6a2bec750224be32a0e9c90"
+    },
+    {
+      "path": "examples/the-scream/qa/mobile-zh.png",
+      "bytes": 384394,
+      "sha256": "5eb741d1b96c682484268e07980beb6fc8192899e2afccfdeaab69464109d5bc"
+    },
+    {
+      "path": "examples/the-scream/qa/place-02.png",
+      "bytes": 709126,
+      "sha256": "c472acf0b65f75c83000a9e3466e52b89c9b7742acf1cea70e2c28444425aef4"
+    },
+    {
+      "path": "examples/the-scream/qa/place-03.png",
+      "bytes": 681828,
+      "sha256": "4cc2c5314af2001b1872bfec1b72ef8fc00e4b5232b06f2c0c2150930ac0978d"
+    },
+    {
+      "path": "examples/the-scream/qa/place-06.png",
+      "bytes": 726566,
+      "sha256": "5ababe2c7cbc6dd4b3d3ed7e491a01606f390c9116eb4c46b58b51829cee131a"
+    },
+    {
+      "path": "examples/the-scream/qa/postcard.png",
+      "bytes": 1147914,
+      "sha256": "e382efc76af8cbc4095971b57a2b89d95d38c96ec7478ff13b65e7cf9434f2cf"
+    },
+    {
+      "path": "examples/the-scream/qa/reverse.png",
+      "bytes": 720732,
+      "sha256": "afef11f049f0bc380f4ac740353ae83e0cd81601865737036edbbfba3ca0ae90"
+    },
+    {
+      "path": "examples/the-scream/qa/scene-clean.jpg",
+      "bytes": 261798,
+      "sha256": "ac6d9c5cd8aff72897caffc9a92fe16d11c922b09288aaaba1d810a115cea9eb"
+    },
+    {
+      "path": "examples/the-scream/qa/scene-clean.png",
+      "bytes": 1956607,
+      "sha256": "d07032886a73438b86c5e58847086f4d5531cbb258e546916813eb119c40621c"
+    },
+    {
+      "path": "examples/the-scream/qa/test-desktop.json",
+      "bytes": 4078,
+      "sha256": "ff73613ddc1704708bf4e9820bf3c0e1f3a063f5220cc985ed578c2e957c9402"
+    },
+    {
+      "path": "examples/the-scream/qa/test-fallback.json",
+      "bytes": 631,
+      "sha256": "4bbbdc919b8054aadbf3c0044a4e821379fd7437892c9fe7425e19fbc106c9a9"
+    },
+    {
+      "path": "examples/the-scream/qa/test-mobile.json",
+      "bytes": 3410,
+      "sha256": "ec903f9203fb81d85744fd187c81b60876febc3a4250cd604b947bdfa355fc5c"
+    },
+    {
+      "path": "examples/the-scream/qa/test-tour.json",
+      "bytes": 1958,
+      "sha256": "80a867ac5e42630b1916138152b6aa65f3e670202d325761cc5ddf6ade5b0a75"
+    },
+    {
+      "path": "examples/the-scream/qa/tour-complete.png",
+      "bytes": 399196,
+      "sha256": "52eedf62e4c290dac3728a86cf9fbbba3978104e417f01db61b8aa01237faecc"
+    },
+    {
+      "path": "examples/the-scream/scripts/build.mjs",
+      "bytes": 884,
+      "sha256": "9a83e7e4b95c50738d2ed0e13859ce17e6fe4c1c5faf1b00151baa2530598ec2"
+    },
+    {
+      "path": "examples/the-scream/src/app.js",
+      "bytes": 21119,
+      "sha256": "7111038d3361deafbec043e0dd9a7dbb067be668b94e3389128fdd74d5c3f736"
+    },
+    {
+      "path": "examples/the-scream/src/audio.js",
+      "bytes": 3391,
+      "sha256": "697d8edd1a17e5de9e31dd9bebc1d9493b187ea77f5532124f5076ca6009018a"
+    },
+    {
+      "path": "examples/the-scream/src/engine.js",
+      "bytes": 11967,
+      "sha256": "51f9ee1a8c68b847bc9becc4b4fe1a666de528c99695e1d65abb7c057ab5b570"
+    },
+    {
+      "path": "examples/the-scream/src/index.template.html",
+      "bytes": 3931,
+      "sha256": "36253fdd7e184f880540d84282f553928d0b96d09916cb53ec12b5da498a70e1"
+    },
+    {
+      "path": "examples/the-scream/src/style.css",
+      "bytes": 9267,
+      "sha256": "b8954bf918a631b6eaacae5678cf2da692546c1f5c12e47f62c779dbe381fa7e"
+    },
+    {
+      "path": "examples/the-scream/src/textures.js",
+      "bytes": 2772,
+      "sha256": "a4f64440c459eee07e1d28dbef38562058a47f4a4e6a4d59aabd50efc3a244a4"
+    },
+    {
+      "path": "examples/the-scream/src/world.js",
+      "bytes": 8076,
+      "sha256": "1cf3bfcd28353773890786b8ad6bd4df3113147fb074a99ea0745e5ea435a897"
+    },
+    {
+      "path": "marketing/archive-ai-concepts-zh-CN/01-hero-concept.png",
+      "bytes": 2227132,
+      "sha256": "f8bb513b7cb82f8ee9133c8be89a44eddbc484ed9b3473b4e2c2458410954bc3"
+    },
+    {
+      "path": "marketing/archive-ai-concepts-zh-CN/02-guide-concept.png",
+      "bytes": 2264781,
+      "sha256": "370c777970160c67b904555e64d707586a04343369d7d04890621a41ab5e9475"
+    },
+    {
+      "path": "marketing/archive-ai-concepts-zh-CN/03-product-concept.png",
+      "bytes": 2274098,
+      "sha256": "b043bd5c731ccc04a68f772d668f93756591ad17472e08b06e41dbe45ef2d1cf"
+    },
+    {
+      "path": "marketing/archive-ai-concepts-zh-CN/04-case-concept.png",
+      "bytes": 2400000,
+      "sha256": "4fcb4017b8ff66cd7a19564ea87436f1d3f2aec8a00ca520a5ae31fb9dbd2609"
+    },
+    {
+      "path": "marketing/archive-ai-concepts-zh-CN/README.md",
+      "bytes": 578,
+      "sha256": "7fbbea1c8eec943850c77a283a75e9ad6be42dd22b899f10918a9f8a54319b06"
+    },
+    {
+      "path": "marketing/en/01-hero.html",
+      "bytes": 5434,
+      "sha256": "507627b1b7b4cfc81b42d3e5eef148e49db790a56b4924eac71069879f9cb201"
+    },
+    {
+      "path": "marketing/en/01-hero.png",
+      "bytes": 968259,
+      "sha256": "7152107a88be58e21421a0de2bfb0cf8d25713428bd9cc1c5d74d008558cd0c8"
+    },
+    {
+      "path": "marketing/en/02-guide.html",
+      "bytes": 6173,
+      "sha256": "9e2234f63288b441ac77584aefdb5426c8220df8cc80dd6e81125eda317291d8"
+    },
+    {
+      "path": "marketing/en/02-guide.png",
+      "bytes": 770779,
+      "sha256": "1a73f17cf2d5447c0901832626dc2905246c7b1942f0d53a218f5f55841b9f49"
+    },
+    {
+      "path": "marketing/en/03-product.html",
+      "bytes": 6227,
+      "sha256": "848bc1bea4191719547d4d252d80582092f04e85e4cfff4dbc8a0b4327a2d310"
+    },
+    {
+      "path": "marketing/en/03-product.png",
+      "bytes": 809050,
+      "sha256": "3af69a17aa42a4f39cd8aaee1a74bfeac0077dc882cd1da55e4cbe2eeb9d7e45"
+    },
+    {
+      "path": "marketing/en/04-case.html",
+      "bytes": 5749,
+      "sha256": "457f6dbacc7d7848c6c71339b4f5bc140c57f646c508e35460af8dc9df0b98dc"
+    },
+    {
+      "path": "marketing/en/04-case.png",
+      "bytes": 1114239,
+      "sha256": "46bf2bf7f7220ffd02513e53c3ac0e9546747e375995bc78b2f2be3a5ca8214b"
+    },
+    {
+      "path": "marketing/zh-CN/01-hero.html",
+      "bytes": 5424,
+      "sha256": "3bc34aa35ad1f1d85a25464e82e50474bfe5ef6535b5e98549cce5397b9b847a"
+    },
+    {
+      "path": "marketing/zh-CN/01-hero.png",
+      "bytes": 963033,
+      "sha256": "70059c0e202d91acd80e4959a2e10d47e07c97e51758dd0498b74967c21f65b9"
+    },
+    {
+      "path": "marketing/zh-CN/02-guide.html",
+      "bytes": 6201,
+      "sha256": "990fb094997be600c0da55745d3fc6a4a1fceea8b4c78489bbce3f28628b1e01"
+    },
+    {
+      "path": "marketing/zh-CN/02-guide.png",
+      "bytes": 779368,
+      "sha256": "4389d5fc2ad161bd681a2ee12fd271faba71f9654f525cf8dd3a56d85dcd48ab"
+    },
+    {
+      "path": "marketing/zh-CN/03-product.html",
+      "bytes": 6185,
+      "sha256": "851c2f042a32332beb5ccfd413d1772427ba39f49736f6c593b41ddab0155000"
+    },
+    {
+      "path": "marketing/zh-CN/03-product.png",
+      "bytes": 809769,
+      "sha256": "a3dd3391e0d2e08917e9d107c3b14a0e5d2186ab07dd9d2c825dbeddb214b45d"
+    },
+    {
+      "path": "marketing/zh-CN/04-case.html",
+      "bytes": 5739,
+      "sha256": "7d63bbdd37ad1e268bec6355936f693bc5100623661d8cfa13758cce51de4c99"
+    },
+    {
+      "path": "marketing/zh-CN/04-case.png",
+      "bytes": 1123586,
+      "sha256": "3a9cc3877a4d60215c865c0bc564cf42fa2f37f883f742b7a4e315e38d48edc9"
+    },
+    {
+      "path": "qa/current/cafe-baseline-integrity.json",
+      "bytes": 760,
+      "sha256": "2308eb5d2e16e608d97938d5e6ab479a11fb085aea01e2bd270fc3e7b06188c8"
+    },
+    {
+      "path": "qa/current/marketing-layout.json",
+      "bytes": 1285,
+      "sha256": "c5a0af01fbdc970c1fd7a2cc5498ebe19178b6d654771f834687f58b18a9dfa1"
+    },
+    {
+      "path": "qa/current/package-static.json",
+      "bytes": 8820,
+      "sha256": "ff2762d1a241edb3bcd63d1b8a11766c1a511ea671d78d1c4cf2363d45d0efd5"
+    },
+    {
+      "path": "qa/current/portability.json",
+      "bytes": 9082,
+      "sha256": "26dfb104dbec44d88fcc1a40f7bd43745d4be68e8b988641f9f6c8873cf940b8"
+    },
+    {
+      "path": "qa/current/portal-checks.json",
+      "bytes": 1897,
+      "sha256": "25a06f7bd9ac022099ecb1686b51b80d42884abbab58643c89a2ee2adb212fdb"
+    },
+    {
+      "path": "qa/current/portal-en.png",
+      "bytes": 406677,
+      "sha256": "4ca3d70defc557dc2b462a847b3567507c78ec02bfb3995c62e3b513ef37c41b"
+    },
+    {
+      "path": "qa/current/portal-mobile-en.png",
+      "bytes": 118894,
+      "sha256": "5bb6a52cbe008612e11410eefcc2c57d63199e5737b6262f574335736f7dff66"
+    },
+    {
+      "path": "qa/current/portal-mobile-zh-CN.png",
+      "bytes": 147684,
+      "sha256": "f520a67a5da12dec8f509bfb8810dd492eaba6fc4b96fe40c2ee2574ff43468e"
+    },
+    {
+      "path": "qa/current/portal-zh-CN.png",
+      "bytes": 399551,
+      "sha256": "a3a845aa74f489bcafec9df4f04307151caad934bbe019f868b1d14effe6cf04"
+    },
+    {
+      "path": "qa/current/test-runner-status.json",
+      "bytes": 557,
+      "sha256": "a7425b1e02446a3efb5ee2acdbb62cebc08ba83d5209f150b05053c9368227f4"
+    },
+    {
+      "path": "scripts/build-all.mjs",
+      "bytes": 582,
+      "sha256": "513ac0f3fe8bd87690b893e7f026aa511d5ecd66aa9b5575ecfea26224deebb2"
+    },
+    {
+      "path": "scripts/check-package.mjs",
+      "bytes": 3355,
+      "sha256": "abd2a63af4c6bb5e2260f8b27b6a226e15baee37501b371b4acebe2415139af8"
+    },
+    {
+      "path": "skills/en/painting-to-world/SKILL.md",
+      "bytes": 11567,
+      "sha256": "5192239507c4d93e554f20c9255b0aff0ef449e2463b994cdc60a95f67da9da9"
+    },
+    {
+      "path": "skills/en/painting-to-world/assets/cafe-reference.jpg",
+      "bytes": 220243,
+      "sha256": "0271f92f8b80667acf4c051362a3d5b282401fabbe3468d55e59bcbfdfda2e3c"
+    },
+    {
+      "path": "skills/en/painting-to-world/assets/starter/ATTRIBUTION.md",
+      "bytes": 948,
+      "sha256": "aaa96a6a52cb79b5da3543f37fd61e154f348e409b717b00cc3dfc19d766298e"
+    },
+    {
+      "path": "skills/en/painting-to-world/assets/starter/README.md",
+      "bytes": 313,
+      "sha256": "4d28a206868799eaed4e07f77b3b298a8f796664fbb3fa41539da4f69dfc49a5"
+    },
+    {
+      "path": "skills/en/painting-to-world/assets/starter/package.json",
+      "bytes": 349,
+      "sha256": "3992a37952bead48e76728009119c828048fa72d0edf87d3dcd826e00bfae42b"
+    },
+    {
+      "path": "skills/en/painting-to-world/assets/starter/scripts/build.mjs",
+      "bytes": 884,
+      "sha256": "9a83e7e4b95c50738d2ed0e13859ce17e6fe4c1c5faf1b00151baa2530598ec2"
+    },
+    {
+      "path": "skills/en/painting-to-world/assets/starter/src/app.js",
+      "bytes": 29199,
+      "sha256": "79e8dd214af6e9143d33a7b3d8b057d307e417cb44b832e73701c9839b79b106"
+    },
+    {
+      "path": "skills/en/painting-to-world/assets/starter/src/audio.js",
+      "bytes": 3405,
+      "sha256": "88faa12f559616d6a152b471f99cd19eed46abdeb38edeb1defc424fdebf737b"
+    },
+    {
+      "path": "skills/en/painting-to-world/assets/starter/src/engine.js",
+      "bytes": 12103,
+      "sha256": "6e16d9763dd2a905369416435ee135d62fe8142647497bfcc8054d7eee98701f"
+    },
+    {
+      "path": "skills/en/painting-to-world/assets/starter/src/index.template.html",
+      "bytes": 10113,
+      "sha256": "2239bf232309fd9df9337e42887a6fa79b19b0297fd14f9144a790e519f8c3a1"
+    },
+    {
+      "path": "skills/en/painting-to-world/assets/starter/src/style.css",
+      "bytes": 14786,
+      "sha256": "e6071e390865aed0c6130dce2e497892d3e722aa21df9ec560f13c5fadfad72a"
+    },
+    {
+      "path": "skills/en/painting-to-world/assets/starter/src/textures.js",
+      "bytes": 5596,
+      "sha256": "dbc3d06c58f6aac561258f9eca4ee230f34a2472186f7ee8ffdc7d7963ab90c0"
+    },
+    {
+      "path": "skills/en/painting-to-world/assets/starter/src/world.js",
+      "bytes": 20153,
+      "sha256": "deabbd37f6ee94e7f9cb13d48e55ab669e45c0b8712e21bec6e30445f089b45e"
+    },
+    {
+      "path": "skills/en/painting-to-world/references/analysis-template.md",
+      "bytes": 1310,
+      "sha256": "56cbf8153098d8b20787c393eac84291097eca53dc3ac681055b4c50000c637f"
+    },
+    {
+      "path": "skills/en/painting-to-world/references/cafe-recipe.md",
+      "bytes": 1700,
+      "sha256": "6bb5a038e33d247269d352a51561e0b2630fed4722aec06e0213ec9fd829c9a4"
+    },
+    {
+      "path": "skills/en/painting-to-world/references/engine-contract.md",
+      "bytes": 2483,
+      "sha256": "3f38fee6bd95a710479c35d4cb44eeb633f5ddadd0f93eb7d13d8dcea567f9f4"
+    },
+    {
+      "path": "skills/en/painting-to-world/references/prompt-examples.md",
+      "bytes": 1085,
+      "sha256": "1cd1391add36265407c379278b4d0a795ff7e559d102d360a6488ee3351a18df"
+    },
+    {
+      "path": "skills/en/painting-to-world/references/qa-gates.md",
+      "bytes": 1920,
+      "sha256": "3ff0a46a772a331db15ddfdeffc2bdf1de4df9c5873604eca0deea83284f6fd6"
+    },
+    {
+      "path": "skills/en/painting-to-world/references/sources.md",
+      "bytes": 1248,
+      "sha256": "06cab5f9a8c0f8d975419cc9e31ebacfb60e84258c74c8011300461e3653e028"
+    },
+    {
+      "path": "skills/en/painting-to-world/scripts/audit.mjs",
+      "bytes": 1689,
+      "sha256": "446c6b1284800f46ace3502c55d9f21f1cf303b42e2cbb496df590acf8c36e5b"
+    },
+    {
+      "path": "skills/en/painting-to-world/scripts/init.mjs",
+      "bytes": 2176,
+      "sha256": "aaaf72d05d7a2fd66710ac9558bf1c3b76295b1639f1dbe0dac8ff5c5eb44b8c"
+    },
+    {
+      "path": "skills/zh-CN/painting-to-world/SKILL.md",
+      "bytes": 9397,
+      "sha256": "d024654de89eebdf593c000440370f092b51a169f2f4d919136ff16bc1984698"
+    },
+    {
+      "path": "skills/zh-CN/painting-to-world/assets/cafe-reference.jpg",
+      "bytes": 220243,
+      "sha256": "0271f92f8b80667acf4c051362a3d5b282401fabbe3468d55e59bcbfdfda2e3c"
+    },
+    {
+      "path": "skills/zh-CN/painting-to-world/assets/starter/ATTRIBUTION.md",
+      "bytes": 1701,
+      "sha256": "9308bdc3742ffb27be780724e3cb4d69ab48dc1b991ec2af65aceec7f50084a9"
+    },
+    {
+      "path": "skills/zh-CN/painting-to-world/assets/starter/README.md",
+      "bytes": 313,
+      "sha256": "4d28a206868799eaed4e07f77b3b298a8f796664fbb3fa41539da4f69dfc49a5"
+    },
+    {
+      "path": "skills/zh-CN/painting-to-world/assets/starter/package.json",
+      "bytes": 349,
+      "sha256": "3992a37952bead48e76728009119c828048fa72d0edf87d3dcd826e00bfae42b"
+    },
+    {
+      "path": "skills/zh-CN/painting-to-world/assets/starter/scripts/build.mjs",
+      "bytes": 884,
+      "sha256": "9a83e7e4b95c50738d2ed0e13859ce17e6fe4c1c5faf1b00151baa2530598ec2"
+    },
+    {
+      "path": "skills/zh-CN/painting-to-world/assets/starter/src/app.js",
+      "bytes": 29199,
+      "sha256": "79e8dd214af6e9143d33a7b3d8b057d307e417cb44b832e73701c9839b79b106"
+    },
+    {
+      "path": "skills/zh-CN/painting-to-world/assets/starter/src/audio.js",
+      "bytes": 3405,
+      "sha256": "88faa12f559616d6a152b471f99cd19eed46abdeb38edeb1defc424fdebf737b"
+    },
+    {
+      "path": "skills/zh-CN/painting-to-world/assets/starter/src/engine.js",
+      "bytes": 12103,
+      "sha256": "6e16d9763dd2a905369416435ee135d62fe8142647497bfcc8054d7eee98701f"
+    },
+    {
+      "path": "skills/zh-CN/painting-to-world/assets/starter/src/index.template.html",
+      "bytes": 10113,
+      "sha256": "2239bf232309fd9df9337e42887a6fa79b19b0297fd14f9144a790e519f8c3a1"
+    },
+    {
+      "path": "skills/zh-CN/painting-to-world/assets/starter/src/style.css",
+      "bytes": 14786,
+      "sha256": "e6071e390865aed0c6130dce2e497892d3e722aa21df9ec560f13c5fadfad72a"
+    },
+    {
+      "path": "skills/zh-CN/painting-to-world/assets/starter/src/textures.js",
+      "bytes": 5596,
+      "sha256": "dbc3d06c58f6aac561258f9eca4ee230f34a2472186f7ee8ffdc7d7963ab90c0"
+    },
+    {
+      "path": "skills/zh-CN/painting-to-world/assets/starter/src/world.js",
+      "bytes": 20153,
+      "sha256": "deabbd37f6ee94e7f9cb13d48e55ab669e45c0b8712e21bec6e30445f089b45e"
+    },
+    {
+      "path": "skills/zh-CN/painting-to-world/references/analysis-template.md",
+      "bytes": 1044,
+      "sha256": "2c615950699174bca5221233f530685845b213c1c8e1251576e2a9e8433e0a6f"
+    },
+    {
+      "path": "skills/zh-CN/painting-to-world/references/cafe-recipe.md",
+      "bytes": 1358,
+      "sha256": "c5ceca26ad89263fb1aca922428b2bf621662bed4bfd6d448ba74a5c8461cc03"
+    },
+    {
+      "path": "skills/zh-CN/painting-to-world/references/engine-contract.md",
+      "bytes": 2058,
+      "sha256": "c90368d75a1738ceea3bea412211221ff8232391c87883dca59fd548a6375242"
+    },
+    {
+      "path": "skills/zh-CN/painting-to-world/references/prompt-examples.md",
+      "bytes": 883,
+      "sha256": "37949b44ebffea73d4e71100e57acd0e27b73be6ff6030b76f9506c5c46293a0"
+    },
+    {
+      "path": "skills/zh-CN/painting-to-world/references/qa-gates.md",
+      "bytes": 1494,
+      "sha256": "6a876251f90d8fd341cd5e465c4bcc47db71a5db5264ea0d7eb5a0a45d4628e6"
+    },
+    {
+      "path": "skills/zh-CN/painting-to-world/references/sources.md",
+      "bytes": 1248,
+      "sha256": "06cab5f9a8c0f8d975419cc9e31ebacfb60e84258c74c8011300461e3653e028"
+    },
+    {
+      "path": "skills/zh-CN/painting-to-world/scripts/audit.mjs",
+      "bytes": 1689,
+      "sha256": "446c6b1284800f46ace3502c55d9f21f1cf303b42e2cbb496df590acf8c36e5b"
+    },
+    {
+      "path": "skills/zh-CN/painting-to-world/scripts/init.mjs",
+      "bytes": 2176,
+      "sha256": "aaaf72d05d7a2fd66710ac9558bf1c3b76295b1639f1dbe0dac8ff5c5eb44b8c"
+    },
+    {
+      "path": "tests/capture-scenes.py",
+      "bytes": 1254,
+      "sha256": "77c7de7ac7f075737fe1993ed1dd79ce46861cc0c778b98301905ed7fe1d0cfb"
+    },
+    {
+      "path": "tests/smoke.py",
+      "bytes": 9730,
+      "sha256": "f0a95e189b4099bcccd29e488d78ef8da0627fdc21f8640affe8b43a9ac84007"
+    }
+  ]
+}

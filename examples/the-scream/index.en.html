@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#34413c"><title>如果世界，也会呐喊。｜入画</title><style>:root{color-scheme:dark;--cream:#f3e9d3;--gold:#d2b27c;--line:#ddd3ae36;--panel:#253933eb;--serif:Georgia,'Songti SC','Noto Serif CJK SC',serif;--sans:system-ui,-apple-system,'PingFang SC','Noto Sans CJK SC',sans-serif}*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#34413c;color:var(--cream);font:14px var(--sans)}button,input,a{-webkit-tap-highlight-color:transparent}button{font:inherit;cursor:pointer;color:inherit;border:1px solid var(--line);background:#263932aa;padding:10px 14px;border-radius:7px;transition:background .2s,border-color .2s}button:hover{background:#5e6444ba;border-color:#d2b27caa}button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(--gold);outline-offset:4px}button.primary{background:var(--cream);color:#2e3931;border-color:var(--cream);padding:17px 24px}a{color:#e2c790;text-underline-offset:4px}#world{position:fixed;inset:0;width:100%;height:100%;display:block;touch-action:none;cursor:grab}#world:active{cursor:grabbing}.shade{position:fixed;inset:0;pointer-events:none;background:linear-gradient(90deg,#141f2470,transparent 60%),linear-gradient(0deg,#17282780,transparent 38%)}.frame{position:fixed;inset:16px;border:1px solid #e4d4ac25;pointer-events:none}header{position:fixed;inset:26px 34px auto;display:flex;align-items:center;justify-content:space-between;gap:14px;z-index:5}.brand{display:flex;gap:13px;align-items:center;text-align:left;background:none;border:0;padding:0}.mark{width:38px;height:40px;border:1px solid #e2cb9566;font:30px var(--serif);display:grid;place-items:center}.brand b{font:16px var(--serif);letter-spacing:4px;font-weight:400}.brand small{display:block;font:8px var(--sans);letter-spacing:1.1px;margin-top:5px;color:#dcccae}nav{display:flex;gap:8px;align-items:center}nav button{font-size:12px;padding:9px 12px}#hero{position:fixed;left:7%;bottom:21%;width:390px;max-width:45vw;z-index:3}.eyebrow{letter-spacing:2px;font-size:10px;color:#e3cf9f}h1{font:400 clamp(38px,4.5vw,67px)/1.34 var(--serif);margin:26px 0 22px;letter-spacing:3px}#hero p{font-size:14px;line-height:1.95;color:#e7dac0;max-width:340px}#hero small{display:block;font-size:10px;color:#c9b994;margin-top:18px;line-height:1.7}.actions{display:flex;align-items:center;gap:12px;margin-top:26px}.exploring #hero{display:none}#explore{display:none}.exploring #explore{display:block}#location{position:fixed;left:38px;top:104px;max-width:350px;pointer-events:none}#locTag{font-size:9px;letter-spacing:2px;color:#d4c3a5}#locName{font:25px var(--serif);margin:11px 0}#locDesc{font-size:12px;line-height:1.7;color:#d5ceb7}.utility{position:fixed;left:34px;bottom:30px;display:flex;flex-direction:column;gap:6px}.utility button{text-align:left;font-size:11px;background:#263932aa;padding:7px 10px}#dock{position:fixed;bottom:28px;left:50%;transform:translateX(-50%);display:flex;max-width:66vw;gap:8px;border:1px solid var(--line);padding:8px;background:var(--panel);border-radius:9px;backdrop-filter:blur(9px)}#spots{display:flex;gap:4px;overflow:auto;scrollbar-width:none}#spots button{white-space:nowrap;min-width:80px;font-size:11px;border-color:transparent;background:none;padding:10px 12px}#spots button small{display:block;font:italic 16px var(--serif);color:#b6bc9d;margin-bottom:7px}#spots button.active{background:#ddc79c22;color:#eed3a0}#tour{font-size:11px;white-space:nowrap}#hint{position:fixed;bottom:126px;left:50%;transform:translateX(-50%);font-size:10px;background:#243531a0;padding:8px 16px;border-radius:20px;white-space:nowrap;color:#e0d7c3}#tourText{position:fixed;left:50%;bottom:183px;transform:translateX(-50%);font:21px/1.7 var(--serif);text-align:center;max-width:75vw;text-shadow:0 2px 18px #1c252d;pointer-events:none;display:none}.touring #tourText{display:block}#progress{position:fixed;bottom:8px;left:20px;right:20px;height:2px;display:none;background:#d3b77a20}.touring #progress{display:block}#progress i{display:block;height:100%;background:#dfbc79;width:0}#restore{position:fixed;right:22px;bottom:24px;display:none;z-index:30;font-size:12px}.hidden-ui header,.hidden-ui #hero,.hidden-ui #explore,.hidden-ui .frame,.hidden-ui .shade{display:none!important}.hidden-ui #restore{display:block}#toast{position:fixed;left:50%;bottom:166px;transform:translate(-50%,8px);background:#22362ff0;border:1px solid var(--line);border-radius:7px;padding:12px 17px;font-size:12px;max-width:86vw;z-index:40;opacity:0;pointer-events:none;transition:.2s}.show#toast{opacity:1;transform:translate(-50%,0)}dialog{position:fixed;background:#263731f5;border:1px solid #d4be8655;border-radius:12px;color:var(--cream);max-width:650px;width:calc(100vw - 32px);max-height:85dvh;padding:35px;overflow:auto;box-shadow:0 30px 80px #10211790}dialog::backdrop{background:#102027bb;backdrop-filter:blur(5px)}dialog .close{float:right;line-height:1;border-radius:50%;font-size:21px;width:38px;height:38px;padding:6px}dialog h2{font:29px/1.5 var(--serif);margin:22px 0}dialog h3{font:19px var(--serif);margin:25px 0 12px;color:#dec58e}dialog p{font-size:13px;line-height:1.95;color:#d0d1bc}dialog .fine{font-size:11px;color:#a9b59f}dialog small{letter-spacing:2px;font-size:9px}dialog label{display:flex;justify-content:space-between;gap:15px;align-items:center;margin:24px 0}input[type=range]{accent-color:var(--gold);width:45%}.row{display:flex;align-items:center;gap:10px;margin:18px 0}.row span{margin-right:auto}.row button{font-size:12px}.row button.active{background:#bdb18355}#loading{position:fixed;inset:0;background:#2e403b;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:25px;z-index:100}#loading p{font-size:12px;letter-spacing:1px}#loading.done{display:none}#error{position:fixed;inset:0;z-index:150;background:#303f39;padding:15vh 12vw;line-height:1.8}#error[hidden]{display:none}#error h2{font:32px var(--serif)}#error pre{white-space:pre-wrap;font-size:12px}#joystick{position:fixed;left:24px;bottom:147px;width:96px;height:96px;border:1px solid #dbcca052;background:#31443a60;border-radius:50%;touch-action:none;display:none;z-index:10}#stick{position:absolute;width:34px;height:34px;left:30px;top:30px;background:#d7c3914a;border:1px solid #dfd2b35a;border-radius:50%}#vertical{position:fixed;right:24px;bottom:164px;display:none;flex-direction:column;gap:12px;z-index:10}#vertical button{width:46px;height:46px;touch-action:none}.touch.exploring:not(.touring) #joystick{display:block}.touch.exploring.flying:not(.touring) #vertical{display:flex}
+@media(max-width:1000px){#dock{left:auto;right:24px;transform:none;max-width:76vw}.utility{left:22px}.brand small{font-size:7px}#hero{bottom:17%}#hint{bottom:126px}}
+@media(max-width:700px){header{inset:20px 22px auto}.brand{gap:9px}.brand b{font-size:13px}.brand small{font-size:6px;letter-spacing:.5px}.mark{width:30px;height:34px;font-size:24px}nav{gap:5px}nav button{padding:9px 8px;font-size:10px}#hero{left:26px;right:24px;bottom:65px;width:auto;max-width:none}h1{font-size:37px;margin:16px 0;letter-spacing:2px}#hero p{font-size:12px;max-width:280px;line-height:1.8}#hero small{font-size:9px;margin-top:13px}.eyebrow{font-size:9px}.actions{margin-top:18px}.actions button{padding:13px 17px;font-size:12px}.shade{background:linear-gradient(0deg,#192623ee,transparent 60%)}.exploring .shade{background:linear-gradient(0deg,#19262377,transparent 22%)}#location{top:89px;left:25px;max-width:240px}#locName{font-size:22px}#locDesc{font-size:10px}.utility{top:205px;right:22px;left:auto;bottom:auto;gap:4px}.utility button{font-size:9px;padding:8px}#dock{left:15px;right:15px;bottom:22px;max-width:none;padding:5px;gap:5px}#spots button{min-width:64px;font-size:9px;padding:7px 8px}#spots button small{font-size:14px}#tour{font-size:9px;padding:8px}#hint{bottom:108px;font-size:9px;width:max-content;max-width:94vw;white-space:normal;text-align:center;padding:6px 10px}#tourText{bottom:163px;width:88vw;max-width:88vw;font-size:18px}dialog{padding:24px}dialog h2{font-size:23px}#toast{bottom:251px;font-size:11px}.frame{inset:9px}html[lang=en] .brand b{font-size:11px;letter-spacing:.4px}html[lang=en] .brand small{font-size:5.5px}html[lang=en] h1{font-size:35px;letter-spacing:0;line-height:1.2}html[lang=en] #hero p{max-width:270px}html[lang=en] nav button{font-size:9px;padding:9px 7px}}
+@media(max-height:520px){header{top:15px}#hero{bottom:30px}#hero h1{font-size:32px;margin:10px 0}#hero p,#hero small{display:none}.actions{margin-top:10px}#location{top:72px}#locDesc{display:none}.utility{top:90px;bottom:auto}#hint{display:none}#tourText{bottom:119px}#joystick{bottom:119px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+/* Compact screens keep complete labels on a separate toolbar row. */
+@media(max-width:700px){header{flex-wrap:wrap;row-gap:10px}header nav{width:100%;justify-content:flex-end}header nav button{white-space:nowrap;min-height:36px;padding:9px 12px}html[lang=en] header nav button{padding:9px 12px;font-size:10px}.brand b,html[lang=en] .brand b{white-space:nowrap;letter-spacing:1px;font-size:13px}#location{top:139px}#locDesc{max-width:205px}}
+@media(max-width:700px) and (max-height:520px){header{flex-wrap:nowrap}header nav{width:auto}.brand span:last-child{display:none}#location{top:80px}}
+</style></head>
+<body>
+<canvas id="world" tabindex="0" aria-label="可探索的三维艺术世界"></canvas><div class="shade"></div><div class="frame"></div>
+<header><button id="home" class="brand" aria-label="返回首屏"><span class="mark">入</span><span><b data-i18n="brand">入画</b><small>PAINTING TO WORLD</small></span></button><nav><button id="language">EN</button><button id="sound" data-i18n="soundOff">配乐：关</button><button id="settings" data-i18n="settings">设置</button><button id="about" data-i18n="about">关于原画</button></nav></header>
+<main id="hero"><div class="eyebrow" data-i18n="eyebrow">爱德华·蒙克 / 呐喊 / 1893</div><h1 data-i18n="title">如果世界，<br>也会呐喊。</h1><p data-i18n="intro">红色的天空，弯曲的峡湾。走过那道栏杆，来到一声回响里。</p><div class="actions"><button id="enter" class="primary" data-i18n="enter">走进这幅画 ↗</button><button id="free" data-i18n="free">自己走走</button></div><small data-i18n="note">32 秒导览 · 随时接手 · 配乐默认关闭</small></main>
+<section id="explore" inert><aside id="location"><small id="locTag"></small><h2 id="locName"></h2><p id="locDesc"></p></aside><div id="tourText" aria-live="polite"></div><div class="utility"><button id="mode" data-i18n="walk">步行 · F</button><button id="capture" data-i18n="capture">留张明信片 · P</button><button id="hide" data-i18n="hide">只看画面 · H</button></div><div id="hint" data-i18n="hint">拖动环顾 · WASD 移动 · F 飞行 · Q/E 升降</div><div id="dock"><div id="spots"></div><button id="tour" data-i18n="replay">重播导览</button></div><div id="joystick" aria-label="移动摇杆"><i id="stick"></i></div><div id="vertical"><button id="up" aria-label="上升">↑</button><button id="down" aria-label="下降">↓</button></div><div id="progress"><i></i></div></section>
+<button id="restore" data-i18n="restore">恢复界面 · H</button><div id="toast" role="status"></div>
+<dialog id="aboutDialog"><button data-close class="close" aria-label="关闭">×</button><small>THE SCREAM · EDVARD MUNCH</small><h2 data-i18n="aboutTitle">画里的情绪，画外的空间。</h2><p data-i18n="aboutText"></p><h3 data-i18n="keptTitle"></h3><p data-i18n="kept"></p><h3 data-i18n="extraTitle"></h3><p data-i18n="extra"></p><p data-i18n="rebuild"></p><a href="https://www.nasjonalmuseet.no/en/collection/object/NG.M.00939" target="_blank" rel="noopener noreferrer" data-i18n="source">原作资料 ↗</a><p class="fine" data-i18n="network"></p></dialog>
+<dialog id="settingsDialog"><button data-close class="close" aria-label="关闭">×</button><h2 data-i18n="settingsTitle">以舒服的方式，看这幅画。</h2><label><span data-i18n="volume"></span><input id="volume" type="range" min="0" max="100" value="34"></label><label><span data-i18n="grain"></span><input id="grain" type="range" min="0" max="160" value="100"></label><div class="row"><span data-i18n="quality"></span><button id="qualityLow" data-i18n="light"></button><button id="qualityHigh" data-i18n="fine"></button></div><div class="row"><span data-i18n="motion"></span><button id="motionOn" data-i18n="on"></button><button id="motionOff" data-i18n="off"></button></div><p data-i18n="help"></p><p data-i18n="bounds"></p></dialog>
+<div id="loading"><span class="mark">入</span><p data-i18n="loading">铺开木板，让天空成为一声回响。</p></div><div id="error" hidden><h2 data-i18n="errorTitle">无法展开三维空间</h2><p data-i18n="errorHelp"></p><pre id="errorDetail"></pre></div>
+<script>
+/* Small, dependency-free WebGL2 renderer. All geometry is real 3D, batched by material. */
+'use strict';
+const V={
+ add:(a,b)=>a.map((x,i)=>x+b[i]),sub:(a,b)=>a.map((x,i)=>x-b[i]),mul:(a,s)=>a.map(x=>x*s),
+ dot:(a,b)=>a[0]*b[0]+a[1]*b[1]+a[2]*b[2],cross:(a,b)=>[a[1]*b[2]-a[2]*b[1],a[2]*b[0]-a[0]*b[2],a[0]*b[1]-a[1]*b[0]],
+ norm:a=>{let d=Math.hypot(...a)||1;return a.map(x=>x/d)},mix:(a,b,t)=>a.map((x,i)=>x+(b[i]-x)*t)
+};
+const M={
+ identity:()=>new Float32Array([1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]),
+ perspective:(f,a,n,z)=>{let s=1/Math.tan(f/2);return new Float32Array([s/a,0,0,0,0,s,0,0,0,0,(z+n)/(n-z),-1,0,0,2*z*n/(n-z),0])},
+ look:(e,t)=>{let z=V.norm(V.sub(e,t)),x=V.norm(V.cross([0,1,0],z)),y=V.cross(z,x);return new Float32Array([x[0],y[0],z[0],0,x[1],y[1],z[1],0,x[2],y[2],z[2],0,-V.dot(x,e),-V.dot(y,e),-V.dot(z,e),1])},
+ mul:(a,b)=>{let o=new Float32Array(16);for(let c=0;c<4;c++)for(let r=0;r<4;r++)for(let k=0;k<4;k++)o[c*4+r]+=a[k*4+r]*b[c*4+k];return o}
+};
+function RNG(seed=188809){return ()=>{seed|=0;seed=seed+0x6D2B79F5|0;let t=Math.imul(seed^seed>>>15,1|seed);t=t+Math.imul(t^t>>>7,61|t)^t;return ((t^t>>>14)>>>0)/4294967296}}
+const rand=RNG();const range=(a,b)=>a+(b-a)*rand(),pick=a=>a[Math.floor(rand()*a.length)];
+function rgb(hex){if(Array.isArray(hex))return hex;return [(parseInt(hex.slice(1,3),16))/255,(parseInt(hex.slice(3,5),16))/255,(parseInt(hex.slice(5,7),16))/255]}
+function tint(c,v){return rgb(c).map(x=>Math.min(1,Math.max(0,x*v)))}
+const clamp=(x,a,b)=>Math.max(a,Math.min(b,x));const ease=t=>t*t*(3-2*t);
+
+class Batch{
+ constructor(kind='paint'){this.kind=kind;this.data=[];this.count=0;}
+ vert(p,n,uv,c,em=0,anim=0,alpha=1){this.data.push(...p,...n,...uv,...rgb(c),em,anim,alpha);}
+ tri(a,b,c,color,uv=[[0,0],[1,0],[1,1]],em=0,anim=0,alpha=1,normals=null){let n=V.norm(V.cross(V.sub(b,a),V.sub(c,a)));[a,b,c].forEach((p,i)=>this.vert(p,normals?normals[i]:n,uv[i],color,em,anim,alpha));}
+ quad(a,b,c,d,color,em=0,anim=0,alpha=1,uv=[[0,0],[1,0],[1,1],[0,1]]){this.tri(a,b,c,color,[uv[0],uv[1],uv[2]],em,anim,alpha);this.tri(a,c,d,color,[uv[0],uv[2],uv[3]],em,anim,alpha)}
+ upload(gl){this.count=this.data.length/14;this.vao=gl.createVertexArray();gl.bindVertexArray(this.vao);this.vbo=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,this.vbo);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array(this.data),gl.STATIC_DRAW);let off=0;[3,3,2,3,3].forEach((s,i)=>{gl.enableVertexAttribArray(i);gl.vertexAttribPointer(i,s,gl.FLOAT,false,56,off*4);off+=s;});this.data=null;gl.bindVertexArray(null);}
+}
+class World{
+ constructor(){this.solid=new Batch();this.alpha=new Batch();this.sky=new Batch('sky');this.labels=new Batch('labels');this.colliders=[];this.stats={};this.active=this.solid;}
+ box(p,size,c,rot=0,em=0){let [x,y,z]=size.map(v=>v/2),vs=[[-x,-y,-z],[x,-y,-z],[x,y,-z],[-x,y,-z],[-x,-y,z],[x,-y,z],[x,y,z],[-x,y,z]];
+  vs=vs.map(q=>this.transform(q,p,rot));const fs=[[0,3,2,1],[4,5,6,7],[0,4,7,3],[1,2,6,5],[3,7,6,2],[0,1,5,4]];fs.forEach((f,i)=>this.active.quad(...f.map(v=>vs[v]),tint(c,[.87,1,.93,.96,1.07,.7][i]),em));}
+ transform(q,p,rot=0){let s=Math.sin(rot),c=Math.cos(rot);return [q[0]*c+q[2]*s+p[0],q[1]+p[1],q[2]*c-q[0]*s+p[2]];}
+ cylinder(a,b,r1,r2,c,sides=9,em=0){let axis=V.norm(V.sub(b,a)),u=V.norm(V.cross(axis,Math.abs(axis[1])>.9?[1,0,0]:[0,1,0])),v=V.cross(axis,u);let ring=(p,r,t)=>V.add(p,V.add(V.mul(u,Math.cos(t)*r),V.mul(v,Math.sin(t)*r)));
+  for(let i=0;i<sides;i++){let t=i/sides*Math.PI*2,nt=(i+1)/sides*Math.PI*2,aa=ring(a,r1,t),ab=ring(a,r1,nt),ba=ring(b,r2,t),bb=ring(b,r2,nt);this.active.quad(aa,ab,bb,ba,tint(c,.93+.09*Math.cos(t)),em);this.active.tri(a,ab,aa,c,undefined,em);this.active.tri(b,ba,bb,c,undefined,em);}}
+ sphere(p,s,c,seg=10,rings=6,em=0,anim=0){let pt=(a,b)=>[p[0]+s[0]*Math.sin(b)*Math.cos(a),p[1]+s[1]*Math.cos(b),p[2]+s[2]*Math.sin(b)*Math.sin(a)];
+  for(let j=0;j<rings;j++)for(let i=0;i<seg;i++){let a=i/seg*Math.PI*2,b=j/rings*Math.PI,aa=(i+1)/seg*Math.PI*2,bb=(j+1)/rings*Math.PI;let A=pt(a,b),B=pt(aa,b),D=pt(a,bb),C=pt(aa,bb),norm=q=>V.norm(q.map((v,k)=>(v-p[k])/(s[k]*s[k]))),col=tint(c,.97+.035*Math.sin(i*9+j*5));this.active.tri(A,B,C,col,[[0,0],[1,0],[1,1]],em,anim,1,[norm(A),norm(B),norm(C)]);this.active.tri(A,C,D,col,[[0,0],[1,1],[0,1]],em,anim,1,[norm(A),norm(C),norm(D)]);}}
+ tube(points,r,c,sides=6,em=0){for(let i=0;i<points.length-1;i++)this.cylinder(points[i],points[i+1],r,r,c,sides,em)}
+ ellipse(p,rx,rz,c,alpha=1,em=0){let batch=alpha<1?this.alpha:this.active;for(let i=0;i<20;i++){let a=i/20*6.283,b=(i+1)/20*6.283;batch.tri(p,[p[0]+Math.cos(a)*rx,p[1],p[2]+Math.sin(a)*rz],[p[0]+Math.cos(b)*rx,p[1],p[2]+Math.sin(b)*rz],c,undefined,em,0,alpha)}}
+ collider(x0,x1,z0,z1){this.colliders.push({x0,x1,z0,z1});}
+}
+
+const sceneVS=`#version 300 es
+precision highp float;
+layout(location=0) in vec3 aPosition;layout(location=1) in vec3 aNormal;layout(location=2) in vec2 aUV;layout(location=3) in vec3 aColor;layout(location=4) in vec3 aExtra;
+uniform mat4 uVP;uniform float uTime;out vec3 vPos;out vec3 vNormal;out vec2 vUV;out vec3 vColor;out vec3 vExtra;
+void main(){vec3 p=aPosition;if(aExtra.y>1.5&&aExtra.y<2.5){p.x+=sin(uTime*.75+p.z*.4)*.055;p.y+=sin(uTime*.9+p.x)*.035;}if(aExtra.y>2.5&&aExtra.y<3.5){p.y+=sin(uTime*.6+p.x*8.)*.22;p.x+=sin(uTime*.3+p.z)*.1;}if(aExtra.y>3.5){p.x+=sin(uTime*1.2+p.y*7.)*.05;p.y+=sin(uTime*.7+p.x)*.045;}vPos=p;vNormal=aNormal;vUV=aUV;vColor=aColor;vExtra=aExtra;gl_Position=uVP*vec4(p,1.);}`;
+const sceneFS=`#version 300 es
+precision highp float;in vec3 vPos;in vec3 vNormal;in vec2 vUV;in vec3 vColor;in vec3 vExtra;
+uniform sampler2D uTexture;uniform vec3 uEye;uniform float uTime;uniform int uKind;out vec4 outColor;
+void main(){vec4 tex=texture(uTexture,vUV);if(uKind==1){vec3 s=tex.rgb;float star=smoothstep(.67,.93,max(s.r,s.g));s+=star*.025*sin(uTime*.8+vUV.x*128.+vUV.y*99.);outColor=vec4(s,1.);return;}
+vec3 col=vColor;if(uKind==2){col*=tex.rgb;}else{col*=.37+tex.rgb*.87;}
+vec3 N=normalize(vNormal);float diffuse=max(dot(N,normalize(vec3(-.4,1.,.5))),0.);float fill=.75+.25*diffuse;col*=fill;
+float warm=clamp(N.y*.30+.16,0.,.45);col=mix(col,col*vec3(1.08,1.01,.83),warm);
+col=mix(col,vColor*(uKind==2?tex.rgb:(.53+tex.rgb*.67)),vExtra.x);
+float fog=1.-exp(-pow(length(vPos-uEye)*.0043,1.6));fog*=1.-vExtra.x*.6;col=mix(col,vec3(.25,.29,.265),fog);
+outColor=vec4(clamp(col,0.,1.),vExtra.z*(uKind==2?tex.a:1.));}`;
+const postVS=`#version 300 es
+precision highp float;out vec2 vUV;void main(){vec2 p=vec2((gl_VertexID<<1)&2,gl_VertexID&2);vUV=p;gl_Position=vec4(p*2.-1.,0.,1.);}`;
+const postFS=`#version 300 es
+precision highp float;in vec2 vUV;uniform sampler2D uScene;uniform vec2 uSize;uniform float uPaint;uniform float uFade;out vec4 outColor;
+float hash(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}
+void main(){vec2 px=1./uSize;vec3 c=texture(uScene,vUV).rgb;vec3 sum=c;float w=1.;vec3 halo=vec3(0.);
+for(int i=0;i<4;i++){float a=float(i)*1.570796;vec2 d=vec2(cos(a),sin(a));vec3 n=texture(uScene,vUV+d*px*1.1).rgb;float k=.12*exp(-length(n-c)*11.);sum+=n*k;w+=k;vec3 b=texture(uScene,vUV+d*px*6.).rgb;halo+=max(b-vec3(.77,.71,.56),vec3(0.))*.026;}
+c=mix(c,sum/w,.75)+halo;vec2 q=vUV*uSize;float grain=hash(floor(q))-.5;float weave=sin(q.x*2.8)*sin(q.y*2.6);c*=1.+grain*.055*uPaint+weave*.014*uPaint;
+float edge=smoothstep(.23,.85,length((vUV-.5)*vec2(1.,.85)));c*=1.-edge*.18;c=mix(c,c*vec3(1.026,1.0,.975),.45);outColor=vec4(c*(1.-uFade),1.);}`;
+class Renderer{
+ constructor(canvas){this.canvas=canvas;const gl=canvas.getContext('webgl2',{alpha:false,antialias:false,preserveDrawingBuffer:true,powerPreference:'high-performance'});if(!gl)throw new Error('WEBGL2_UNAVAILABLE');this.gl=gl;this.sceneProgram=this.program(sceneVS,sceneFS);this.postProgram=this.program(postVS,postFS);this.paint=1;this.scale=1;this.fbo=gl.createFramebuffer();this.color=gl.createTexture();this.depth=gl.createRenderbuffer();this.textureCache=[];this.draws=0;this.errors=[];this.resize();}
+ program(v,f){const g=this.gl;function compile(type,s){let x=g.createShader(type);g.shaderSource(x,s);g.compileShader(x);if(!g.getShaderParameter(x,g.COMPILE_STATUS))throw new Error(g.getShaderInfoLog(x));return x;}let p=g.createProgram();g.attachShader(p,compile(g.VERTEX_SHADER,v));g.attachShader(p,compile(g.FRAGMENT_SHADER,f));g.linkProgram(p);if(!g.getProgramParameter(p,g.LINK_STATUS))throw new Error(g.getProgramInfoLog(p));return p;}
+ texture(canvas,repeat=true){const g=this.gl,t=g.createTexture();g.bindTexture(g.TEXTURE_2D,t);g.pixelStorei(g.UNPACK_FLIP_Y_WEBGL,true);g.texImage2D(g.TEXTURE_2D,0,g.RGBA,g.RGBA,g.UNSIGNED_BYTE,canvas);g.texParameteri(g.TEXTURE_2D,g.TEXTURE_MIN_FILTER,g.LINEAR_MIPMAP_LINEAR);g.texParameteri(g.TEXTURE_2D,g.TEXTURE_MAG_FILTER,g.LINEAR);g.texParameteri(g.TEXTURE_2D,g.TEXTURE_WRAP_S,repeat?g.REPEAT:g.CLAMP_TO_EDGE);g.texParameteri(g.TEXTURE_2D,g.TEXTURE_WRAP_T,repeat?g.REPEAT:g.CLAMP_TO_EDGE);g.generateMipmap(g.TEXTURE_2D);return t;}
+ resize(){const g=this.gl;let ratio=Math.min(window.devicePixelRatio||1,1.45)*this.scale,w=Math.max(1,Math.floor(innerWidth*ratio)),h=Math.max(1,Math.floor(innerHeight*ratio));this.canvas.width=w;this.canvas.height=h;g.bindTexture(g.TEXTURE_2D,this.color);g.texImage2D(g.TEXTURE_2D,0,g.RGBA8,w,h,0,g.RGBA,g.UNSIGNED_BYTE,null);g.texParameteri(g.TEXTURE_2D,g.TEXTURE_MIN_FILTER,g.LINEAR);g.texParameteri(g.TEXTURE_2D,g.TEXTURE_MAG_FILTER,g.LINEAR);g.texParameteri(g.TEXTURE_2D,g.TEXTURE_WRAP_S,g.CLAMP_TO_EDGE);g.texParameteri(g.TEXTURE_2D,g.TEXTURE_WRAP_T,g.CLAMP_TO_EDGE);g.bindRenderbuffer(g.RENDERBUFFER,this.depth);g.renderbufferStorage(g.RENDERBUFFER,g.DEPTH_COMPONENT24,w,h);g.bindFramebuffer(g.FRAMEBUFFER,this.fbo);g.framebufferTexture2D(g.FRAMEBUFFER,g.COLOR_ATTACHMENT0,g.TEXTURE_2D,this.color,0);g.framebufferRenderbuffer(g.FRAMEBUFFER,g.DEPTH_ATTACHMENT,g.RENDERBUFFER,this.depth);if(g.checkFramebufferStatus(g.FRAMEBUFFER)!==g.FRAMEBUFFER_COMPLETE)throw new Error('Framebuffer is incomplete');g.bindFramebuffer(g.FRAMEBUFFER,null);}
+ init(world,paint,sky,labels){this.world=world;for(let b of [world.solid,world.alpha,world.sky,world.labels])b.upload(this.gl);this.paintTex=this.texture(paint);this.skyTex=this.texture(sky);this.labelTex=this.texture(labels,false);this.uniforms={};for(const n of ['uVP','uTime','uTexture','uEye','uKind'])this.uniforms[n]=this.gl.getUniformLocation(this.sceneProgram,n);this.postUniforms={};for(const n of ['uScene','uSize','uPaint','uFade'])this.postUniforms[n]=this.gl.getUniformLocation(this.postProgram,n);}
+ render(eye,target,time,fade=0){const g=this.gl,w=this.canvas.width,h=this.canvas.height;let vp=M.mul(M.perspective((innerWidth<600?66:56)*Math.PI/180,w/h,.08,260),M.look(eye,target));g.bindFramebuffer(g.FRAMEBUFFER,this.fbo);g.viewport(0,0,w,h);g.enable(g.DEPTH_TEST);g.depthMask(true);g.disable(g.CULL_FACE);g.disable(g.BLEND);g.clearColor(.07,.13,.22,1);g.clear(g.COLOR_BUFFER_BIT|g.DEPTH_BUFFER_BIT);g.useProgram(this.sceneProgram);g.uniformMatrix4fv(this.uniforms.uVP,false,vp);g.uniform1f(this.uniforms.uTime,time);g.uniform3fv(this.uniforms.uEye,eye);g.uniform1i(this.uniforms.uTexture,0);g.activeTexture(g.TEXTURE0);
+ const draw=(b,t,k)=>{g.bindTexture(g.TEXTURE_2D,t);g.uniform1i(this.uniforms.uKind,k);g.bindVertexArray(b.vao);g.drawArrays(g.TRIANGLES,0,b.count);};g.depthMask(false);draw(this.world.sky,this.skyTex,1);g.depthMask(true);draw(this.world.solid,this.paintTex,0);g.enable(g.BLEND);g.blendFunc(g.SRC_ALPHA,g.ONE_MINUS_SRC_ALPHA);draw(this.world.labels,this.labelTex,2);g.depthMask(false);draw(this.world.alpha,this.paintTex,0);g.depthMask(true);g.disable(g.BLEND);
+ g.bindFramebuffer(g.FRAMEBUFFER,null);g.disable(g.DEPTH_TEST);g.bindVertexArray(null);g.useProgram(this.postProgram);g.bindTexture(g.TEXTURE_2D,this.color);g.uniform1i(this.postUniforms.uScene,0);g.uniform2f(this.postUniforms.uSize,w,h);g.uniform1f(this.postUniforms.uPaint,this.paint);g.uniform1f(this.postUniforms.uFade,fade);g.drawArrays(g.TRIANGLES,0,3);this.draws=5;this.vp=vp;}
+}
+
+/* Original seeded brushwork; no downloaded textures, photographs, fonts or models. */
+function surface(w,h){const c=document.createElement('canvas');c.width=w;c.height=h;return [c,c.getContext('2d')];}
+function makePaint(){const [c,x]=surface(512,512),r=RNG(9145);x.fillStyle='#c1c3b2';x.fillRect(0,0,512,512);
+ // Broad, rounded deposits and parallel bristle ridges make pigment legible up close.
+ const pigment=['#eeead1','#cbd2c1','#9eaeb0','#b3bba8','#dcd8b8','#8e9b9d','#d6d5c3'];
+ for(let i=0;i<580;i++){let px=r()*512,py=r()*512,len=20+r()*95,ww=3+r()*13;
+  x.save();x.translate(px,py);x.rotate(-.19+r()*.36);x.lineCap='round';x.strokeStyle=pigment[Math.floor(r()*pigment.length)];x.globalAlpha=.20+r()*.32;x.lineWidth=ww;x.beginPath();x.moveTo(0,0);x.quadraticCurveTo(-ww*.10,len*.45,ww*.28,len);x.stroke();
+  for(let j=0;j<3;j++){x.lineWidth=.6+r()*.85;x.strokeStyle=j%2?'#758989':'#f6edc7';x.globalAlpha=.10+r()*.15;let a=(r()-.5)*ww;x.beginPath();x.moveTo(a,3);x.quadraticCurveTo(a+1,len*.45,a+ww*.28,len-4);x.stroke();}x.restore();}
+ for(let i=0;i<2900;i++){const px=r()*512,py=r()*512,len=3+r()*24,v=Math.floor(110+r()*135);x.strokeStyle=`rgba(${v},${v-2},${v-7},${.07+r()*.20})`;x.lineWidth=.4+r()*1.2;x.beginPath();x.moveTo(px,py);x.lineTo(px+2,py+len);x.stroke();}
+ let d=x.getImageData(0,0,512,512);for(let i=0;i<d.data.length;i+=4){let n=(r()-.5)*11;d.data[i]+=n;d.data[i+1]+=n;d.data[i+2]+=n;}x.putImageData(d,0,0);return c;}
+function makeSky(){
+ const [c,x]=surface(2048,1024),r=RNG(1893),g=x.createLinearGradient(0,0,0,1024);
+ g.addColorStop(0,'#462f32');g.addColorStop(.14,'#96513c');g.addColorStop(.30,'#d27040');g.addColorStop(.44,'#f1ac63');g.addColorStop(.53,'#a88459');g.addColorStop(1,'#394d51');
+ x.fillStyle=g;x.fillRect(0,0,2048,1024);
+ const colors=['#bd502f','#e47a43','#df673b','#e39b55','#dcbc79','#904736','#eeac66','#d79650','#b4683c'];
+ // Long, continuous wave bands; the horizontal period matches the sky seam.
+ for(let j=0;j<62;j++){
+  let base=55+j*7.2,amp=12+18*Math.sin(j*.19),phase=j*.08;x.beginPath();
+  for(let k=0;k<=256;k++){let xx=k*8,y=base+Math.sin(xx/2048*Math.PI*4+phase)*amp+Math.sin(xx/2048*Math.PI*6-phase)*9;
+   if(k===0)x.moveTo(xx,y);else x.lineTo(xx,y);}
+  x.strokeStyle=colors[j%colors.length];x.globalAlpha=.33+r()*.24;x.lineWidth=4+r()*8;x.lineCap='round';x.stroke();
+ }
+ for(let i=0;i<19000;i++){
+  let xx=r()*2048,y=r()*550,len=3+r()*24,phase=y*.011,slope=Math.cos(xx/2048*Math.PI*4+phase)*.15;
+  x.strokeStyle=colors[Math.floor(r()*colors.length)];x.globalAlpha=.025+r()*.11;x.lineWidth=.5+r()*1.5;x.beginPath();x.moveTo(xx,y);x.lineTo(xx+len,y+len*slope);x.stroke();
+ }
+ x.globalAlpha=1;return c;
+}
+function makeLabels(){const [c,x]=surface(16,16);x.fillStyle='#d3c59e';x.fillRect(0,0,16,16);return c;}
+
+/* The Scream: an authored, bounded interpretation, rebuilt for this bilingual kit.
+   All landmarks are actual WebGL meshes. The original artwork is not embedded. */
+function makeWorld(){
+ const w=new World(), r=RNG(189309), rr=(a,b)=>a+(b-a)*r(), choose=a=>a[Math.floor(r()*a.length)];
+ const tau=Math.PI*2;
+ // An enclosing sky only. The landscape, figure and walkway are separate geometry.
+ for(let j=0;j<32;j++)for(let i=0;i<96;i++){
+  const a=i/96*tau,b=j/32*Math.PI,aa=(i+1)/96*tau,bb=(j+1)/32*Math.PI;
+  const pt=(t,h)=>[Math.cos(t)*Math.sin(h)*205,Math.cos(h)*205,Math.sin(t)*Math.sin(h)*205];
+  w.sky.quad(pt(a,b),pt(aa,b),pt(aa,bb),pt(a,bb),'#ffffff',1,0,1,[[i/96,1-j/32],[(i+1)/96,1-j/32],[(i+1)/96,1-(j+1)/32],[i/96,1-(j+1)/32]]);
+ }
+ // Wood on a real raised walkway. The deck has depth and a visible underside.
+ w.box([0,-.27,-25],[7.7,.44,102],'#765333');
+ let planks=0;
+ const timber=['#b78249','#c29861','#ceaa75','#aa6d3f','#8e6341','#d3ab74','#a88559','#a57645'];
+ for(let z=-75;z<26;z+=.43){
+  const col=choose(timber), y=rr(-.025,.005);
+  w.box([0,y-.035,z],[7.56,.10,.405],col,rr(-.002,.002));planks++;
+  for(let k=0;k<18;k++){
+   let x=rr(-3.74,3.7),length=rr(.14,1.32),zz=z+rr(-.17,.17);
+   w.solid.quad([x,y+.020,zz],[Math.min(3.76,x+length),y+.020,zz+.004],[Math.min(3.76,x+length),y+.020,zz+.015],[x,y+.020,zz+.012],tint(col,rr(.62,1.23)),.06);
+  }
+  for(let x of [-3.24,3.24])w.cylinder([x,y+.024,z],[x,y+.029,z],.024,.024,'#4a463b',6);
+ }
+ // Railing: posts, three continuous beams, end grain and fastenings.
+ for(let z=-76;z<27;z+=2.6){
+  w.box([3.72,.65,z],[.20,1.45,.21],'#795035');
+  w.box([3.72,1.39,z],[.30,.09,.30],'#cda166');
+  for(let yy of [.43,.88]){w.sphere([3.58,yy,z],[.015,.029,.031],'#44423a',6,4);}
+  w.box([3.66,.68,z+.066],[.015,1.20,.075],'#bc8950');
+ }
+ for(let yy of [.37,.82,1.26]){
+  w.box([3.72,yy,-25],[.20,.14,103],'#bd8b50');
+  w.box([3.63,yy+.052,-25],[.035,.02,103],'#dfb370');
+  w.box([3.61,yy-.026,-25],[.016,.026,103],'#775035');
+ }
+ // Supporting braces are visible from outside the deck.
+ for(let z=-72;z<25;z+=7){w.box([3.36,-2.3,z],[.26,4.4,.26],'#564b3c');w.cylinder([3.35,-2.4,z],[2.0,-.36,z+1.1],.11,.11,'#64513b',6);}
+ // A rolling landmass left of the walkway, with contours following the surface.
+ function land(x,z){let u=Math.max(0,(-x-3.8)/65);return -.18+u*(1.7+4.2*Math.sin(z*.018+.8))+Math.sin(z*.065+x*.026)*u*1.0;}
+ const landCols=['#343c37','#3d443a','#465044','#4e5240','#5b5943'];
+ for(let j=0;j<34;j++)for(let i=0;i<32;i++){
+  let x=-4-i*2.8,z=28-j*4.8,x2=x-2.8,z2=z-4.8;
+  w.solid.quad([x,land(x,z),z],[x2,land(x2,z),z],[x2,land(x2,z2),z2],[x,land(x,z2),z2],landCols[(i+Math.floor(j/5))%landCols.length]);
+ }
+ // Pigment ribbons are anchored to the hillside, not painted over the screen.
+ for(let k=0;k<140;k++){
+  let xx=-4.05-k*.50,width=rr(.025,.13),col=choose(['#8a7850','#a28c54','#627064','#263e3d','#9c874f']);
+  for(let j=0;j<76;j++){
+   let z=27-j*1.9,z2=z-1.9;
+   const tx=t=>xx+Math.sin(t*.038+k*.024)*Math.min(7,k*.075)+Math.sin(t*.11)*.19;
+   let x=tx(z),x2=tx(z2);
+   w.solid.quad([x,land(x,z)+.025,z],[x+width,land(x+width,z)+.028,z],[x2+width,land(x2+width,z2)+.028,z2],[x2,land(x2,z2)+.025,z2],col,.13);
+  }
+ }
+ // Right-hand bluff falls away into the fjord.
+ for(let j=0;j<46;j++){
+  let z=28-j*3.7,z2=z-3.7;
+  w.solid.quad([3.9,-.5,z],[8+Math.sin(z*.037)*1.6,-7.2,z],[8+Math.sin(z2*.037)*1.6,-7.2,z2],[3.9,-.5,z2],'#485141');
+ }
+ // Broad water surface, painted reflection marks and distant vessels.
+ w.solid.quad([6,-7.25,82],[161,-7.25,82],[161,-7.25,-162],[6,-7.25,-162],'#376477',.23);
+ for(let i=0;i<3600;i++){
+  let x=rr(8,150),z=rr(-156,72),len=rr(.13,.77),wid=rr(.018,.055),y=-7.22;
+  let col=choose(['#698a82','#83a29b','#9d965f','#beaa74','#496f78','#3e596b']);
+  w.solid.quad([x,y,z],[x+len,y,z],[x+len,y,z+wid],[x,y,z+wid],col,.3);
+ }
+ function boat(x,z,size=1){
+  w.cylinder([x-size*.58,-7.01,z],[x+size*.60,-7.01,z],.13*size,.045*size,'#1f424e',8);
+  w.cylinder([x,-6.94,z],[x,-6.94+size*1.45,z],.020*size,.012*size,'#97865e',5);
+  w.solid.tri([x+.034,-6.9,z],[x+.034,-6.94+size*1.38,z],[x+size*.64,-6.9,z],'#c2bd93',undefined,.18);
+ }
+ boat(34,-34,1.5);boat(66,-81,2.1);boat(105,-104,1.3);
+ // Distant ridges are volumetric ribbons, allowing an elevated/reverse viewpoint.
+ const ridges=[{z:-103,amp:15,c:'#495647'},{z:-138,amp:19,c:'#666b50'},{z:-170,amp:22,c:'#73755a'}];
+ for(let l=ridges.length-1;l>=0;l--){let h=ridges[l];
+  for(let i=0;i<100;i++){
+   let x=-145+i*3.2,x2=x+3.2;
+   const crest=a=>h.amp*(.66+.30*Math.sin(a*.051+l*2)+.20*Math.sin(a*.10+1.2))-.5;
+   let y=crest(x),y2=crest(x2),depth=11+l*4;
+   w.solid.quad([x,-8,h.z+9],[x,y,h.z],[x2,y2,h.z],[x2,-8,h.z+9],h.c,.18);
+   w.solid.quad([x,y,h.z],[x,-7,h.z-depth],[x2,-7,h.z-depth],[x2,y2,h.z],tint(h.c,.83),.10);
+  }
+ }
+ // A few imagined shoreline lights, not a reconstructed historical city.
+ for(let i=0;i<46;i++){
+  let x=10+i*2.08,z=-97+Math.sin(i*.20)*3.1,h=rr(.32,1.05);
+  w.box([x,-6.0+h/2,z],[rr(.45,.90),h,.50],choose(['#9c9369','#ac9a62','#8c9273']));
+  w.box([x,-5.94+h*.57,z+.263],[.15,.19,.01],'#d0b77d',0,.6);
+ }
+ // Sculptural central figure: sinuous dark body, actual oval head and hands.
+ const fx=1.13,fz=1.1;
+ function bp(y){return [fx+Math.sin(y*2.1)*.095,y,fz+Math.sin(y*1.4)*.052];}
+ function radius(y){return .24+.17*Math.sin(Math.min(1,y/1.9)*Math.PI)+.02*Math.sin(y*6);}
+ for(let j=0;j<28;j++)for(let i=0;i<44;i++){
+  let y=.06+j*1.95/28,y2=.06+(j+1)*1.95/28,a=i/44*tau,a2=(i+1)/44*tau;
+  const pt=(yy,aa)=>{let p=bp(yy),rad=radius(yy);return [p[0]+Math.cos(aa)*rad,p[1],p[2]+Math.sin(aa)*rad*.61];};
+  w.solid.quad(pt(y,a),pt(y,a2),pt(y2,a2),pt(y2,a),i%7===0?'#555044':'#343a36');
+ }
+ for(let k=0;k<28;k++){
+  let a=k/28*tau;
+  for(let j=0;j<31;j++){
+   let y=.08+j*1.83/31,y2=y+1.83/31;
+   const pt=(yy,aa)=>{let p=bp(yy),rad=radius(yy)+.006;return [p[0]+Math.cos(aa+Math.sin(yy*3.4)*.042)*rad,p[1],p[2]+Math.sin(aa+Math.sin(yy*3.4)*.042)*rad*.615];};
+   w.solid.quad(pt(y,a),pt(y,a+.014),pt(y2,a+.014),pt(y2,a),k%3?'#9f9366':'#737960',.12);
+  }
+ }
+ w.sphere([fx,1.94,fz],[.38,.26,.23],'#47473c',22,12);
+ w.cylinder([fx,1.95,fz],[fx,2.21,fz],.13,.12,'#a9a57a',14);
+ w.sphere([fx,2.56,fz],[.365,.53,.285],'#c3bc89',40,30,.09);
+ // Small eyes, asymmetry and an open vertical mouth preserve the painted gesture.
+ w.sphere([fx-.126,2.65,fz+.245],[.045,.079,.034],'#4e6557',16,12,.1);
+ w.sphere([fx+.116,2.66,fz+.247],[.041,.080,.034],'#536857',16,12,.1);
+ w.sphere([fx-.123,2.655,fz+.270],[.017,.042,.010],'#273f37',10,7);
+ w.sphere([fx+.12,2.665,fz+.272],[.018,.043,.010],'#2b4138',10,7);
+ w.sphere([fx+.006,2.47,fz+.277],[.028,.093,.036],'#b7b286',14,10,.08);
+ w.sphere([fx+.022,2.243,fz+.244],[.097,.169,.021],'#787d5e',22,15,.14);
+ w.sphere([fx+.022,2.247,fz+.261],[.077,.148,.016],'#203c37',24,18,.15);
+ for(let s of [-1,1]){
+  const sh=[fx+s*.32,1.96,fz],el=[fx+s*.54,1.59,fz+.12],wr=[fx+s*.40,2.34,fz+.15];
+  w.cylinder(sh,el,.13,.11,'#44463b',12);w.cylinder(el,wr,.11,.068,'#48483d',12);
+  w.sphere([fx+s*.33,2.43,fz+.12],[.085,.255,.090],'#c4b98b',18,12,.06);
+  for(let k=0;k<4;k++){
+   w.cylinder([fx+s*(.33+.025*k),2.48,fz+.13],[fx+s*(.25+.024*k),2.73-k*.018,fz+.135],.018,.013,'#d0c390',8,.08);
+  }
+ }
+ // Two remote companions with heads, hats, coats and legs—not billboard silhouettes.
+ function companion(x,z,s){
+  w.cylinder([x,.39,z],[x,1.38,z],.14,.21,'#2c4140',12);
+  for(let k of [-1,1]){w.cylinder([x+k*.085,.73,z],[x+k*.08,.09,z+.025*k],.061,.040,'#24383a',7);w.sphere([x+k*.09,.064,z+.063],[.065,.046,.122],'#253636',8,5);}
+  for(let k of [-1,1])w.cylinder([x+k*.18,1.30,z],[x+k*.22,.70,z],.060,.035,'#33433e',8);
+  w.sphere([x,1.60,z],[.11,.14,.10],'#a29a72',14,8);
+  w.cylinder([x,1.68,z],[x,1.76,z],.15,.105,'#273b39',10);
+ }
+ companion(-.75,-38,1);companion(.15,-40,1);
+ w.figure={x:fx,z:fz,r:.67};
+ w.stats={planks,triangles:(w.solid.data.length+w.alpha.data.length+w.sky.data.length+w.labels.data.length)/42,opaqueVertices:w.solid.data.length/14,interpretation:'Authored 3D reconstruction; no original painting bitmap'};
+ return w;
+}
+
+/* Original procedural score “An echo at the fjord”. Web Audio only, no samples. */
+class NightMusic{
+ constructor(){this.context=null;this.on=false;this.volume=.43;this.timer=null;this.step=0;this.next=0;this.scheduled=0;}
+ init(){if(this.context)return;const AC=window.AudioContext||window.webkitAudioContext;if(!AC)throw new Error('AUDIO_UNAVAILABLE');const c=this.context=new AC();this.master=c.createGain();this.master.gain.value=0;const compressor=c.createDynamicsCompressor();compressor.threshold.value=-18;compressor.knee.value=14;compressor.ratio.value=3;this.master.connect(compressor);compressor.connect(c.destination);
+  const rev=c.createConvolver(),buf=c.createBuffer(2,Math.floor(c.sampleRate*2.8),c.sampleRate),r=RNG(1927);for(let ch=0;ch<2;ch++){let d=buf.getChannelData(ch);for(let i=0;i<d.length;i++)d[i]=(r()*2-1)*Math.pow(1-i/d.length,3.4)*.4;}rev.buffer=buf;const wet=c.createGain();wet.gain.value=.27;rev.connect(wet);wet.connect(this.master);this.reverb=rev;
+  this.chords=[[38,45,50,53,57,62],[34,41,46,50,53,58],[41,48,53,57,60,65],[36,43,48,52,55,60],[38,45,50,53,57,62],[34,41,46,50,53,58],[36,43,48,52,55,60],[38,45,50,53,57,62]];
+  this.melody=[69,0,65,0,62,0, 65,0,69,70,0,0, 67,0,64,0,60,0, 62,0,65,69,0,0, 70,0,69,0,65,0, 67,0,64,62,0,0, 65,0,62,0,57,0, 62,0,0,0,0,0];}
+ note(midi,time,duration=.9,gain=.13,pan=0){const c=this.context;let hz=440*Math.pow(2,(midi-69)/12),env=c.createGain(),filter=c.createBiquadFilter(),stereo=c.createStereoPanner();stereo.pan.value=pan;filter.type='lowpass';filter.frequency.setValueAtTime(3800,time);filter.frequency.exponentialRampToValueAtTime(1000,time+duration);env.gain.setValueAtTime(0,time);env.gain.linearRampToValueAtTime(gain,time+.009);env.gain.exponentialRampToValueAtTime(.001,time+duration+1.6);env.connect(filter);filter.connect(stereo);stereo.connect(this.master);stereo.connect(this.reverb);
+  [1,2,3.001,4.01].forEach((f,i)=>{let o=c.createOscillator(),g=c.createGain();o.type='sine';o.frequency.value=hz*f;g.gain.value=[.77,.14,.047,.023][i];o.connect(g);g.connect(env);o.start(time);o.stop(time+duration+1.65);});this.scheduled++;setTimeout(()=>{env.disconnect();filter.disconnect();stereo.disconnect()},(time-c.currentTime+duration+1.8)*1000);}
+ schedule(){if(!this.on)return;const beat=60/70,half=beat/2,c=this.context;while(this.next<c.currentTime+.22){let s=this.step,bar=Math.floor(s/6),part=s%6,chord=this.chords[Math.floor(bar/2)%8];if(part===0)this.note(chord[0],this.next,1.1,.15,-.22);if(part===2||part===4){this.note(chord[2],this.next,.55,.061,-.12);this.note(chord[3],this.next+.021,.60,.048,.07);this.note(chord[4],this.next+.039,.70,.043,.16);}let mel=this.melody[s%this.melody.length];if(mel)this.note(mel,this.next+.016,part===0?1.1:.72,.09,.23);this.step++;this.next+=half;}}
+ async set(on){this.init();clearInterval(this.timer);this.timer=null;this.on=on;const c=this.context;if(on){await c.resume();this.next=c.currentTime+.08;this.master.gain.cancelScheduledValues(c.currentTime);this.master.gain.setTargetAtTime(this.volume,c.currentTime,.3);this.schedule();this.timer=setInterval(()=>this.schedule(),90);}else{this.master.gain.cancelScheduledValues(c.currentTime);this.master.gain.setTargetAtTime(0,c.currentTime,.15);}}
+ setVolume(value){this.volume=clamp(value,0,1)*.65;if(this.context&&this.on)this.master.gain.setTargetAtTime(this.volume,this.context.currentTime,.1);}
+}
+
+/* Bilingual UI and camera controller. No online model calls or runtime assets. */
+const COPY={
+ zh:{brand:'入画',eyebrow:'爱德华·蒙克 / 呐喊 / 1893',title:'如果世界，<br>也会呐喊。',intro:'红色的天空，弯曲的峡湾。走过那道栏杆，来到一声回响里。',enter:'走进这幅画 ↗',free:'自己走走',note:'32 秒导览 · 随时接手 · 配乐默认关闭',settings:'设置',about:'关于原画',soundOn:'配乐：开',soundOff:'配乐：关',walk:'步行 · F',fly:'飞行 · F',capture:'留张明信片 · P',hide:'只看画面 · H',restore:'恢复界面 · H',replay:'重播导览',stop:'停止导览',hint:'拖动环顾 · WASD 移动 · F 飞行 · Q/E 升降',touchHint:'左摇杆移动 · 拖动画面环顾 · 点击地点抵达',aboutTitle:'画里的情绪，画外的空间。',aboutText:'本场景以爱德华·蒙克的《呐喊》为灵感，参考挪威国家博物馆的 1893 年版本。它不是毕加索的作品。',keptTitle:'保留的识别点',kept:'橙红的波状天空、斜向延伸的栏杆、双手贴耳的人物、远处行人与冷色峡湾。人物是可绕行的风格化雕塑。',extraTitle:'画框之外，由想象继续',extra:'步道背面、远山体积、海面、船只、木板细节和音乐是本项目的艺术化扩展，不是历史测绘或原作扫描。飞行可绕过碰撞，空间有明确边界。',rebuild:'版本说明：此前案例只留下截图，本版基于成功咖啡座引擎重新实现；并非找回旧版源码。',source:'原作馆藏资料 ↗',network:'漫游、纹理、配乐与截图均在本地运行；只有主动打开馆藏资料链接才联网。',settingsTitle:'以舒服的方式，看这幅画。',volume:'配乐音量',grain:'画布颗粒',quality:'画面精度',light:'轻量',fine:'精细',motion:'自动运镜',on:'开启',off:'关闭',help:'拖动画面环顾，WASD/方向键前后左右，滚轮前后移动。F 切换步行/飞行，Q/E 升降。P 保存 PNG，H 隐藏/恢复界面，Esc 停止导览。手机提供摇杆和飞行升降按钮。',bounds:'步行限制在有界步道内，并避让主体人物；飞行允许离开步道观察地形，不模拟真实身体碰撞。关闭自动运镜不会禁用手动探索。',loading:'铺开木板，让天空成为一声回响。',errorTitle:'无法展开三维空间',errorHelp:'需要支持 WebGL2 的浏览器与可用的图形加速。请尝试重新打开页面；这不是只靠图片展示的替代模式。',freeToast:'现在，方向交给你。',tourEnd:'导览结束。留在喜欢的地方，再看一会儿。',bound:'这边是栏杆、人物或步道边缘。可以绕行或切换飞行。',reduced:'自动运镜已关闭，已进入自由探索。',shotOK:'明信片已生成。',shotError:'无法保存图片，请使用系统截图。',audioError:'音频未能启动；仍可继续漫游。',close:'关闭',home:'返回首屏',up:'上升',down:'下降',joystick:'移动摇杆',canvas:'可以步行和飞行的呐喊主题三维艺术世界',postcard:'来到一声回响里。',credit:'呐喊 · 艺术化空间演绎',tourLines:['走进画里，不必成为画中的人。','一道栏杆，分开两种节奏。','近处的波动，远处的沉默。','把视线交给峡湾。','有些情绪，没有画框。']},
+ en:{brand:'Painting to World',eyebrow:'EDVARD MUNCH / THE SCREAM / 1893',title:'What if the world<br>could cry out?',intro:'A red sky. A curving fjord. Follow the railing into the space of an echo.',enter:'Enter the painting ↗',free:'Wander freely',note:'32-second tour · Take over anytime · Sound off by default',settings:'Settings',about:'The painting',soundOn:'Sound: on',soundOff:'Sound: off',walk:'Walk · F',fly:'Fly · F',capture:'Keep a postcard · P',hide:'Just the painting · H',restore:'Show interface · H',replay:'Replay tour',stop:'Stop tour',hint:'Drag to look · WASD move · F fly · Q/E descend / rise',touchHint:'Joystick to move · Drag to look · Tap a place to travel',aboutTitle:'The feeling within. The space beyond.',aboutText:'Inspired by Edvard Munch’s The Scream, with the National Museum’s 1893 version as the reference. The painting is not by Picasso.',keptTitle:'Recognizable anchors',kept:'A flowing orange-red sky, the oblique railing, a figure with hands beside its ears, distant companions, and a cool fjord. The figure is a walk-around stylized sculpture.',extraTitle:'Beyond the frame, imagination continues',extra:'The underside of the path, mountain volumes, water, vessels, timber details and score are authored extensions—not a historical survey or a scan. Flight bypasses collisions; the world has finite boundaries.',rebuild:'Version note: only screenshots of the previous example survived. This edition was rebuilt using the successful café renderer; it is not recovered original source.',source:'Museum collection reference ↗',network:'Exploration, textures, music and postcards run locally. Only opening the optional museum link uses the internet.',settingsTitle:'Look at your own pace.',volume:'Soundtrack volume',grain:'Canvas grain',quality:'Render quality',light:'Light',fine:'Fine',motion:'Automatic camera',on:'On',off:'Off',help:'Drag to look; WASD/arrows move; the wheel moves forward/back. F toggles walk/flight; Q/E descend/rise. P saves PNG, H hides/restores the UI, Esc stops the tour. Mobile includes a movement joystick and flight altitude buttons.',bounds:'Walking stays on the bounded path and avoids the central figure. Flight may leave the deck to inspect the terrain and does not simulate body collisions. Reduced camera motion still allows manual exploration.',loading:'Laying out the planks. Letting the sky become an echo.',errorTitle:'The 3D space could not open',errorHelp:'A WebGL2 browser and working graphics acceleration are required. Try reloading the page. No screenshot is substituted for the interactive scene.',freeToast:'The direction is yours now.',tourEnd:'The tour has ended. Stay with the view a little longer.',bound:'A railing, figure or path edge is here. Walk around it or switch to flight.',reduced:'Automatic camera motion is off. You are free to explore.',shotOK:'Your postcard is ready.',shotError:'Image export failed. Try a system screenshot.',audioError:'Audio could not start. Exploration is still available.',close:'Close',home:'Return to the opening view',up:'Rise',down:'Descend',joystick:'Movement joystick',canvas:'A walkable and flyable three-dimensional interpretation of The Scream',postcard:'Stay inside an echo.',credit:'THE SCREAM · AN AUTHORED SPATIAL INTERPRETATION',tourLines:['Enter the painting, without becoming its figure.','One railing. Two different rhythms.','Movement nearby. Silence in the distance.','Let your eyes follow the fjord.','Some feelings have no frame.']}
+};
+const POIS=[
+ {p:[.15,3.1,10],t:[-3.0,3.0,-23],tag:'THE THRESHOLD',zh:['入画','从画面的方向，走进一个陌生空间。'],en:['The threshold','Begin with the composition. Continue into unfamiliar space.']},
+ {p:[-.5,2.5,5.5],t:[1.13,2.0,1.1],tag:'THE FIGURE',zh:['一声回响','绕到侧面看，笔触不再只有一面。'],en:['An echo','Move around the sculpture. Brushwork has more than one side.']},
+ {p:[1.5,1.72,-8],t:[3.7,1.0,-27],tag:'THE RAILING',zh:['沿着栏杆','一块木板，一道斜线，一条没有尽头的路。'],en:['The railing','Timber, a diagonal, and a path that seems to continue.']},
+ {p:[-1.8,1.72,-30],t:[-.2,1.1,-39],tag:'THE COMPANIONS',zh:['远处的人','同一条路，也可以有不同的世界。'],en:['The companions','The same path can hold different worlds.']},
+ {p:[15,5,-10],t:[54,-3,-82],tag:'THE FJORD',zh:['峡湾的呼吸','冷色水面，接住了橙色天空。'],en:['The fjord','Cool water beneath the orange sky.']},
+ {p:[21,25,18],t:[-4,-1,-38],tag:'BEYOND THE FRAME',zh:['画框之外','这个角度，是画作之外的想象。'],en:['Beyond the frame','This angle belongs to the imagined extension.']}
+];
+const TOUR={p:[[.15,3.1,10],[.1,2.6,8],[-1.8,2.2,3.7],[-1.2,2.4,-7],[-1.0,2.9,-28],[5.5,6,-33],[14,15,-7],[21,25,18]],t:[[-3,3,-23],[1.13,2,1.1],[1.13,2.25,1.1],[.6,1.5,-34],[-.2,1.3,-42],[44,-3,-79],[1.5,0,-34],[-4,-1,-38]]};
+const $=id=>document.getElementById(id),body=document.body;
+let lang=document.documentElement.lang==='en'?'en':'zh',renderer,world,music,ready=false,mode='landing',fly=false,selected=0,reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+let eye=POIS[0].p.slice(),yaw=0,pitch=0,goalYaw=0,goalPitch=0,frame=0,last=0,age=0,tourTime=0,animationFrame,transition=null,keys=new Set(),joy=[0,0],vertical=0,dialogOpen=false,toastTimer,touch=matchMedia('(pointer:coarse)').matches;
+const tr=k=>COPY[lang][k]||k;
+function aim(t){let d=V.norm(V.sub(t,eye));yaw=goalYaw=Math.atan2(d[0],-d[2]);pitch=goalPitch=Math.asin(clamp(d[1],-.999,.999));}
+function forward(){return [Math.sin(yaw)*Math.cos(pitch),Math.sin(pitch),-Math.cos(yaw)*Math.cos(pitch)];}
+function toast(msg){$('toast').textContent=msg;$('toast').classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('toast').classList.remove('show'),2600);}
+function applyLang(){document.documentElement.lang=lang==='zh'?'zh-CN':'en';document.querySelectorAll('[data-i18n]').forEach(n=>n.innerHTML=tr(n.dataset.i18n));$('language').textContent=lang==='zh'?'EN':'中文';$('language').ariaLabel=lang==='zh'?'Switch to English':'切换中文';for(const id of ['home','up','down','joystick','world'])$(id).ariaLabel=tr(id==='world'?'canvas':id);document.querySelectorAll('[data-close]').forEach(n=>n.ariaLabel=tr('close'));document.title=lang==='zh'?'如果世界，也会呐喊。｜入画':'What if the world could cry out? | Painting to World';$('spots').replaceChildren(...POIS.map((p,i)=>{let b=document.createElement('button');b.dataset.spot=i;b.innerHTML=`<small>0${i+1}</small>${p[lang][0]}`;b.onclick=()=>jump(i);return b;}));updateUI();}
+function updateUI(){body.classList.toggle('exploring',mode!=='landing');body.classList.toggle('touring',mode==='tour');body.classList.toggle('flying',fly);body.classList.toggle('touch',touch);$('hero').inert=mode!=='landing';$('explore').inert=mode==='landing';$('mode').textContent=tr(fly?'fly':'walk');$('sound').textContent=tr(music?.on?'soundOn':'soundOff');$('tour').textContent=tr(mode==='tour'?'stop':'replay');$('hint').textContent=tr(touch?'touchHint':'hint');$('locTag').textContent=`0${selected+1} / 06 · ${POIS[selected].tag}`;$('locName').textContent=POIS[selected][lang][0];$('locDesc').textContent=POIS[selected][lang][1];document.querySelectorAll('[data-spot]').forEach(n=>n.classList.toggle('active',+n.dataset.spot===selected));$('motionOn').classList.toggle('active',!reduced);$('motionOff').classList.toggle('active',reduced);$('qualityLow').classList.toggle('active',renderer?.scale<1);$('qualityHigh').classList.toggle('active',!renderer||renderer.scale===1);}
+function resetInputs(){keys.clear();joy=[0,0];vertical=0;$('stick').style.transform='';}
+function stopTour(){if(mode==='tour'){mode='free';fly=eye[1]>2.3;updateUI();}transition=null;}
+function enter(free){if(!ready)return;if(free||reduced){mode='free';eye=POIS[0].p.slice();aim(POIS[0].t);fly=true;updateUI();toast(tr(reduced?'reduced':'freeToast'));}else startTour();$('world').focus({preventScroll:true});}
+function startTour(){if(!ready)return;if(reduced){enter(true);return;}resetInputs();transition=null;mode='tour';tourTime=0;selected=0;eye=TOUR.p[0].slice();aim(TOUR.t[0]);updateUI();}
+function home(){resetInputs();transition=null;mode='landing';eye=POIS[0].p.slice();aim(POIS[0].t);fly=false;selected=0;body.classList.remove('hidden-ui');updateUI();}
+function jump(i,instant=false){if(!Number.isInteger(i)||i<0||i>=POIS.length)return;stopTour();resetInputs();mode='free';const change=()=>{selected=i;eye=POIS[i].p.slice();aim(POIS[i].t);fly=eye[1]>2.3||Math.abs(eye[0])>3.5;updateUI();};if(instant)change();else transition={age:0,change,done:false};updateUI();}
+function toggleFly(){if(mode==='landing')enter(true);stopTour();fly=!fly;if(!fly){eye=[clamp(eye[0],-3.4,3.4),1.72,clamp(eye[2],-72,24)];if(!canWalk(eye[0],eye[2]))eye[0]=-1.7;}updateUI();}
+function canWalk(x,z){return x>-3.52&&x<3.47&&z>-73&&z<24.8&&Math.hypot(x-1.13,z-1.1)>.90;}
+function move(d){if(fly){eye=[clamp(eye[0]+d[0],-95,126),clamp(eye[1]+d[1],-2,64),clamp(eye[2]+d[2],-140,68)];return;}let x=eye[0]+d[0],z=eye[2]+d[2];if(canWalk(x,eye[2]))eye[0]=x;if(canWalk(eye[0],z))eye[2]=z;eye[1]=1.72;}
+function curve(points,k){let n=points.length-1,u=clamp(k,0,1)*n,i=Math.min(n-1,Math.floor(u)),t=u-i;let a=points[Math.max(0,i-1)],b=points[i],c=points[i+1],d=points[Math.min(n,i+2)];return b.map((_,q)=>.5*((2*b[q])+(-a[q]+c[q])*t+(2*a[q]-5*b[q]+4*c[q]-d[q])*t*t+(-a[q]+3*b[q]-3*c[q]+d[q])*t*t*t));}
+function updateTour(dt){tourTime=Math.min(32,tourTime+dt);let k=tourTime/32;eye=curve(TOUR.p,k);aim(curve(TOUR.t,k));let section=Math.min(4,Math.floor(k*5));$('tourText').textContent=COPY[lang].tourLines[section];document.querySelector('#progress i').style.width=`${k*100}%`;selected=k<.28?0:k<.43?1:k<.58?2:k<.74?3:k<.86?4:5;updateUI();if(tourTime>=32){mode='free';fly=true;selected=5;updateUI();toast(tr('tourEnd'));}}
+function loop(stamp){if(!ready)return;let dt=Math.min(.08,(stamp-last)/1000||.016),elapsed=Math.min(1,(stamp-last)/1000||.016);last=stamp;age+=dt;frame++;let fade=0;
+ if(!dialogOpen){if(mode==='tour')updateTour(elapsed);else if(mode==='free'){
+  yaw+=(goalYaw-yaw)*(1-Math.exp(-dt*15));pitch+=(goalPitch-pitch)*(1-Math.exp(-dt*15));let f=(keys.has('KeyW')||keys.has('ArrowUp')?1:0)-(keys.has('KeyS')||keys.has('ArrowDown')?1:0)-joy[1],s=(keys.has('KeyD')||keys.has('ArrowRight')?1:0)-(keys.has('KeyA')||keys.has('ArrowLeft')?1:0)+joy[0],up=(keys.has('KeyE')?1:0)-(keys.has('KeyQ')?1:0)+vertical,n=Math.max(1,Math.hypot(f,s)),speed=(fly?7:2.5)*(keys.has('ShiftLeft')?1.8:1)*dt,dir=fly?forward():[Math.sin(yaw),0,-Math.cos(yaw)];
+  if(f||s||up)move(V.add(V.mul(V.add(V.mul(dir,f/n),V.mul([Math.cos(yaw),0,Math.sin(yaw)],s/n)),speed),[0,fly?up*speed:0,0]));
+ }
+ if(transition){transition.age+=dt;let a=transition.age;if(a<.18)fade=ease(a/.18)*.96;else{if(!transition.done){transition.change();transition.done=true;}fade=(1-ease(clamp((a-.18)/.35,0,1)))*.96;if(a>=.53)transition=null;}}
+ }
+ let e=eye,t=V.add(eye,forward());if(mode==='landing'){t=POIS[0].t;if(!reduced)e=[eye[0]+Math.sin(age*.13)*.035,eye[1],eye[2]];}renderer.render(e,t,reduced?0:age,fade);animationFrame=requestAnimationFrame(loop);
+}
+async function sound(on){try{await music.set(on);music.setVolume(+$('volume').value/100);}catch(e){music.on=false;toast(tr('audioError'));}updateUI();}
+function capture(){if(!ready)return;renderer.render(eye,V.add(eye,forward()),reduced?0:age,0);const cv=$('world'),out=document.createElement('canvas'),pad=Math.round(cv.width*.03),foot=Math.max(84,Math.round(cv.width*.09));out.width=cv.width+pad*2;out.height=cv.height+pad*2+foot;let x=out.getContext('2d');x.fillStyle='#eee7d6';x.fillRect(0,0,out.width,out.height);x.drawImage(cv,pad,pad);x.fillStyle='#334d45';x.font=`${Math.max(16,Math.round(cv.width*.024))}px Georgia,serif`;x.fillText(tr('postcard'),pad,pad+cv.height+foot*.42);x.font=`${Math.max(9,Math.round(cv.width*.010))}px sans-serif`;x.fillStyle='#64736a';x.fillText(tr('credit'),pad,pad+cv.height+foot*.77);x.textAlign='right';x.fillText('MakerJackie · Painting to World',out.width-pad,pad+cv.height+foot*.77);try{out.toBlob(blob=>{if(!blob){toast(tr('shotError'));return;}let u=URL.createObjectURL(blob),a=document.createElement('a');a.href=u;a.download='the-scream-postcard.png';a.click();setTimeout(()=>URL.revokeObjectURL(u),15000);toast(tr('shotOK'));},'image/png');}catch(e){toast(tr('shotError'));}}
+function bind(){
+ $('enter').onclick=()=>enter(false);$('free').onclick=()=>enter(true);$('home').onclick=home;$('language').onclick=()=>{lang=lang==='zh'?'en':'zh';applyLang();};$('sound').onclick=()=>sound(!music.on);$('mode').onclick=toggleFly;$('capture').onclick=capture;$('tour').onclick=()=>mode==='tour'?stopTour():startTour();$('hide').onclick=()=>body.classList.add('hidden-ui');$('restore').onclick=()=>body.classList.remove('hidden-ui');
+ for(const [b,d] of [['about','aboutDialog'],['settings','settingsDialog']])$(b).onclick=()=>{stopTour();resetInputs();dialogOpen=true;$(d).showModal();};document.querySelectorAll('[data-close]').forEach(b=>b.onclick=()=>b.closest('dialog').close());document.querySelectorAll('dialog').forEach(d=>d.addEventListener('close',()=>{dialogOpen=false;resetInputs();last=performance.now();}));
+ $('volume').oninput=()=>music.setVolume(+$('volume').value/100);$('grain').oninput=()=>renderer.paint=+$('grain').value/100;$('qualityLow').onclick=()=>{renderer.scale=.7;renderer.resize();updateUI();};$('qualityHigh').onclick=()=>{renderer.scale=1;renderer.resize();updateUI();};$('motionOff').onclick=()=>{reduced=true;stopTour();updateUI();};$('motionOn').onclick=()=>{reduced=false;updateUI();};
+ let drag=null;const cv=$('world');cv.addEventListener('pointerdown',e=>{if(dialogOpen)return;if(e.pointerType==='touch'){touch=true;updateUI();}if(mode==='landing')enter(true);stopTour();drag={id:e.pointerId,x:e.clientX,y:e.clientY};cv.setPointerCapture(e.pointerId);});cv.addEventListener('pointermove',e=>{if(!drag||drag.id!==e.pointerId)return;goalYaw-=(e.clientX-drag.x)*.0035;goalPitch=clamp(goalPitch-(e.clientY-drag.y)*.003,-1.28,1.32);drag.x=e.clientX;drag.y=e.clientY;});for(let ev of ['pointerup','pointercancel','lostpointercapture'])cv.addEventListener(ev,()=>drag=null);
+ cv.addEventListener('wheel',e=>{e.preventDefault();if(dialogOpen)return;if(mode==='landing')enter(true);stopTour();move(V.mul(fly?forward():[Math.sin(yaw),0,-Math.cos(yaw)],-Math.sign(e.deltaY)*.55));},{passive:false});
+ window.addEventListener('keydown',e=>{if(dialogOpen||['INPUT','TEXTAREA','SELECT'].includes(document.activeElement?.tagName))return;if(e.code==='Escape'){stopTour();body.classList.remove('hidden-ui');return;}if(e.code==='KeyH'&&!e.repeat){body.classList.toggle('hidden-ui');return;}if(e.code==='KeyF'&&!e.repeat){toggleFly();return;}if(e.code==='KeyP'&&!e.repeat){capture();return;}if(['KeyW','KeyA','KeyS','KeyD','KeyQ','KeyE','ArrowUp','ArrowDown','ArrowLeft','ArrowRight','ShiftLeft'].includes(e.code)){e.preventDefault();if(mode==='landing')enter(true);stopTour();keys.add(e.code);}});window.addEventListener('keyup',e=>keys.delete(e.code));window.addEventListener('blur',()=>{resetInputs();drag=null;});
+ let jid=null;const j=$('joystick');function jmove(e){if(e.pointerId!==jid)return;let bb=j.getBoundingClientRect(),x=(e.clientX-bb.left-bb.width/2)/35,y=(e.clientY-bb.top-bb.height/2)/35,l=Math.max(1,Math.hypot(x,y));joy=[x/l,y/l];$('stick').style.transform=`translate(${joy[0]*29}px,${joy[1]*29}px)`;}j.onpointerdown=e=>{e.preventDefault();stopTour();jid=e.pointerId;j.setPointerCapture(e.pointerId);jmove(e);};j.onpointermove=jmove;for(let ev of ['pointerup','pointercancel','lostpointercapture'])j.addEventListener(ev,()=>{jid=null;joy=[0,0];$('stick').style.transform='';});
+ for(let [id,v] of [['up',1],['down',-1]]){$(id).onpointerdown=e=>{e.preventDefault();stopTour();vertical=v;$(id).setPointerCapture(e.pointerId);};for(let ev of ['pointerup','pointercancel','lostpointercapture'])$(id).addEventListener(ev,()=>vertical=0);}
+ document.addEventListener('visibilitychange',()=>{resetInputs();drag=null;if(document.hidden&&music?.on)sound(false);last=performance.now();});window.addEventListener('resize',()=>renderer?.resize());cv.addEventListener('webglcontextlost',e=>{e.preventDefault();ready=false;cancelAnimationFrame(animationFrame);$('error').hidden=false;$('errorDetail').textContent='WebGL context lost; reload the page. / 图形上下文丢失，请重新打开。';if(music?.on)sound(false);});
+}
+async function boot(){applyLang();try{await new Promise(r=>setTimeout(r,20));renderer=new Renderer($('world'));let paint=makePaint(),sky=makeSky(),labels=makeLabels();world=makeWorld();renderer.init(world,paint,sky,labels);music=new NightMusic();aim(POIS[0].t);bind();applyLang();ready=true;last=performance.now();renderer.render(eye,POIS[0].t,0);$('loading').classList.add('done');animationFrame=requestAnimationFrame(loop);
+ window.paintingWorld=window.screamWorld={get ready(){return ready},getState:()=>({mode,fly,eye:eye.slice(),yaw,pitch,selected,lang,reduced,frame,stats:world.stats,drawCalls:renderer.draws,audioOn:music.on,audioNotes:music.scheduled,audioState:music.context?.state,canvas:[$('world').width,$('world').height]}),jump:i=>jump(i,true),setLanguage:l=>{if(['zh','en'].includes(l)){lang=l;applyLang();}},setPose:(p,t)=>{mode='free';eye=p.slice();aim(t);fly=eye[1]>2.3||Math.abs(eye[0])>3.5;updateUI();},setTourTime:s=>{mode='tour';tourTime=clamp(s,0,32);updateTour(0);},startTour,home,capture,canWalk,glError:()=>renderer.gl.getError(),stop:()=>cancelAnimationFrame(animationFrame),render:()=>renderer.render(eye,V.add(eye,forward()),0,0)};
+ }catch(e){console.error(e);$('loading').classList.add('done');$('error').hidden=false;$('errorDetail').textContent=e.message;}}
+boot();
+
+</script></body></html>

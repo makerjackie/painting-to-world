@@ -1,0 +1,286 @@
+{
+  "case": "desktop",
+  "checks": [
+    {
+      "name": "WebGL2 boot and all shaders compile",
+      "pass": true,
+      "detail": {
+        "mode": "landing",
+        "fly": false,
+        "eye": [
+          8.2,
+          3.25,
+          14.5
+        ],
+        "yaw": -0.41934164755003,
+        "pitch": 0.034832866415099625,
+        "selected": 0,
+        "visits": [
+          0
+        ],
+        "lang": "zh",
+        "reduced": false,
+        "stats": {
+          "stones": 2281,
+          "triangles": 269329,
+          "opaqueVertices": 792165
+        },
+        "drawCalls": 5,
+        "audioOn": false,
+        "audioState": null,
+        "audioNotes": 0,
+        "frame": 5,
+        "canvas": [
+          1100,
+          760
+        ]
+      }
+    },
+    {
+      "name": "WebGL error flag is zero",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "No audio autoplay before interaction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Real 3D geometry is populated",
+      "pass": true,
+      "detail": {
+        "stones": 2281,
+        "triangles": 269329,
+        "opaqueVertices": 792165
+      }
+    },
+    {
+      "name": "Hero shown and hidden exploration controls inert",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Free entry does not force a tour",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Hero no longer takes keyboard focus",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Audio starts only after entry click",
+      "pass": true,
+      "detail": {
+        "mode": "free",
+        "fly": false,
+        "eye": [
+          8.2,
+          3.25,
+          14.5
+        ],
+        "yaw": -0.41934164755003,
+        "pitch": 0.034832866415099625,
+        "selected": 0,
+        "visits": [
+          0
+        ],
+        "lang": "zh",
+        "reduced": false,
+        "stats": {
+          "stones": 2281,
+          "triangles": 269329,
+          "opaqueVertices": 792165
+        },
+        "drawCalls": 5,
+        "audioOn": true,
+        "audioState": "running",
+        "audioNotes": 13,
+        "frame": 21,
+        "canvas": [
+          1100,
+          760
+        ]
+      }
+    },
+    {
+      "name": "Score schedules actual notes",
+      "pass": true,
+      "detail": 13
+    },
+    {
+      "name": "Music mute works",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "WASD moves camera in world space",
+      "pass": true,
+      "detail": {
+        "before": [
+          3,
+          1.72,
+          10
+        ],
+        "after": [
+          3,
+          1.72,
+          9.483999999999998
+        ]
+      }
+    },
+    {
+      "name": "Dragging changes view direction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "F toggles flight",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "E raises flight height",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Walking returns to eye level",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Wall is not walkable",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Actual café doorway is walkable",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Table collision is active",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Empty street is walkable",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Destination 1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Destination 2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Destination 3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Destination 4",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Destination 5",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Destination 6",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "All six destinations tracked",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Hide interface works",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Restore interface works",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Language switches to English",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Painting provenance dialog opens",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Imaginative extension is disclosed",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Light render reduces resolution",
+      "pass": true,
+      "detail": [
+        770,
+        532
+      ]
+    },
+    {
+      "name": "Reduced motion can be enabled",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Reduced-motion mode does not start automatic tour",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Postcard exports a real PNG with border",
+      "pass": true,
+      "detail": {
+        "size": [
+          1178,
+          933
+        ],
+        "bytes": 1765163
+      }
+    },
+    {
+      "name": "Home returns to landing",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "No GL error after interaction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "No runtime HTTP/network requests",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "No uncaught JavaScript errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "requests": []
+}

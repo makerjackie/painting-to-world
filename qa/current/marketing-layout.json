@@ -1,0 +1,58 @@
+[
+  {
+    "file": "marketing/zh-CN/01-hero.html",
+    "lastContentBottom": 772.734375,
+    "footerTop": 794.734375,
+    "scrollWidth": 1600,
+    "width": 1600
+  },
+  {
+    "file": "marketing/zh-CN/02-guide.html",
+    "lastContentBottom": 1314.15625,
+    "footerTop": 1395.40625,
+    "scrollWidth": 1200,
+    "width": 1200
+  },
+  {
+    "file": "marketing/zh-CN/03-product.html",
+    "lastContentBottom": 1337.15625,
+    "footerTop": 1395.40625,
+    "scrollWidth": 1200,
+    "width": 1200
+  },
+  {
+    "file": "marketing/zh-CN/04-case.html",
+    "lastContentBottom": 1350.15625,
+    "footerTop": 1395.40625,
+    "scrollWidth": 1200,
+    "width": 1200
+  },
+  {
+    "file": "marketing/en/01-hero.html",
+    "lastContentBottom": 756.046875,
+    "footerTop": 778.046875,
+    "scrollWidth": 1600,
+    "width": 1600
+  },
+  {
+    "file": "marketing/en/02-guide.html",
+    "lastContentBottom": 1294.25,
+    "footerTop": 1395.40625,
+    "scrollWidth": 1200,
+    "width": 1200
+  },
+  {
+    "file": "marketing/en/03-product.html",
+    "lastContentBottom": 1317.25,
+    "footerTop": 1395.40625,
+    "scrollWidth": 1200,
+    "width": 1200
+  },
+  {
+    "file": "marketing/en/04-case.html",
+    "lastContentBottom": 1340.25,
+    "footerTop": 1395.40625,
+    "scrollWidth": 1200,
+    "width": 1200
+  }
+]

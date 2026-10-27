@@ -1,0 +1,129 @@
+{
+  "case": "tour",
+  "checks": [
+    {
+      "name": "WebGL2 boot and all shaders compile",
+      "pass": true,
+      "detail": {
+        "mode": "landing",
+        "fly": false,
+        "eye": [
+          8.2,
+          3.25,
+          14.5
+        ],
+        "yaw": -0.41934164755003,
+        "pitch": 0.034832866415099625,
+        "selected": 0,
+        "visits": [
+          0
+        ],
+        "lang": "zh",
+        "reduced": false,
+        "stats": {
+          "stones": 2281,
+          "triangles": 269329,
+          "opaqueVertices": 792165
+        },
+        "drawCalls": 5,
+        "audioOn": false,
+        "audioState": null,
+        "audioNotes": 0,
+        "frame": 4,
+        "canvas": [
+          640,
+          480
+        ]
+      }
+    },
+    {
+      "name": "WebGL error flag is zero",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "No audio autoplay before interaction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Entry starts the cinematic tour",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Full guided tour completes and hands over control",
+      "pass": true,
+      "detail": {
+        "wall_clock_seconds": 27.56,
+        "state": {
+          "mode": "free",
+          "fly": true,
+          "eye": [
+            5,
+            23,
+            1.9999999999999982
+          ],
+          "yaw": -0.18822150530477075,
+          "pitch": 0.3580903572699285,
+          "selected": 5,
+          "visits": [
+            0,
+            1,
+            3,
+            4,
+            5
+          ],
+          "lang": "zh",
+          "reduced": false,
+          "stats": {
+            "stones": 2281,
+            "triangles": 269329,
+            "opaqueVertices": 792165
+          },
+          "drawCalls": 5,
+          "audioOn": true,
+          "audioState": "running",
+          "audioNotes": 133,
+          "frame": 150,
+          "canvas": [
+            640,
+            480
+          ]
+        }
+      }
+    },
+    {
+      "name": "Tour can be replayed",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Escape interrupts tour",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Dragging interrupts tour",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Movement interrupts tour",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "No runtime HTTP/network requests",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "No uncaught JavaScript errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "requests": []
+}

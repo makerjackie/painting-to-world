@@ -1,0 +1,102 @@
+{
+  "scope": "DOM links, locale and responsive layout; local HTML loaded using set_content",
+  "checks": [
+    {
+      "name": "zh-CN portal local link targets",
+      "pass": true,
+      "links": 28,
+      "missing": []
+    },
+    {
+      "name": "zh-CN correct portal locale",
+      "pass": true
+    },
+    {
+      "name": "zh-CN portal 1440 layout",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scroll": 1440,
+        "buttons": [
+          {
+            "x": 1205.5625,
+            "r": 1298
+          },
+          {
+            "x": 1171.984375,
+            "r": 1274
+          }
+        ]
+      }
+    },
+    {
+      "name": "zh-CN portal 390 layout",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "buttons": [
+          {
+            "x": 277.5625,
+            "r": 370
+          },
+          {
+            "x": 247.984375,
+            "r": 350
+          }
+        ]
+      }
+    },
+    {
+      "name": "en portal local link targets",
+      "pass": true,
+      "links": 28,
+      "missing": []
+    },
+    {
+      "name": "en correct portal locale",
+      "pass": true
+    },
+    {
+      "name": "en portal 1440 layout",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scroll": 1440,
+        "buttons": [
+          {
+            "x": 1227.984375,
+            "r": 1298
+          },
+          {
+            "x": 1137.96875,
+            "r": 1274
+          }
+        ]
+      }
+    },
+    {
+      "name": "en portal 390 layout",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "buttons": [
+          {
+            "x": 299.984375,
+            "r": 370
+          },
+          {
+            "x": 244.09375,
+            "r": 350
+          }
+        ]
+      }
+    },
+    {
+      "name": "No portal runtime errors",
+      "pass": true,
+      "errors": []
+    }
+  ]
+}

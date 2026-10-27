@@ -1,0 +1,343 @@
+{
+  "scope": "Executed initialization, non-overwrite, YAML, relocation and reproducible build checks; not AI-client installation or arbitrary-image generation",
+  "checks": [
+    {
+      "name": "zh-CN: valid Agent Skill frontmatter",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "zh-CN: initializer with image and spaces",
+      "pass": true,
+      "detail": "Created /tmp/painting to world relocate 039_fwf0/zh-CN project with spaces\nNext: have your image-capable coding agent read SKILL.md and TASK.md.\nBuild: node \"/tmp/painting to world relocate 039_fwf0/zh-CN project with spaces/scripts/build.mjs\""
+    },
+    {
+      "name": "zh-CN: relocated standalone build",
+      "pass": true,
+      "detail": "Built index.html (93.1 KB), zero runtime dependencies."
+    },
+    {
+      "name": "zh-CN: generated baseline static audit",
+      "pass": true,
+      "detail": {
+        "scope": "static only; not visual/runtime QA",
+        "results": [
+          {
+            "name": "exists index.html",
+            "pass": true,
+            "details": ""
+          },
+          {
+            "name": "exists src/engine.js",
+            "pass": true,
+            "details": ""
+          },
+          {
+            "name": "exists src/textures.js",
+            "pass": true,
+            "details": ""
+          },
+          {
+            "name": "exists src/world.js",
+            "pass": true,
+            "details": ""
+          },
+          {
+            "name": "exists src/audio.js",
+            "pass": true,
+            "details": ""
+          },
+          {
+            "name": "exists src/app.js",
+            "pass": true,
+            "details": ""
+          },
+          {
+            "name": "exists src/index.template.html",
+            "pass": true,
+            "details": ""
+          },
+          {
+            "name": "exists src/style.css",
+            "pass": true,
+            "details": ""
+          },
+          {
+            "name": "exists scripts/build.mjs",
+            "pass": true,
+            "details": ""
+          },
+          {
+            "name": "no unresolved template slots",
+            "pass": true,
+            "details": ""
+          },
+          {
+            "name": "no remote script tag",
+            "pass": true,
+            "details": ""
+          },
+          {
+            "name": "no remote CSS import",
+            "pass": true,
+            "details": ""
+          },
+          {
+            "name": "WebGL2 renderer requested",
+            "pass": true,
+            "details": ""
+          },
+          {
+            "name": "depth buffer enabled",
+            "pass": true,
+            "details": ""
+          },
+          {
+            "name": "inline script syntax 1",
+            "pass": true,
+            "details": ""
+          },
+          {
+            "name": "inline script syntax 2",
+            "pass": true,
+            "details": ""
+          },
+          {
+            "name": "inline script syntax 3",
+            "pass": true,
+            "details": ""
+          },
+          {
+            "name": "inline script syntax 4",
+            "pass": true,
+            "details": ""
+          },
+          {
+            "name": "inline script syntax 5",
+            "pass": true,
+            "details": ""
+          },
+          {
+            "name": "inline application present",
+            "pass": true,
+            "details": ""
+          },
+          {
+            "name": "relocatable build",
+            "pass": true,
+            "details": ""
+          }
+        ]
+      }
+    },
+    {
+      "name": "zh-CN: generated index.html matches current cafe baseline",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "zh-CN: generated index.en.html matches current cafe baseline",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "zh-CN: reference copied unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "zh-CN: nonempty destination refused",
+      "pass": true,
+      "detail": "Destination must be absent or empty. Existing work will not be overwritten."
+    },
+    {
+      "name": "zh-CN: unsupported reference refused",
+      "pass": true,
+      "detail": "Use PNG, JPG or WEBP."
+    },
+    {
+      "name": "en: valid Agent Skill frontmatter",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "en: initializer with image and spaces",
+      "pass": true,
+      "detail": "Created /tmp/painting to world relocate 039_fwf0/en project with spaces\nNext: have your image-capable coding agent read SKILL.md and TASK.md.\nBuild: node \"/tmp/painting to world relocate 039_fwf0/en project with spaces/scripts/build.mjs\""
+    },
+    {
+      "name": "en: relocated standalone build",
+      "pass": true,
+      "detail": "Built index.html (93.1 KB), zero runtime dependencies."
+    },
+    {
+      "name": "en: generated baseline static audit",
+      "pass": true,
+      "detail": {
+        "scope": "static only; not visual/runtime QA",
+        "results": [
+          {
+            "name": "exists index.html",
+            "pass": true,
+            "details": ""
+          },
+          {
+            "name": "exists src/engine.js",
+            "pass": true,
+            "details": ""
+          },
+          {
+            "name": "exists src/textures.js",
+            "pass": true,
+            "details": ""
+          },
+          {
+            "name": "exists src/world.js",
+            "pass": true,
+            "details": ""
+          },
+          {
+            "name": "exists src/audio.js",
+            "pass": true,
+            "details": ""
+          },
+          {
+            "name": "exists src/app.js",
+            "pass": true,
+            "details": ""
+          },
+          {
+            "name": "exists src/index.template.html",
+            "pass": true,
+            "details": ""
+          },
+          {
+            "name": "exists src/style.css",
+            "pass": true,
+            "details": ""
+          },
+          {
+            "name": "exists scripts/build.mjs",
+            "pass": true,
+            "details": ""
+          },
+          {
+            "name": "no unresolved template slots",
+            "pass": true,
+            "details": ""
+          },
+          {
+            "name": "no remote script tag",
+            "pass": true,
+            "details": ""
+          },
+          {
+            "name": "no remote CSS import",
+            "pass": true,
+            "details": ""
+          },
+          {
+            "name": "WebGL2 renderer requested",
+            "pass": true,
+            "details": ""
+          },
+          {
+            "name": "depth buffer enabled",
+            "pass": true,
+            "details": ""
+          },
+          {
+            "name": "inline script syntax 1",
+            "pass": true,
+            "details": ""
+          },
+          {
+            "name": "inline script syntax 2",
+            "pass": true,
+            "details": ""
+          },
+          {
+            "name": "inline script syntax 3",
+            "pass": true,
+            "details": ""
+          },
+          {
+            "name": "inline script syntax 4",
+            "pass": true,
+            "details": ""
+          },
+          {
+            "name": "inline script syntax 5",
+            "pass": true,
+            "details": ""
+          },
+          {
+            "name": "inline application present",
+            "pass": true,
+            "details": ""
+          },
+          {
+            "name": "relocatable build",
+            "pass": true,
+            "details": ""
+          }
+        ]
+      }
+    },
+    {
+      "name": "en: generated index.html matches current cafe baseline",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "en: generated index.en.html matches current cafe baseline",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "en: reference copied unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "en: nonempty destination refused",
+      "pass": true,
+      "detail": "Destination must be absent or empty. Existing work will not be overwritten."
+    },
+    {
+      "name": "en: unsupported reference refused",
+      "pass": true,
+      "detail": "Use PNG, JPG or WEBP."
+    },
+    {
+      "name": "cafe-terrace: relocated source builds both entries",
+      "pass": true,
+      "detail": "Built index.html (93.1 KB), zero runtime dependencies."
+    },
+    {
+      "name": "cafe-terrace: rebuild matches index.html",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "cafe-terrace: rebuild matches index.en.html",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "the-scream: relocated source builds both entries",
+      "pass": true,
+      "detail": "Built index.html (59.0 KB), zero runtime dependencies."
+    },
+    {
+      "name": "the-scream: rebuild matches index.html",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "the-scream: rebuild matches index.en.html",
+      "pass": true,
+      "detail": null
+    }
+  ]
+}

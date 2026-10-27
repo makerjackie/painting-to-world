@@ -1,0 +1,167 @@
+{
+  "case": "mobile",
+  "checks": [
+    {
+      "name": "WebGL2 boot and all shaders compile",
+      "pass": true,
+      "detail": {
+        "mode": "landing",
+        "fly": false,
+        "eye": [
+          8.2,
+          3.25,
+          14.5
+        ],
+        "yaw": -0.41934164755003,
+        "pitch": 0.034832866415099625,
+        "selected": 0,
+        "visits": [
+          0
+        ],
+        "lang": "zh",
+        "reduced": false,
+        "stats": {
+          "stones": 2281,
+          "triangles": 269329,
+          "opaqueVertices": 792165
+        },
+        "drawCalls": 5,
+        "audioOn": false,
+        "audioState": null,
+        "audioNotes": 0,
+        "frame": 4,
+        "canvas": [
+          360,
+          800
+        ]
+      }
+    },
+    {
+      "name": "WebGL error flag is zero",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "No audio autoplay before interaction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Mobile page does not overflow horizontally",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "zh header fits 360px without overlap",
+      "pass": true,
+      "detail": {
+        "b": {
+          "x": 24,
+          "y": 24,
+          "width": 114.953125,
+          "height": 35,
+          "top": 24,
+          "right": 138.953125,
+          "bottom": 59,
+          "left": 24
+        },
+        "n": {
+          "x": 150,
+          "y": 25,
+          "width": 188,
+          "height": 33,
+          "top": 25,
+          "right": 338,
+          "bottom": 58,
+          "left": 150
+        },
+        "w": 360
+      }
+    },
+    {
+      "name": "en header fits 360px without overlap",
+      "pass": true,
+      "detail": {
+        "b": {
+          "x": 24,
+          "y": 26,
+          "width": 129.359375,
+          "height": 29,
+          "top": 26,
+          "right": 153.359375,
+          "bottom": 55,
+          "left": 24
+        },
+        "n": {
+          "x": 164,
+          "y": 24,
+          "width": 174,
+          "height": 33,
+          "top": 24,
+          "right": 338,
+          "bottom": 57,
+          "left": 164
+        },
+        "w": 360
+      }
+    },
+    {
+      "name": "Touch joystick visible after entry",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Touch joystick movement path works",
+      "pass": true,
+      "detail": {
+        "before": [
+          3,
+          1.72,
+          10
+        ],
+        "after": [
+          3,
+          1.72,
+          9.501027999999996
+        ]
+      }
+    },
+    {
+      "name": "Touch flight toggle works",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Vertical flight controls visible",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Mobile rise button changes altitude",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Scrollable destination bar reaches stars",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Landscape resize rebuilds render target",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "No runtime HTTP/network requests",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "No uncaught JavaScript errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "requests": []
+}

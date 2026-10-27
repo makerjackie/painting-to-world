@@ -1,0 +1,395 @@
+{
+  "scope": "static package checks, not visual QA",
+  "results": [
+    {
+      "name": "Exists skills/zh-CN/painting-to-world/SKILL.md",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Exists skills/zh-CN/painting-to-world/scripts/init.mjs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Exists skills/zh-CN/painting-to-world/scripts/audit.mjs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Exists skills/zh-CN/painting-to-world/assets/starter/src/engine.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Exists skills/zh-CN/painting-to-world/assets/starter/src/world.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Exists skills/zh-CN/painting-to-world/assets/starter/src/app.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Exists skills/zh-CN/painting-to-world/assets/starter/scripts/build.mjs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "zh-CN frontmatter and canonical name",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "zh-CN main instructions under 500 lines",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Bilingual document zh-CN/GUIDE",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Bilingual document zh-CN/PRODUCT",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Bilingual document zh-CN/PROMPTS",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Bilingual document zh-CN/DEVELOPMENT",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Bilingual document zh-CN/PROVENANCE",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Bilingual document zh-CN/QA",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Marketing zh-CN/01-hero.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Marketing zh-CN/01-hero.png",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Marketing zh-CN/02-guide.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Marketing zh-CN/02-guide.png",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Marketing zh-CN/03-product.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Marketing zh-CN/03-product.png",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Marketing zh-CN/04-case.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Marketing zh-CN/04-case.png",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Exists skills/en/painting-to-world/SKILL.md",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Exists skills/en/painting-to-world/scripts/init.mjs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Exists skills/en/painting-to-world/scripts/audit.mjs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Exists skills/en/painting-to-world/assets/starter/src/engine.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Exists skills/en/painting-to-world/assets/starter/src/world.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Exists skills/en/painting-to-world/assets/starter/src/app.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Exists skills/en/painting-to-world/assets/starter/scripts/build.mjs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "en frontmatter and canonical name",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "en main instructions under 500 lines",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Bilingual document en/GUIDE",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Bilingual document en/PRODUCT",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Bilingual document en/PROMPTS",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Bilingual document en/DEVELOPMENT",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Bilingual document en/PROVENANCE",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Bilingual document en/QA",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Marketing en/01-hero.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Marketing en/01-hero.png",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Marketing en/02-guide.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Marketing en/02-guide.png",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Marketing en/03-product.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Marketing en/03-product.png",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Marketing en/04-case.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Marketing en/04-case.png",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Exists examples/cafe-terrace/index.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "examples/cafe-terrace/index.html full offline renderer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "examples/cafe-terrace/index.html no unfilled slots",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "examples/cafe-terrace/index.html no remote scripts",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "examples/cafe-terrace/index.html no external stylesheet",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "examples/cafe-terrace/index.html requested language",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "examples/cafe-terrace/index.html inline JS syntax",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Exists examples/cafe-terrace/index.en.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "examples/cafe-terrace/index.en.html full offline renderer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "examples/cafe-terrace/index.en.html no unfilled slots",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "examples/cafe-terrace/index.en.html no remote scripts",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "examples/cafe-terrace/index.en.html no external stylesheet",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "examples/cafe-terrace/index.en.html requested language",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "examples/cafe-terrace/index.en.html inline JS syntax",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "cafe-terrace portable builder",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Exists examples/the-scream/index.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "examples/the-scream/index.html full offline renderer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "examples/the-scream/index.html no unfilled slots",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "examples/the-scream/index.html no remote scripts",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "examples/the-scream/index.html no external stylesheet",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "examples/the-scream/index.html requested language",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "examples/the-scream/index.html inline JS syntax",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Exists examples/the-scream/index.en.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "examples/the-scream/index.en.html full offline renderer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "examples/the-scream/index.en.html no unfilled slots",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "examples/the-scream/index.en.html no remote scripts",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "examples/the-scream/index.en.html no external stylesheet",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "examples/the-scream/index.en.html requested language",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "examples/the-scream/index.en.html inline JS syntax",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "the-scream portable builder",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Offline package portal",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "No font binaries, dependency trees or caches",
+      "pass": true,
+      "detail": ""
+    }
+  ]
+}

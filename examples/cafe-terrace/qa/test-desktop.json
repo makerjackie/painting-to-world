@@ -1,0 +1,216 @@
+{
+  "case": "cafe-terrace",
+  "suite": "desktop",
+  "browser": "144.0.7559.96",
+  "loading": "set_content, network requests blocked",
+  "checks": [
+    {
+      "name": "Five WebGL render passes",
+      "pass": true,
+      "detail": {
+        "mode": "landing",
+        "fly": false,
+        "eye": [
+          8.2,
+          3.25,
+          14.5
+        ],
+        "yaw": -0.41934164755003,
+        "pitch": 0.034832866415099625,
+        "selected": 0,
+        "visits": [
+          0
+        ],
+        "lang": "en",
+        "reduced": false,
+        "stats": {
+          "stones": 2281,
+          "triangles": 269329,
+          "opaqueVertices": 792165
+        },
+        "drawCalls": 5,
+        "audioOn": false,
+        "audioState": null,
+        "audioNotes": 0,
+        "frame": 6,
+        "canvas": [
+          900,
+          600
+        ]
+      }
+    },
+    {
+      "name": "GL error flag zero",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "English entry opens in English",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "No autoplay on load",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Free exploration entry",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Audio scheduled after interaction",
+      "pass": true,
+      "detail": 11
+    },
+    {
+      "name": "Audio mute works",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "World-space camera movement",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Drag changes direction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Flight toggle",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Flight ascends",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Walk returns to eye level",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Walking predicate (-5.6,-8)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Walking predicate (-5.6,2.05)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Walking predicate (-0.16,4.1)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Walking predicate (3,10)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Destination 1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Destination 2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Destination 3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Destination 4",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Destination 5",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Destination 6",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "UI hides",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "UI restoration",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Language retains camera",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "About dialog opens",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Light quality reduces pixels",
+      "pass": true,
+      "detail": [
+        630,
+        420
+      ]
+    },
+    {
+      "name": "Motion-off prevents tour",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Postcard is a real framed PNG",
+      "pass": true,
+      "detail": {
+        "size": [
+          964,
+          759
+        ],
+        "bytes": 1168774
+      }
+    },
+    {
+      "name": "Home returns to landing",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "No GL error after interaction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Zero runtime network requests",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "No uncaught script errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "requests": [],
+  "physicalPhone": false,
+  "listeningTest": false
+}

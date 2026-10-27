@@ -1,0 +1,49 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Current-release QA report · Painting to World</title><style>*{box-sizing:border-box}body{margin:0;background:#f2eee2;color:#263c3c;font:17px/1.8 system-ui,-apple-system,"Noto Sans CJK SC",sans-serif}main{max-width:900px;margin:0 auto;padding:50px 30px 90px}nav{display:flex;gap:20px;flex-wrap:wrap;border-bottom:1px solid #cbcbbf;padding-bottom:20px;font-size:14px}a{color:#365c66;text-underline-offset:4px}h1,h2,h3{font-family:Georgia,"Noto Serif CJK SC",serif;line-height:1.35;font-weight:500}h1{font-size:40px;margin:45px 0 22px}h2{font-size:27px;margin:40px 0 15px}h3{font-size:21px}pre{overflow-x:auto;padding:22px;background:#213638;color:#f7eed9;border-radius:5px;line-height:1.6;font-size:14px}code{font-family:ui-monospace,Consolas,monospace}p code,li code{background:#e3dfd2;padding:2px 5px;border-radius:3px}table{width:100%;border-collapse:collapse;font-size:15px;display:block;overflow-x:auto}td,th{padding:12px 16px;border:1px solid #cfcdc0;text-align:left}blockquote{margin:25px 0;padding:4px 20px;border-left:3px solid #b28d45;background:#eae5d7}img{max-width:100%}li{margin:7px 0}footer{margin-top:60px;border-top:1px solid #cbcbbf;padding-top:20px;color:#677a77;font-size:13px}@media(max-width:600px){main{padding:24px 20px 60px}h1{font-size:32px}h2{font-size:24px}body{font-size:16px}}</style><main><nav><a href="../../START-HERE.html">Package home</a><a href="../zh-CN/QA.html">中文</a><a href="QA.md">Markdown</a></nav><h1>Current-release QA report</h1>
+<h2>Result and scope</h2>
+<p>The two real WebGL2 examples were tested across desktop, mobile viewports, complete tours and missing-WebGL fallbacks: <strong>130 passed / 130 checks</strong>. These are implementation and interaction checks, not an artistic-fidelity score or evidence that arbitrary paintings produce identical quality.</p>
+<p>The café renderer, scene, textures, audio and styles are hash-identical to the recovered successful source. Current entry points add language/accessibility copy. The complete untouched original HTML, source and historical reports are retained under <code>examples/cafe-terrace/archive/</code>.</p>
+<p>The Scream was reauthored and tested in this release. Only images survived from the earlier version. Historical screenshots and AI concept posters are archived separately and are not counted as current test evidence.</p>
+<h2>Browser suites</h2>
+<table>
+<thead>
+<tr>
+  <th>Example</th>
+  <th style="text-align:right">Desktop</th>
+  <th style="text-align:right">Mobile viewports</th>
+  <th style="text-align:right">Complete tour</th>
+  <th style="text-align:right">WebGL fallback</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Café Terrace at Night</td>
+  <td style="text-align:right">33/33</td>
+  <td style="text-align:right">17/17</td>
+  <td style="text-align:right">11/11</td>
+  <td style="text-align:right">4/4</td>
+</tr>
+<tr>
+  <td>The Scream, rebuilt edition</td>
+  <td style="text-align:right">33/33</td>
+  <td style="text-align:right">17/17</td>
+  <td style="text-align:right">11/11</td>
+  <td style="text-align:right">4/4</td>
+</tr>
+</tbody>
+</table>
+<p>Checks cover: WebGL2/depth rendering, five draw batches and the GL error flag; Chinese/English entry points and switching; actual camera movement, flight altitude and walking bounds; six destinations; complete 28/32-second tours and manual interruption; no audio autoplay on load, user-triggered AudioContext start and mute; interface hide/restore; a real downloaded PNG; 360×800 and 800×360 viewports, joystick and altitude controls; readable missing-WebGL fallback; no unhandled JavaScript errors or runtime external requests.</p>
+<h2>Method and limits</h2>
+<p>Executed on Linux with Chromium 144.0.7559.96, Playwright, Xvfb and SwiftShader. Because navigation is restricted in this environment, the real complete HTML was loaded with <code>set_content</code>, with all network requests blocked. <strong>This is not an end-to-end test of double-clicking a file:// page on the user's computer or visiting a hosted URL.</strong> The inlined-resource structure was also statically checked.</p>
+<p>Safari, Firefox, physical iPhone/Android devices, multiple GPUs and long-duration sessions were not tested. Software-rendering timings are not hardware performance claims. Audio scheduling and toggling were checked, but no human listening review was performed. Installation in an actual AI client was not exercised. No arbitrary-image conversion generalization test was performed; this kit does not contain such an inference model.</p>
+<h2>Builds, languages and promotional assets</h2>
+<p>Both Skill YAML headers were parsed. Initialization, paths containing spaces, relocation, unchanged reference copying, refusal to overwrite a nonempty directory and rejection of unsupported image formats were executed. Both examples were rebuilt in temporary locations, producing byte-identical Chinese and English HTML. See <code>qa/current/portability.json</code>.</p>
+<p>Eight new bilingual promotional PNGs use actual WebGL frame captures from this release, without interface overlays, and include editable HTML. Page widths and footer positions were checked; landscape and portrait renderings were visually inspected. No font binaries are distributed. Historical concept-poster copy is not a capability promise; the release documents are authoritative.</p>
+<h2>Evidence and reruns</h2>
+<p>Each example's <code>qa/test-*.json</code> contains itemized results. The same directory includes desktop, both mobile locales, reverse/aerial views, full-tour completion and the exported PNG. <code>qa/current/cafe-baseline-integrity.json</code> records preservation of the original baseline.</p>
+<p>From the extracted package root:</p>
+<pre><code class="language-bash">node scripts/build-all.mjs
+node scripts/check-package.mjs
+python tests/smoke.py --browser /path/to/chromium --case cafe-terrace --suite desktop
+</code></pre>
+<p>The browser test script requires separately installed Python Playwright and Chromium; a Linux software-rendering environment may also require Xvfb. These are not website runtime dependencies. Current static package results are saved in <code>qa/current/package-static.json</code>; static checks do not replace browser or visual review.</p>
+<footer>MakerJackie · Painting to World · Bilingual Kit 1.1</footer></main></html>

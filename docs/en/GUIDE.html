@@ -1,0 +1,62 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Usage guide · Painting to World</title><style>*{box-sizing:border-box}body{margin:0;background:#f2eee2;color:#263c3c;font:17px/1.8 system-ui,-apple-system,"Noto Sans CJK SC",sans-serif}main{max-width:900px;margin:0 auto;padding:50px 30px 90px}nav{display:flex;gap:20px;flex-wrap:wrap;border-bottom:1px solid #cbcbbf;padding-bottom:20px;font-size:14px}a{color:#365c66;text-underline-offset:4px}h1,h2,h3{font-family:Georgia,"Noto Serif CJK SC",serif;line-height:1.35;font-weight:500}h1{font-size:40px;margin:45px 0 22px}h2{font-size:27px;margin:40px 0 15px}h3{font-size:21px}pre{overflow-x:auto;padding:22px;background:#213638;color:#f7eed9;border-radius:5px;line-height:1.6;font-size:14px}code{font-family:ui-monospace,Consolas,monospace}p code,li code{background:#e3dfd2;padding:2px 5px;border-radius:3px}table{width:100%;border-collapse:collapse;font-size:15px;display:block;overflow-x:auto}td,th{padding:12px 16px;border:1px solid #cfcdc0;text-align:left}blockquote{margin:25px 0;padding:4px 20px;border-left:3px solid #b28d45;background:#eae5d7}img{max-width:100%}li{margin:7px 0}footer{margin-top:60px;border-top:1px solid #cbcbbf;padding-top:20px;color:#677a77;font-size:13px}@media(max-width:600px){main{padding:24px 20px 60px}h1{font-size:32px}h2{font-size:24px}body{font-size:16px}}</style><main><nav><a href="../../START-HERE.html">Package home</a><a href="../zh-CN/GUIDE.html">中文</a><a href="GUIDE.md">Markdown</a></nav><h1>Usage guide</h1>
+<h2>Explore before authoring</h2>
+<p>Extract the whole archive and open <code>START-HERE.html</code>. Both examples have Chinese and English entry points, with an in-world language switch. <code>examples/cafe-terrace/archive/index.html</code> is the untouched successful original; the current entry points add localization details.</p>
+<p>Desktop controls: drag to look, WASD/arrows to move, F for walk/flight, Q down and E up in flight, H to hide/restore, and P to export an actual framed PNG. The destination bar provides quick travel. Mobile includes a movement joystick, drag-to-look and altitude buttons.</p>
+<p>The café starts gentle music after the entry click; it can be muted immediately. The Scream starts with music off and requires a separate click. Both offer an automatic-camera off option. Collision is limited to walking; flight is not a physical-body simulation.</p>
+<h2>Requirements</h2>
+<p>Authoring requires an image-capable coding AI that can read the complete Skill, read/write local files and implement code. Supplied build scripts require Node.js 18+. Visual review needs a working WebGL2 browser. Python and Playwright are optional testing tools, not website dependencies. Without a browser, code can still be produced, but visual verification must not be claimed.</p>
+<p>The package does not include an AI account, credits, third-party model weights, an online image-upload application or hosting. Opening an example plays a finished artifact; a new painting still requires the AI to execute the Skill.</p>
+<h2>Install one language only</h2>
+<p>Chinese: <code>skills/zh-CN/painting-to-world/</code>. English: <code>skills/en/painting-to-world/</code>. Each contains the same capabilities and self-contained code assets. <strong>Do not install both same-name versions in the same scope.</strong></p>
+<p>In a local Agent Skills environment such as Codex, copy the whole folder to <code>.agents/skills/painting-to-world/</code> inside your project. A user-wide location is <code>~/.agents/skills/painting-to-world/</code>. Discovery and reload behavior depend on the client version; see the official source below.</p>
+<p>macOS/Linux example, from the extracted package root; replace the project path:</p>
+<pre><code class="language-bash">DEST=&quot;/path/to/your-project/.agents/skills/painting-to-world&quot;
+if [ -e &quot;$DEST&quot; ]; then
+  echo &quot;Destination exists. Inspect and back it up rather than overwriting.&quot;
+else
+  mkdir -p &quot;$(dirname &quot;$DEST&quot;)&quot;
+  cp -R skills/en/painting-to-world &quot;$DEST&quot;
+fi
+</code></pre>
+<p>On Windows, copying the full folder with a file manager is also sufficient for the file placement step. Nothing has been installed on your machine automatically.</p>
+<p>In an environment that can read attachments and execute code but does not discover local Skills, supply the complete folder or kit as working material and explicitly ask the AI to read <code>SKILL.md</code> and its references. Uploading a ZIP does not guarantee automatic installation or execution in every chat client. A text-only client without file writing/code execution cannot run the build scripts merely by reading them.</p>
+<h2>Supply the reference and start</h2>
+<p>Use a clear, uncropped JPG/PNG/WEBP with its original aspect ratio. Identify the artist, title, year or collection when multiple versions exist. A collage, advertisement screenshot or heavily obscured image is a weak precise-composition reference. Do not send private imagery to external services without appropriate authorization.</p>
+<p>Select or explicitly invoke <code>painting-to-world</code> using your client's supported interface. A complete request:</p>
+<pre><code class="language-text">Use the painting-to-world Skill to turn my uploaded painting into a walkable 3D website.
+Use this exact upload rather than silently substituting another version.
+Record composition, recognition anchors, palette and brushwork before choosing a spatial interpretation.
+Use the café's engineering quality as the baseline, but reauthor the subject and scene—not just its colors.
+Begin with a guided tour, then allow free exploration. Include Chinese and English, desktop and mobile,
+a sound toggle and actual image export. Inspect browser screenshots and repair problems.
+Do not substitute a concept image for a running scene.
+Deliver offline HTML, editable source, usage notes, provenance and QA together in one ZIP.
+Make normal creative decisions autonomously; identify missing input or unclear asset rights explicitly.
+</code></pre>
+<h2>Optional: copy the working baseline</h2>
+<p>From the package root:</p>
+<pre><code class="language-bash">node skills/en/painting-to-world/scripts/init.mjs ./my-painting --reference ./my-reference.png
+node my-painting/scripts/build.mjs
+</code></pre>
+<p>The initializer refuses to overwrite a nonempty directory and copies the baseline, reference image and analysis template. <strong>It is still the café at this point.</strong> The script does not analyze an image or generate new geometry. The AI must then reauthor <code>world.js</code>, <code>textures.js</code>, camera choreography and copy. Do not present scaffolding success as a completed new painting.</p>
+<h2>Improve resemblance deliberately</h2>
+<p>Instead of “make it more detailed,” identify three to seven concrete differences: subject location and area, the railing's vanishing direction, foreground occlusion, warm/cool balance or sky stroke direction. Correct composition and primary silhouettes before adding details. Request same-camera before/after captures, plus reverse and side views that verify three-dimensional volume.</p>
+<p>Landscapes, streets and interiors often suit continuous walking spaces. Portraits, still lifes and Cubist multi-view images may work better as sculptural dioramas or spatial installations. A depth relief is valid when labeled with its view limits; it is not a full 360-degree world. One image cannot determine every hidden surface.</p>
+<h2>Deliver and publish</h2>
+<p>A finished output should contain <code>index.html</code>, <code>index.en.html</code>, full <code>src/</code>, <code>scripts/build.mjs</code>, bilingual notes, provenance, QA and actual screenshots. Rebuild and run static checks, then open and inspect the result.</p>
+<pre><code class="language-bash">node scripts/build-all.mjs
+node scripts/check-package.mjs
+</code></pre>
+<p>You may publish the files through your chosen static host using its account, permissions and configuration. This package does not create a live URL. Use reference images and assets you are entitled to use. Decide product licensing, support, updates and refund terms separately before selling.</p>
+<h2>FAQ</h2>
+<p><strong>Why is my new project still a café?</strong> Only the scaffold was copied. The AI has not reauthored the scene yet.</p>
+<p><strong>Why did I get a screenshot or panorama?</strong> Return to the Skill's geometry gate: translating the camera must reveal parallax and new object sides. Main subjects cannot simply be camera-facing pictures.</p>
+<p><strong>Why does a poster look better than the app?</strong> Historical AI concept images are not runtime evidence. Use the current actual-capture posters under <code>marketing/en/</code>, retaining their scope notes.</p>
+<p><strong>Does every image work perfectly in one pass?</strong> That is not guaranteed. The Skill improves consistency, while quality still depends on the reference, AI, tools, spatial approach and iteration.</p>
+<p><strong>Do I need to install both languages?</strong> No. Install one Skill locale; generated examples themselves should support both interface languages.</p>
+<h2>Sources checked 2026-09-21</h2>
+<ul>
+<li>Agent Skills format: <a href="https://agentskills.io/specification">https://agentskills.io/specification</a></li>
+<li>Codex local discovery: <a href="https://learn.chatgpt.com/docs/build-skills">https://learn.chatgpt.com/docs/build-skills</a> — Where Codex loads local skills</li>
+</ul>
+<footer>MakerJackie · Painting to World · Bilingual Kit 1.1</footer></main></html>
